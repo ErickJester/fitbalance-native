@@ -1,0 +1,722 @@
+[
+  {
+    "id": "es_001",
+    "nombre": "Peso muerto convencional con barra olímpica",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "isquiosurales",
+    "sinergistas": [
+      "gluteo_mayor",
+      "lumbar",
+      "trapecio",
+      "core"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "discos",
+      "rack de sentadillas"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "De pie frente a la barra, piernas separadas a la anchura de los hombros. Flexionar rodillas, mantener la espalda recta y el core contraído. Levantar la barra extendiendo caderas y rodillas simultáneamente.",
+    "respiracion": "Inspirar profundamente y bloquear la respiración antes de levantar (estabiliza la columna). Espirar al finalizar la extensión.",
+    "variantes_anatomicas": [
+      "Agarre mixto (una mano en pronación, otra en supinación): evita que la barra ruede al usar cargas extremas."
+    ],
+    "advertencias_lesion": [
+      "Encorvar la espalda baja (cifosis lumbar) transfiere una fuerza destructiva a los discos intervertebrales, siendo la principal causa de hernias en este ejercicio."
+    ]
+  },
+  {
+    "id": "es_002",
+    "nombre": "Peso muerto sumo con barra olímpica",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "isquiosurales",
+    "sinergistas": [
+      "gluteo_mayor",
+      "aductores",
+      "lumbar"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Piernas muy separadas, puntas de los pies hacia afuera. Agarrar la barra por el centro (brazos entre las piernas). Mantener el torso lo más vertical posible y realizar el levantamiento.",
+    "respiracion": "Inspirar profundamente, bloquear el tórax, levantar y espirar al final.",
+    "variantes_anatomicas": [
+      "A diferencia del peso muerto convencional, la postura sumo transfiere gran parte del trabajo de la zona lumbar a los cuádriceps y aductores."
+    ],
+    "advertencias_lesion": [
+      "Menos riesgo para la zona lumbar que el convencional, pero requiere mayor flexibilidad en las caderas y puede causar tirones en los aductores si no se calienta."
+    ]
+  },
+  {
+    "id": "es_003",
+    "nombre": "Peso muerto con barra hexagonal",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "isquiosurales",
+    "sinergistas": [
+      "gluteo_mayor",
+      "cuadriceps",
+      "lumbar"
+    ],
+    "equipo": [
+      "barra hexagonal",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie dentro de la barra hexagonal. Flexionar rodillas manteniendo el tronco más erguido que en el peso muerto convencional. Agarrar las asas laterales y extender piernas y cadera.",
+    "respiracion": "Inspirar antes del esfuerzo, retener y espirar arriba.",
+    "variantes_anatomicas": [
+      "Al estar el peso alineado con el centro de gravedad del cuerpo (y no por delante como con la barra recta), es una biomecánica a medio camino entre una sentadilla y un peso muerto."
+    ],
+    "advertencias_lesion": [
+      "Excelente alternativa para principiantes o personas con historial de dolor lumbar, ya que el estrés de cizallamiento espinal es drásticamente menor."
+    ]
+  },
+  {
+    "id": "es_004",
+    "nombre": "Peso muerto en máquina de discos",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "isquiosurales",
+    "sinergistas": [
+      "gluteo_mayor",
+      "lumbar"
+    ],
+    "equipo": [
+      "máquina de peso muerto con discos",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Posicionarse en la máquina, sujetar los agarres con la espalda bloqueada y recta. Extender rodillas y cadera levantando la estructura.",
+    "respiracion": "Inspirar bajando, espirar subiendo.",
+    "variantes_anatomicas": [
+      "La trayectoria fija facilita el aprendizaje del patrón de bisagra de cadera sin preocuparse por la estabilización lateral del peso."
+    ],
+    "advertencias_lesion": [
+      "Asegurarse de que el eje de la máquina coincida con la anatomía del usuario; de lo contrario, forzará la lumbar."
+    ]
+  },
+  {
+    "id": "es_005",
+    "nombre": "Buenos días con barra",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "lumbar",
+    "sinergistas": [
+      "isquiosurales",
+      "gluteo_mayor"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "rack de sentadillas",
+      "discos"
+    ],
+    "nivel": "avanzado",
+    "ejecucion": "De pie, barra apoyada en los trapecios. Piernas ligeramente flexionadas. Inclinar el tronco hacia adelante (bisagra de cadera) hasta la horizontal, manteniendo la espalda recta. Volver a la vertical.",
+    "respiracion": "Inspirar al bajar el tronco, espirar al volver a subir.",
+    "variantes_anatomicas": [
+      "Flexionar más las rodillas transfiere el trabajo hacia los glúteos; mantenerlas casi rectas aísla de forma brutal los isquiosurales y lumbares."
+    ],
+    "advertencias_lesion": [
+      "Ejercicio de altísimo riesgo si se curva la espalda. Jamás se debe usar peso excesivo. La palanca que se crea ejerce enorme presión en la quinta vértebra lumbar (L5)."
+    ]
+  },
+  {
+    "id": "es_006",
+    "nombre": "Hiperextensión en banco lumbar",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "lumbar",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "banco lumbar"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Apoyar la pelvis en el banco, tobillos fijos. Con las manos en el pecho o la nuca, flexionar el tronco hacia abajo y luego elevarlo hasta la línea del cuerpo.",
+    "respiracion": "Inspirar al bajar, espirar al subir.",
+    "variantes_anatomicas": [
+      "Ajuste del cojín: si el apoyo pélvico está por debajo de las caderas, el trabajo es principalmente de glúteos e isquios; si está más alto, bloqueando la pelvis, se aísla la masa espinal (lumbares)."
+    ],
+    "advertencias_lesion": [
+      "Evitar la 'hiperextensión' real (arquear la espalda hacia atrás más allá de la línea recta) para no pellizcar los discos intervertebrales ni chocar las apófisis espinosas."
+    ]
+  },
+  {
+    "id": "es_007",
+    "nombre": "Hiperextensión en banco Glute Ham (GHD)",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "lumbar",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "banco Glute Ham"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Posición horizontal en el banco GHD. Ejecutar la flexión y extensión de cadera de forma controlada.",
+    "respiracion": "Inspirar bajando, espirar subiendo.",
+    "variantes_anatomicas": [
+      "El diseño del GHD permite una flexión de rodilla simultánea, reclutando isquiosurales tanto en su función de extensores de cadera como de flexores de rodilla."
+    ],
+    "advertencias_lesion": [
+      "Requiere fuerza base sustancial. Entrar con impulso puede causar distensiones severas en la musculatura isquiotibial."
+    ]
+  },
+  {
+    "id": "es_008",
+    "nombre": "Extensión lumbar en máquina",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "lumbar",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "máquina de extensión lumbar"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina, el rodillo apoyado en la espalda alta. Empujar hacia atrás extendiendo el tronco y regresar lentamente.",
+    "respiracion": "Inspirar cediendo peso, espirar empujando hacia atrás.",
+    "variantes_anatomicas": [
+      "Aísla la musculatura espinal eliminando por completo la necesidad de mantener el equilibrio pélvico."
+    ],
+    "advertencias_lesion": [
+      "Colocar el eje de rotación de la máquina incorrectamente (no alineado con la cadera) creará tensión mecánica dañina en la columna."
+    ]
+  },
+  {
+    "id": "es_009",
+    "nombre": "Dominadas en pronación",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "biceps_braquial",
+      "romboides",
+      "trapecio"
+    ],
+    "equipo": [
+      "barra de dominadas"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Suspendido en la barra con agarre ancho en pronación. Traccionar el cuerpo hacia arriba hasta que la barbilla pase la barra. Descender controladamente.",
+    "respiracion": "Inspirar antes de traccionar, espirar al pasar la barbilla por la barra.",
+    "variantes_anatomicas": [
+      "Llevar la barra al pecho solicita más el haz superior del dorsal, redondo mayor y fibras inferiores del trapecio, engrosando la espalda."
+    ],
+    "advertencias_lesion": [
+      "Dejarse caer de golpe al final de la fase excéntrica puede causar microtraumatismos severos en hombros y codos."
+    ]
+  },
+  {
+    "id": "es_010",
+    "nombre": "Dominadas en supinación (chin-up)",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "biceps_braquial",
+      "romboides"
+    ],
+    "equipo": [
+      "barra de dominadas"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Sujetar la barra con agarre en supinación (palmas hacia el usuario), manos separadas la anchura de los hombros. Elevar el cuerpo hasta que el mentón supere la barra.",
+    "respiracion": "Inspirar estirado, espirar al culminar el tirón.",
+    "variantes_anatomicas": [
+      "El agarre en supinación coloca el bíceps braquial en su posición biomecánica más fuerte, permitiendo que asista masivamente al dorsal ancho."
+    ],
+    "advertencias_lesion": [
+      "No estirar completamente los brazos al final de la bajada si se padecen tendinitis de bíceps."
+    ]
+  },
+  {
+    "id": "es_011",
+    "nombre": "Dominadas asistidas en máquina",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "biceps_braquial",
+      "romboides"
+    ],
+    "equipo": [
+      "máquina con asistencia (dominadas/fondos)"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Rodillas en la plataforma, sujetar las asas y traccionar. El contrapeso ayuda a elevar el cuerpo.",
+    "respiracion": "Inspirar bajando, espirar subiendo.",
+    "variantes_anatomicas": [
+      "Permite a los principiantes concentrarse puramente en la contracción de la espalda sin que el fallo muscular por el peso corporal arruine la técnica."
+    ],
+    "advertencias_lesion": [
+      "Soltar los agarres de golpe estando arriba hará que la plataforma baje bruscamente, pudiendo causar accidentes de rodilla."
+    ]
+  },
+  {
+    "id": "es_012",
+    "nombre": "Jalón al pecho con polea alta (barra)",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "biceps_braquial",
+      "romboides",
+      "trapecio"
+    ],
+    "equipo": [
+      "polea alta jalón"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado frente a la polea, rodillas bajo los rodillos. Agarre ancho en pronación. Tirar de la barra hasta la parte superior del pecho, arqueando ligeramente la espalda.",
+    "respiracion": "Inspirar estirando los brazos, espirar al final de tirar la barra al pecho.",
+    "variantes_anatomicas": [
+      "Para un desarrollo del grosor de la espalda, es vital juntar los omóplatos (retracción escapular) al acercar la barra al pecho."
+    ],
+    "advertencias_lesion": [
+      "Tirar la barra hacia el ombligo inclinando todo el cuerpo hacia atrás anula el trabajo de los dorsales y usa el impulso lumbar como palanca, arriesgando la zona baja de la espalda."
+    ]
+  },
+  {
+    "id": "es_013",
+    "nombre": "Jalón al pecho con polea alta (agarre neutro)",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "biceps_braquial",
+      "romboides"
+    ],
+    "equipo": [
+      "polea alta jalón"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Usar un maneral de agarre estrecho o paralelo. Tirar hacia el pecho manteniendo los codos pegados a los costados del tronco.",
+    "respiracion": "Inspirar subiendo peso, espirar bajando.",
+    "variantes_anatomicas": [
+      "El agarre neutro estira el dorsal ancho al máximo en su inserción y localiza intensamente el esfuerzo en la zona central e inferior del dorsal."
+    ],
+    "advertencias_lesion": [
+      "Opción muy segura para personas con problemas en la articulación del hombro a quienes les duelen los agarres muy anchos."
+    ]
+  },
+  {
+    "id": "es_014",
+    "nombre": "Jalón tras nuca con polea alta",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "polea alta jalón"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Sujetar la barra con agarre muy ancho. Tirar hacia abajo llevándola justo detrás de la cabeza (hacia la nuca), manteniendo el cuello recto.",
+    "respiracion": "Inspirar al subir la barra, espirar al tirar de ella hacia la nuca.",
+    "variantes_anatomicas": [
+      "Desarrolla excelentemente la amplitud de la espalda trabajando los haces externos del dorsal ancho y el redondo mayor."
+    ],
+    "advertencias_lesion": [
+      "Requiere una flexibilidad excelente en la articulación del hombro. Bajar demasiado la barra o curvar el cuello hacia adelante crea tensiones graves en el manguito rotador y las cervicales."
+    ]
+  },
+  {
+    "id": "es_015",
+    "nombre": "Jalón al pecho en máquina selectorizada",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "biceps_braquial",
+      "romboides"
+    ],
+    "equipo": [
+      "máquina jalón al pecho"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina, brazos estirados hacia arriba agarrando las palancas. Tirar de forma controlada hacia abajo usando la estructura guiada.",
+    "respiracion": "Inspirar al subir, espirar al bajar.",
+    "variantes_anatomicas": [
+      "Permite el trabajo unilateral (si la máquina es independiente), excelente para sentir la contracción muscular específica de cada lado de la espalda."
+    ],
+    "advertencias_lesion": [
+      "No estirar pasivamente los hombros hasta que choquen con la estructura superior en la fase de retorno."
+    ]
+  },
+  {
+    "id": "es_016",
+    "nombre": "Jalón al pecho en máquina de discos",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "biceps_braquial",
+      "romboides"
+    ],
+    "equipo": [
+      "máquina de discos jalón al pecho",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "En la máquina convergente de discos, tirar de los agarres. La trayectoria suele juntar las manos al final, simulando mejor la contracción anatómica natural.",
+    "respiracion": "Inspirar relajando, espirar contrayendo.",
+    "variantes_anatomicas": [
+      "La trayectoria convergente de arriba a abajo y hacia el centro recluta fibras que una barra rígida no alcanza."
+    ],
+    "advertencias_lesion": [
+      "El exceso de peso cargado en discos puede provocar que el usuario se levante del asiento si el tope de rodillas no está bien ajustado."
+    ]
+  },
+  {
+    "id": "es_017",
+    "nombre": "Remo con barra en pronación",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "romboides",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "De pie, rodillas semiflexionadas, tronco inclinado a 45°. Agarrar barra en pronación. Tirar de la barra hacia el abdomen manteniendo la espalda completamente plana.",
+    "respiracion": "Inspirar, bloquear la respiración (core fuerte), tirar de la barra y espirar bajándola.",
+    "variantes_anatomicas": [
+      "Inclinación del tronco: más horizontal al suelo trabaja la espalda media y grosor general; más erguido enfoca el trabajo hacia los trapecios."
+    ],
+    "advertencias_lesion": [
+      "Nunca ejecutar con la espalda encorvada. La fuerza de cizallamiento en los discos intervertebrales L4 y L5 bajo carga es la receta perfecta para una hernia."
+    ]
+  },
+  {
+    "id": "es_018",
+    "nombre": "Remo con barra en supinación",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Misma postura que el remo en pronación, pero agarrando la barra con las palmas hacia adelante (supinación). Tirar rozando los muslos hasta el ombligo.",
+    "respiracion": "Inspirar bloqueando el torso, espirar al descender la carga.",
+    "variantes_anatomicas": [
+      "Involucra de forma muy poderosa los bíceps y la porción inferior y media del trapecio en la parte final del recorrido."
+    ],
+    "advertencias_lesion": [
+      "Usar pesos muy altos en supinación aumenta la tensión directa sobre el tendón del bíceps, existiendo un pequeño riesgo de desgarro si el movimiento es brusco."
+    ]
+  },
+  {
+    "id": "es_019",
+    "nombre": "Remo con barra Z",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "romboides",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "barra Z",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Ejecutar el remo con el tronco inclinado, usando los agarres angulados de la barra Z.",
+    "respiracion": "Inspirar al bloquear espalda, espirar bajando.",
+    "variantes_anatomicas": [
+      "La barra EZ permite un agarre en semipronación o semisupinación, lo cual resulta anatómicamente mucho más amable para las muñecas que una barra recta rígida."
+    ],
+    "advertencias_lesion": [
+      "Mismas prevenciones lumbares que en todo remo inclinado: evitar dar tirones con la espalda baja."
+    ]
+  },
+  {
+    "id": "es_020",
+    "nombre": "Remo con mancuerna (un brazo)",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "romboides",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco plano"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Apoyar rodilla y mano del mismo lado en un banco plano. Espalda paralela al suelo. Con la mano libre, agarrar la mancuerna y tirar de ella hacia la cadera.",
+    "respiracion": "Inspirar al bajar la mancuerna estirando el músculo, espirar al final del tirón.",
+    "variantes_anatomicas": [
+      "Para buscar la contracción máxima de la espalda, se debe subir el codo lo más alto posible por encima de la línea de la espalda, aplicando una pequeña rotación del torso."
+    ],
+    "advertencias_lesion": [
+      "Al tener tres puntos de apoyo (dos en el banco, un pie en el suelo), la tensión sobre la columna lumbar es mínima, siendo un ejercicio excelente para espaldas delicadas."
+    ]
+  },
+  {
+    "id": "es_021",
+    "nombre": "Remo en polea baja sentado",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "romboides",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "polea para remo"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado frente a la polea, rodillas ligeramente flexionadas. Tronco recto, agarrar el maneral doble y tirar hacia el abdomen sacando el pecho y juntando omóplatos.",
+    "respiracion": "Inspirar mientras los brazos se estiran hacia adelante, espirar al tirar del agarre.",
+    "variantes_anatomicas": [
+      "Dejarse ir ligeramente hacia adelante en la fase excéntrica permite estirar al máximo el dorsal ancho, pero requiere buena flexibilidad isquiotibial para no redondear la lumbar."
+    ],
+    "advertencias_lesion": [
+      "Convertir el movimiento en un balancín tirando con el peso del cuerpo hacia atrás elimina el trabajo del dorsal e impacta agresivamente la región lumbar."
+    ]
+  },
+  {
+    "id": "es_022",
+    "nombre": "Remo en máquina selectorizada",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "romboides"
+    ],
+    "equipo": [
+      "máquina de remo"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, con el pecho firmemente apoyado en el cojín. Tirar de las empuñaduras hacia atrás. El apoyo del tórax evita que el torso se balancee.",
+    "respiracion": "Inspirar cediendo peso, espirar tirando.",
+    "variantes_anatomicas": [
+      "El agarre ancho y alto localiza el esfuerzo en deltoides posterior, trapecio y romboides; un agarre estrecho localiza más en el dorsal ancho."
+    ],
+    "advertencias_lesion": [
+      "Extremadamente seguro al tener el pecho apoyado; es imposible usar 'trampa' lumbar si se realiza correctamente."
+    ]
+  },
+  {
+    "id": "es_023",
+    "nombre": "Remo bajo en máquina de discos",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "romboides",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "máquina de discos remo bajo",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Máquina de carga libre que simula el ángulo de remo. Tirar en trayectoria ascendente diagonal desde abajo.",
+    "respiracion": "Inspirar estirando, espirar contrayendo.",
+    "variantes_anatomicas": [
+      "La trayectoria baja-hacia-arriba enfatiza enormemente el grosor central de la espalda y aísla la porción inferior del trapecio."
+    ],
+    "advertencias_lesion": [
+      "No elevar los hombros hacia las orejas al tirar, mantener las escápulas deprimidas."
+    ]
+  },
+  {
+    "id": "es_024",
+    "nombre": "Remo alto en máquina de discos",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "trapecio",
+    "sinergistas": [
+      "deltoides_posterior",
+      "romboides"
+    ],
+    "equipo": [
+      "máquina de discos remo alto",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Con agarres por encima de la línea del pecho, traccionar los codos hacia atrás manteniéndolos altos (ángulo de 90° con el torso).",
+    "respiracion": "Inspirar cediendo, espirar traccionando.",
+    "variantes_anatomicas": [
+      "Tirar con los codos altos y abiertos desplaza casi todo el trabajo del dorsal ancho hacia la parte alta de la espalda (romboides, deltoides posterior, trapecio)."
+    ],
+    "advertencias_lesion": [
+      "Mantener la cabeza recta; no empujarla hacia la almohadilla para ganar palanca, protege las cervicales."
+    ]
+  },
+  {
+    "id": "es_025",
+    "nombre": "Remo en T con soporte para pecho (discos)",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "romboides",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "barra T con soporte para el pecho cargada con discos",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Apoyar el esternón sobre el cojín inclinado. Agarrar los manerales y tirar de la carga hacia el cuerpo, sintiendo cómo se aproximan las escápulas.",
+    "respiracion": "Inspirar en descenso, espirar en contracción.",
+    "variantes_anatomicas": [
+      "El agarre ancho solicitará más deltoides posterior y trapecio medio; el estrecho se enfoca más en dorsales y amplitud de movimiento."
+    ],
+    "advertencias_lesion": [
+      "Al tener el tronco firmemente apoyado, elimina el trabajo extensor lumbar, permitiendo trabajar pesos máximos sin riesgo de hernia discal."
+    ]
+  },
+  {
+    "id": "es_026",
+    "nombre": "Remo con soporte de pecho en máquina de discos",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "romboides"
+    ],
+    "equipo": [
+      "máquina de remo con soporte para el pecho con discos",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Idéntico principio anatómico al Remo en T con soporte, pero operando en una estructura biomecánica horizontal en lugar de inclinada.",
+    "respiracion": "Inspirar bajando el peso, espirar tirando.",
+    "variantes_anatomicas": [
+      "Las máquinas modernas permiten aislar cada brazo independientemente, compensando desequilibrios musculares."
+    ],
+    "advertencias_lesion": [
+      "No asfixiar la respiración empujando la caja torácica excesivamente fuerte contra el soporte al tirar grandes pesos."
+    ]
+  },
+  {
+    "id": "es_027",
+    "nombre": "Remo en barra T (landmine)",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "jalón_horizontal",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "trapecio",
+      "romboides",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "landmine",
+      "barra T en máquina de discos",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Barra fijada a un extremo (landmine). Piernas a ambos lados de la barra, rodillas flexionadas, tronco inclinado a 45°. Usando un agarre en V, tirar de la barra hacia el pecho/abdomen.",
+    "respiracion": "Inspirar profundamente, bloquear y tirar. Espirar al ceder.",
+    "variantes_anatomicas": [
+      "Este ejercicio exige un gran esfuerzo isométrico a los músculos espinales (zona lumbar), isquiosurales y glúteos para mantener la postura estable frente a la carga."
+    ],
+    "advertencias_lesion": [
+      "Los discos muy grandes (de 20kg normales) chocan rápido con el pecho limitando el recorrido; usar discos pequeños (ej. de 10kg) mejora la amplitud anatómica del tirón."
+    ]
+  },
+  {
+    "id": "es_028",
+    "nombre": "Encogimientos con barra olímpica",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "trapecio",
+    "sinergistas": [
+      "elevador_escapula"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, brazos estirados sosteniendo la barra frente a los muslos con agarre en pronación. Elevar los hombros hacia arriba (como diciendo 'no sé') lo más alto posible.",
+    "respiracion": "Inspirar al elevar los hombros, espirar al descenderlos.",
+    "variantes_anatomicas": [
+      "Desarrolla específicamente los haces superiores del trapecio (la porción visible junto al cuello) y el angular del omóplato."
+    ],
+    "advertencias_lesion": [
+      "No rotar ni girar los hombros al elevarlos bajo grandes cargas, ya que esta rotación bajo tensión extrema no aporta crecimiento extra pero sí daña severamente las articulaciones claviculares."
+    ]
+  },
+  {
+    "id": "es_029",
+    "nombre": "Encogimientos con mancuernas",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "trapecio",
+    "sinergistas": [
+      "elevador_escapula"
+    ],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Mismo movimiento de encogimiento de hombros, pero sosteniendo las mancuernas a los lados de los muslos (agarre neutro) en vez de al frente.",
+    "respiracion": "Inspirar al subir, espirar al bajar.",
+    "variantes_anatomicas": [
+      "Al sostener el peso en los laterales, el centro de gravedad del cuerpo está perfectamente equilibrado, evitando el roce de la barra frente a las piernas y mejorando la contracción superior."
+    ],
+    "advertencias_lesion": [
+      "Misma regla fundamental: elevación puramente vertical, sin movimientos rotativos."
+    ]
+  },
+  {
+    "id": "es_030",
+    "nombre": "Encogimientos en máquina de discos",
+    "grupo_muscular": "espalda",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "trapecio",
+    "sinergistas": [
+      "elevador_escapula"
+    ],
+    "equipo": [
+      "máquina de discos encogimiento hombros",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sujetar los mangos de la máquina, cuerpo recto. Elevar hombros hacia las orejas. Controlar el descenso sintiendo el estiramiento del trapecio.",
+    "respiracion": "Inspirar elevando, espirar descendiendo.",
+    "variantes_anatomicas": [
+      "Las máquinas guiadas eliminan el agotamiento en el agarre (las manos) permitiendo sobrecargar los trapecios con kilos que el usuario quizás no podría sostener con barra o mancuernas."
+    ],
+    "advertencias_lesion": [
+      "El exceso de carga puede generar microtraumatismos de tracción en las raíces nerviosas cervicales si el descenso se hace dejándose caer de golpe."
+    ]
+  }
+]

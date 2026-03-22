@@ -1,0 +1,498 @@
+[
+  {
+    "id": "h_001",
+    "nombre": "Press militar con barra de pie",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "deltoides",
+    "sinergistas": [
+      "trapecio",
+      "triceps_braquial",
+      "serrato_anterior"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "rack de sentadillas",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "De pie, con la espalda bien recta y la barra apoyada sobre la parte alta del pecho (clavículas). Agarrar la barra en pronación con separación ligeramente mayor a la anchura de los hombros. Desarrollar el empuje verticalmente.",
+    "respiracion": "Inspirar antes del movimiento, bloquear la respiración para estabilizar el torso y espirar al final del esfuerzo.",
+    "variantes_anatomicas": [
+      "Press tras nuca: bajar la barra por detrás de la cabeza desarrolla más el haz medio y posterior, pero exige una flexibilidad articular excelente.",
+      "Push press: usar un ligero impulso de rodillas permite superar el punto de estancamiento inicial."
+    ],
+    "advertencias_lesion": [
+      "Arquear la espalda en exceso (hiperlordosis lumbar) para compensar la falta de fuerza en el empuje es una causa común de pinzamientos y hernias."
+    ]
+  },
+  {
+    "id": "h_002",
+    "nombre": "Press militar con barra sentado",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "deltoides",
+    "sinergistas": [
+      "trapecio",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "banco vertical",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Sentado en un banco con respaldo a 90° o casi 90°. Coger la barra en pronación apoyada en el pecho superior. Empujar verticalmente sin rebotar.",
+    "respiracion": "Inspirar al bajar la barra, espirar al final del empuje.",
+    "variantes_anatomicas": [
+      "Al realizarse sentado con apoyo en la espalda, evita la trampa de usar las piernas o arquear dramáticamente la zona lumbar baja."
+    ],
+    "advertencias_lesion": [
+      "Si se hace por delante (al pecho), cuidar de no golpearse la mandíbula o la nariz en la fase ascendente."
+    ]
+  },
+  {
+    "id": "h_003",
+    "nombre": "Press con mancuernas sentado",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "deltoides",
+    "sinergistas": [
+      "trapecio",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco vertical"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en el banco, sostener las mancuernas a la altura de los hombros en pronación. Empujar hacia arriba extendiendo los brazos y uniendo ligeramente las mancuernas.",
+    "respiracion": "Inspirar controlando la bajada, espirar empujando hacia arriba.",
+    "variantes_anatomicas": [
+      "Agarre neutro: realizar el empuje con las palmas mirándose entre sí transfiere un mayor trabajo al haz anterior del deltoides y protege el manguito rotador."
+    ],
+    "advertencias_lesion": [
+      "Chocar bruscamente las mancuernas en la cima del movimiento no aporta beneficios musculares y puede causar desestabilización en la articulación del hombro."
+    ]
+  },
+  {
+    "id": "h_004",
+    "nombre": "Press Arnold con mancuernas",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "deltoides",
+    "sinergistas": [
+      "trapecio",
+      "triceps_braquial",
+      "pectoral_mayor_clavicular"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco vertical"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Sentado, sostener las mancuernas a la altura del cuello en supinación (palmas hacia la cara). Empujar verticalmente aplicando una rotación de muñecas de 180° para terminar en pronación arriba.",
+    "respiracion": "Inspirar en la posición inferior, espirar desarrollando el empuje y la rotación.",
+    "variantes_anatomicas": [
+      "Este giro amplía notablemente el rango de movimiento frente a un press normal, forzando al deltoides anterior a trabajar en gran elongación inicial."
+    ],
+    "advertencias_lesion": [
+      "No usar pesos extremos. La rotación articular bajo carga máxima puede inflamar los tendones del manguito rotador y la porción larga del bíceps."
+    ]
+  },
+  {
+    "id": "h_005",
+    "nombre": "Press en máquina Smith (hombros)",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "deltoides",
+    "sinergistas": [
+      "trapecio",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina Smith",
+      "banco vertical",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, destrabar la barra guiada. Bajar la barra por delante de la cara hasta la altura de las clavículas y empujar verticalmente.",
+    "respiracion": "Inspirar durante el descenso guiado, espirar al empujar.",
+    "variantes_anatomicas": [
+      "Bajar la barra tras la nuca aísla mucho más la porción media del hombro, pero bloquea las escápulas y somete al hombro a estrés extremo."
+    ],
+    "advertencias_lesion": [
+      "La trayectoria recta inamovible de la Smith choca con la trayectoria ligeramente curva natural del press de hombros. Un asiento mal alineado causará un estrés articular silencioso pero dañino."
+    ]
+  },
+  {
+    "id": "h_006",
+    "nombre": "Press en máquina de hombros (selectorizada)",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "deltoides",
+    "sinergistas": [
+      "trapecio",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina press de hombros"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina con el pecho alto. Sujetar los manerales y empujar hacia arriba en la trayectoria que dicta el equipo.",
+    "respiracion": "Inspirar cediendo la carga, espirar empujando.",
+    "variantes_anatomicas": [
+      "Casi todas las máquinas permiten dos agarres: pronación (enfatiza deltoides medio) y agarre neutro (enfatiza deltoides anterior y haz clavicular del pecho)."
+    ],
+    "advertencias_lesion": [
+      "Ajustar el asiento de manera que los manerales no queden muy por debajo de los hombros en la posición inicial; esto evitará hiper-estiramientos lesivos."
+    ]
+  },
+  {
+    "id": "h_007",
+    "nombre": "Press en máquina de discos (hombros)",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "deltoides",
+    "sinergistas": [
+      "trapecio",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina de discos press de hombros",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Igual que en la máquina selectorizada, pero al ser convergente (los brazos se juntan al subir) imita mejor la biomecánica de las mancuernas.",
+    "respiracion": "Inspirar bajando los manerales, espirar elevándolos.",
+    "variantes_anatomicas": [
+      "La carga independiente permite trabajar unilateralmente para detectar y corregir desequilibrios asimétricos entre el deltoides izquierdo y derecho."
+    ],
+    "advertencias_lesion": [
+      "No encoger los hombros hacia las orejas durante la ejecución (encogimiento de trapecios), ya que quita tensión al deltoides y agota las cervicales."
+    ]
+  },
+  {
+    "id": "h_008",
+    "nombre": "Elevaciones laterales con mancuernas",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_lateral",
+    "sinergistas": [
+      "trapecio",
+      "supraespinoso"
+    ],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, piernas ligeramente separadas. Elevar los brazos lateralmente hasta la horizontal manteniendo los codos muy ligeramente flexionados.",
+    "respiracion": "Inspirar al elevar los brazos lateralmente, espirar al final del movimiento o durante el descenso.",
+    "variantes_anatomicas": [
+      "Rotación de la mano (vaciar un vaso): inclinar la mano hacia abajo al llegar a la horizontal aísla dramáticamente el haz lateral del deltoides."
+    ],
+    "advertencias_lesion": [
+      "Elevar los brazos por encima de la línea horizontal (90°) transfiere el trabajo al trapecio y pellizca el tendón del músculo supraespinoso contra el acromion (síndrome de pinzamiento)."
+    ]
+  },
+  {
+    "id": "h_009",
+    "nombre": "Elevaciones laterales en polea baja",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_lateral",
+    "sinergistas": [
+      "trapecio"
+    ],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, de lado a la polea baja. Agarrar el maneral con la mano opuesta a la polea y elevar el brazo lateralmente de forma ininterrumpida.",
+    "respiracion": "Inspirar subiendo, espirar cediendo la carga.",
+    "variantes_anatomicas": [
+      "Pasar el cable por delante del cuerpo trabaja un poco más el deltoides anterior; pasarlo por detrás (por la espalda) aísla excepcionalmente el deltoides lateral y posterior."
+    ],
+    "advertencias_lesion": [
+      "A diferencia de las mancuernas, la polea mantiene tensión incluso cuando el brazo cuelga. Es imperativo usar pesos más ligeros para no forzar la articulación en su punto más débil."
+    ]
+  },
+  {
+    "id": "h_010",
+    "nombre": "Elevaciones laterales en máquina vuelo lateral",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_lateral",
+    "sinergistas": [
+      "trapecio"
+    ],
+    "equipo": [
+      "máquina vuelo lateral"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina, con los brazos apoyados en las almohadillas (coderas). Empujar hacia los lados y arriba como si se batieran las alas, manteniendo los codos a 90°.",
+    "respiracion": "Inspirar elevando los brazos, espirar bajándolos.",
+    "variantes_anatomicas": [
+      "Al no tener que agarrar ninguna mancuerna con las manos, se aísla por completo el trabajo en el deltoides lateral, eliminando la intervención de los antebrazos."
+    ],
+    "advertencias_lesion": [
+      "Ajustar la altura de la silla es vital. El eje de rotación de la máquina debe coincidir milimétricamente con el centro del hombro para no lastimar la cápsula articular."
+    ]
+  },
+  {
+    "id": "h_011",
+    "nombre": "Elevaciones laterales de pie en máquina de discos",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_lateral",
+    "sinergistas": [
+      "trapecio",
+      "supraespinoso"
+    ],
+    "equipo": [
+      "máquina de elevación lateral de pie con discos",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, agarrando los manerales o apoyando antebrazos en la máquina de discos independiente. Elevar lateralmente hasta la horizontal.",
+    "respiracion": "Inspirar al subir, espirar al bajar.",
+    "variantes_anatomicas": [
+      "La postura de pie permite introducir ligeros impulsos de rodilla para ejecutar repeticiones 'trampa' forzadas al final de la serie para fatigar el músculo al extremo."
+    ],
+    "advertencias_lesion": [
+      "No convertir el impulso en un tirón de espalda lumbar. El balanceo de tronco está completamente desaconsejado."
+    ]
+  },
+  {
+    "id": "h_012",
+    "nombre": "Elevaciones frontales con mancuernas",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_anterior",
+    "sinergistas": [
+      "pectoral_mayor_clavicular"
+    ],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, con las mancuernas descansando frente a los muslos (agarre en pronación o neutro). Elevar los brazos hacia adelante hasta la altura de los ojos.",
+    "respiracion": "Inspirar elevando la mancuerna, espirar al bajar.",
+    "variantes_anatomicas": [
+      "Hacerlo de forma alterna (un brazo primero, luego el otro) previene el balanceo del cuerpo y permite manejar algo más de peso de forma concentrada."
+    ],
+    "advertencias_lesion": [
+      "Elevar la mancuerna excesivamente alto (por encima de la cabeza) deja de trabajar el deltoides frontal para pasarle la carga al haz inferior del trapecio."
+    ]
+  },
+  {
+    "id": "h_013",
+    "nombre": "Elevaciones frontales con barra",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_anterior",
+    "sinergistas": [
+      "pectoral_mayor_clavicular",
+      "trapecio"
+    ],
+    "equipo": [
+      "barra corta",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, agarrar la barra frente a los muslos en pronación. Con los brazos extendidos, elevar la barra rígidamente hasta el nivel de los hombros o los ojos.",
+    "respiracion": "Inspirar al subir la barra, espirar al descender.",
+    "variantes_anatomicas": [
+      "Un agarre estrecho enfatiza levemente el haz clavicular del pectoral mayor; un agarre a la anchura de hombros es puro trabajo del deltoides anterior."
+    ],
+    "advertencias_lesion": [
+      "Al no permitir la rotación natural de las muñecas, usar una barra rígida puede causar incomodidad o dolor en la muñeca y el codo si el peso es excesivo."
+    ]
+  },
+  {
+    "id": "h_014",
+    "nombre": "Elevaciones frontales en polea baja",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_anterior",
+    "sinergistas": [
+      "pectoral_mayor_clavicular"
+    ],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De espaldas a la máquina de polea baja. Agarrar un maneral o cuerda por entre las piernas y elevar los brazos rectos hacia el frente.",
+    "respiracion": "Inspirar tirando del cable hacia arriba, espirar resistiendo la bajada.",
+    "variantes_anatomicas": [
+      "Mantiene una tensión continua fenomenal que previene los puntos 'muertos' típicos de las pesas libres, aislando el deltoides anterior de forma muy segura."
+    ],
+    "advertencias_lesion": [
+      "Mantener el abdomen fuertemente contraído. Si no, la tensión de la polea hacia atrás obligará a sobrearquear la zona lumbar."
+    ]
+  },
+  {
+    "id": "h_015",
+    "nombre": "Pájaro con mancuernas (deltoides posterior)",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_posterior",
+    "sinergistas": [
+      "romboides",
+      "infraespinoso"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco inclinado"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Tronco inclinado hacia adelante (espalda recta), rodillas flexionadas. Brazos colgando. Elevar las mancuernas lateralmente como si se abrieran unas alas, juntando escápulas.",
+    "respiracion": "Inspirar al elevar los brazos lateralmente y espirar al concluir.",
+    "variantes_anatomicas": [
+      "Apoyar la frente en un banco o realizarlo tumbado boca abajo en un banco inclinado a 30° anula cualquier ayuda lumbar, aislando por completo la espalda alta y deltoides posterior."
+    ],
+    "advertencias_lesion": [
+      "Los tirones bruscos al empezar el movimiento pueden provocar molestias serias en la columna baja al intentar superar la inercia del peso."
+    ]
+  },
+  {
+    "id": "h_016",
+    "nombre": "Pájaro en polea baja (deltoides posterior)",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_posterior",
+    "sinergistas": [
+      "romboides",
+      "trapecio"
+    ],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Inclinado hacia el frente, agarrar el cable izquierdo con mano derecha y el cable derecho con mano izquierda (cruzados). Abrir los brazos en movimiento curvo de ave.",
+    "respiracion": "Inspirar al abrir el tórax y elevar brazos, espirar al cerrarlos.",
+    "variantes_anatomicas": [
+      "A diferencia de las mancuernas, la tracción cruzada de los cables ejerce resistencia máxima justo cuando el deltoides posterior está estirado al principio del recorrido."
+    ],
+    "advertencias_lesion": [
+      "Se debe mantener un ligero ángulo de flexión en el codo; estirar los brazos por completo causa dolor en la articulación del codo a largo plazo."
+    ]
+  },
+  {
+    "id": "h_017",
+    "nombre": "Pájaro en poleas cruzadas",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_posterior",
+    "sinergistas": [
+      "romboides",
+      "infraespinoso"
+    ],
+    "equipo": [
+      "poleas cruzadas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie en medio de la máquina, con las poleas ajustadas altas o medias. Agarrar los cables cruzados frente a la cara y tirar hacia atrás y a los lados.",
+    "respiracion": "Inspirar tirando los brazos hacia atrás, espirar dejándolos volver al centro.",
+    "variantes_anatomicas": [
+      "Poleas altas tirando hacia abajo reclutan fibras medias y bajas del trapecio; poleas a nivel del pecho aíslan mejor el deltoides posterior e infraespinoso."
+    ],
+    "advertencias_lesion": [
+      "Usar demasiado peso forzará a la persona a arquearse hacia atrás, transformando un ejercicio de detalle posterior en un empuje extraño con el peso del cuerpo."
+    ]
+  },
+  {
+    "id": "h_018",
+    "nombre": "Face pull en polea alta",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "deltoides_posterior",
+    "sinergistas": [
+      "trapecio",
+      "manguito_rotador"
+    ],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Frente a polea alta con cuerda doble. Tirar de la cuerda hacia la cara (altura de nariz o frente) abriendo los codos hacia fuera y rotando externamente los hombros.",
+    "respiracion": "Inspirar al traccionar hacia la cara, espirar controlando el regreso.",
+    "variantes_anatomicas": [
+      "Considerado no solo un ejercicio muscular sino de salud articular. Fortalece como ninguno los rotadores externos (infraespinoso, redondo menor), previniendo el hombro 'redondeado' de press de banca."
+    ],
+    "advertencias_lesion": [
+      "Cargar demasiado peso corrompe la postura; el usuario tenderá a tirar hacia el cuello o pecho, convirtiéndolo en un simple remo al cuello y perdiendo el trabajo de rotación."
+    ]
+  },
+  {
+    "id": "h_019",
+    "nombre": "Remo al mentón con barra",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "deltoides_lateral",
+    "sinergistas": [
+      "trapecio",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "De pie, agarrar barra en pronación con separación estrecha. Tirar de la barra rascando el cuerpo hasta el mentón elevando los codos lo más alto posible.",
+    "respiracion": "Inspirar durante la tracción vertical, espirar bajando la barra controladamente.",
+    "variantes_anatomicas": [
+      "Agarre estrecho: localiza un trabajo intenso y directo sobre el trapecio (porción superior).",
+      "Agarre ancho (anchura de hombros): desplaza la mayor parte del trabajo hacia los deltoides laterales."
+    ],
+    "advertencias_lesion": [
+      "Levantar la barra muy por encima del esternón con agarre estrecho crea una inflamación severa del supraespinoso (síndrome de pinzamiento acromioclavicular)."
+    ]
+  },
+  {
+    "id": "h_020",
+    "nombre": "Remo al mentón con mancuernas",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "deltoides_lateral",
+    "sinergistas": [
+      "trapecio",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sostener las mancuernas frente a los muslos y traccionar verticalmente hacia el esternón, dirigiendo el movimiento con los codos apuntando al techo.",
+    "respiracion": "Inspirar elevando, espirar descendiendo.",
+    "variantes_anatomicas": [
+      "El uso de mancuernas permite una rotación y separación natural de las manos durante el ascenso, siendo anatómicamente mucho más fluido y seguro que la barra rígida."
+    ],
+    "advertencias_lesion": [
+      "Mantener las mancuernas pegadas al cuerpo. Si se alejan hacia adelante, se carga la lumbar baja."
+    ]
+  },
+  {
+    "id": "h_021",
+    "nombre": "Remo al mentón en polea baja",
+    "grupo_muscular": "hombros",
+    "patron_movimiento": "jalón_vertical",
+    "musculo_principal": "deltoides_lateral",
+    "sinergistas": [
+      "trapecio",
+      "biceps_braquial"
+    ],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie sobre el anclaje de polea baja. Agarre en barra corta o cuerda, tirar hacia el esternón manteniendo los codos apuntando hacia arriba.",
+    "respiracion": "Inspirar tirando hacia arriba, espirar cediendo la carga hacia abajo.",
+    "variantes_anatomicas": [
+      "Hacerlo con un maneral de cuerda permite separar las manos en el tramo final (hacia los lados de la cara), combinando el remo al cuello con el face-pull para un deltoides íntegro."
+    ],
+    "advertencias_lesion": [
+      "Evitar encoger compulsivamente los hombros antes de doblar los codos; el movimiento debe ser traccionado por los deltoides, no solo por el cuello."
+    ]
+  }
+]

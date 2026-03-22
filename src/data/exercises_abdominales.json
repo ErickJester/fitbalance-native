@@ -1,0 +1,318 @@
+[
+  {
+    "id": "ab_001",
+    "nombre": "Crunch (encogimientos) en el suelo",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_columna",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "oblicuos"
+    ],
+    "equipo": [
+      "peso corporal"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado boca arriba, rodillas flexionadas y pies en el suelo. Manos detrás de la cabeza (sin tirar del cuello). Elevar los hombros del suelo curvando la columna hacia adelante, acercando el esternón a la pelvis.",
+    "respiracion": "Inspirar profundamente antes de iniciar, espirar completamente al final de la contracción para vaciar los pulmones.",
+    "variantes_anatomicas": [
+      "Elevar las piernas del suelo y mantenerlas a 90° elimina la posibilidad de arquear la espalda baja, aislando mejor el recto abdominal."
+    ],
+    "advertencias_lesion": [
+      "Tirar de la nuca con las manos puede causar lesiones graves en las vértebras cervicales. Las manos solo acompañan la cabeza, el esfuerzo nace del vientre."
+    ]
+  },
+  {
+    "id": "ab_002",
+    "nombre": "Sit-up (incorporaciones completas)",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_columna",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "psoas_iliaco",
+      "oblicuos"
+    ],
+    "equipo": [
+      "peso corporal"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado, pies trabados bajo un soporte o sostenidos por un compañero. Elevar todo el tronco hasta quedar sentado, y luego volver a bajar controladamente.",
+    "respiracion": "Inspirar bajando al suelo, espirar al incorporarse.",
+    "variantes_anatomicas": [
+      "Durante la primera fase del movimiento (despegar los hombros) trabaja el recto abdominal; en la segunda fase (levantar la espalda baja del suelo) el esfuerzo principal recae sobre el flexor de la cadera (psoas ilíaco)."
+    ],
+    "advertencias_lesion": [
+      "Personas con lordosis lumbar (curvatura excesiva en la baja espalda) deben evitar este ejercicio, ya que el potente tirón del psoas sobre las vértebras lumbares acentúa el dolor."
+    ]
+  },
+  {
+    "id": "ab_003",
+    "nombre": "Elevación de rodillas en silla romana (paralelas)",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_cadera",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "psoas_iliaco",
+      "recto_femoral"
+    ],
+    "equipo": [
+      "silla romana"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Apoyado sobre los codos en la silla romana, espalda contra el respaldo. Elevar las rodillas hacia el pecho redondeando la zona lumbar al final del recorrido.",
+    "respiracion": "Inspirar con piernas colgando, espirar al elevar las rodillas al pecho.",
+    "variantes_anatomicas": [
+      "Para que el abdomen trabaje realmente, no basta con subir los muslos a la horizontal (eso es puro psoas). Se debe seguir subiendo las rodillas para que la pelvis bascule hacia arriba y contraiga la parte baja del abdomen."
+    ],
+    "advertencias_lesion": [
+      "Dejar caer las piernas de golpe crea una inercia que arquea la zona lumbar violentamente; el descenso debe ser siempre resistido."
+    ]
+  },
+  {
+    "id": "ab_004",
+    "nombre": "Elevación de piernas suspendido en barra",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_cadera",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "psoas_iliaco",
+      "recto_femoral"
+    ],
+    "equipo": [
+      "barra de dominadas"
+    ],
+    "nivel": "avanzado",
+    "ejecucion": "Colgado de la barra, brazos estirados. Elevar las piernas (estiradas o semiflexionadas) intentando llevar los pies hacia la barra, enrollando la pelvis al final.",
+    "respiracion": "Inspirar en la posición inferior, espirar con fuerza en el punto de máxima elevación.",
+    "variantes_anatomicas": [
+      "Hacerlo con las piernas completamente estiradas exige una enorme flexibilidad de los isquiotibiales; flexionar las rodillas reduce el brazo de palanca y permite concentrarse mejor en la báscula de la pelvis."
+    ],
+    "advertencias_lesion": [
+      "Balancearse en la barra (kipping) usa la inercia del cuerpo en lugar de la fuerza muscular, reduciendo el trabajo abdominal y sometiendo a los hombros a tirones articulares."
+    ]
+  },
+  {
+    "id": "ab_005",
+    "nombre": "Crunch inverso (elevación de pelvis en suelo)",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_columna",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "oblicuos"
+    ],
+    "equipo": [
+      "peso corporal"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado boca arriba, manos a los lados. Piernas elevadas (rodillas flexionadas). Contraer el abdomen para despegar los glúteos y la espalda baja del suelo, llevando las rodillas hacia la cara.",
+    "respiracion": "Inspirar en el suelo, espirar al enrollar la pelvis hacia arriba.",
+    "variantes_anatomicas": [
+      "Localiza excepcionalmente el esfuerzo en la porción sub-umbilical (inferior) del recto abdominal, una zona difícil de aislar con el crunch tradicional."
+    ],
+    "advertencias_lesion": [
+      "Muy seguro para la columna. No usar impulso de balanceo de las piernas para subir; el levantamiento debe ser un enrolle controlado desde el vientre."
+    ]
+  },
+  {
+    "id": "ab_006",
+    "nombre": "Crunch en polea alta (con cuerda)",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_columna",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "oblicuos"
+    ],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "De rodillas frente a la polea alta. Sostener la cuerda a los lados de la cabeza. Flexionar la columna (encogerse) llevando la frente hacia las rodillas.",
+    "respiracion": "Inspirar dejándose estirar por el cable, espirar fuertemente al encoger el abdomen.",
+    "variantes_anatomicas": [
+      "A diferencia de los ejercicios de suelo que pierden tensión al llegar arriba, la polea asegura una tensión isocinética brutal en todo el arco de movimiento, permitiendo además añadir peso para hipertrofiar los 'cuadritos'."
+    ],
+    "advertencias_lesion": [
+      "Las caderas no deben moverse hacia atrás y adelante; deben permanecer bloqueadas. El movimiento debe ser únicamente una flexión de la columna dorsal y lumbar."
+    ]
+  },
+  {
+    "id": "ab_007",
+    "nombre": "Crunch en máquina selectorizada",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_columna",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "oblicuos"
+    ],
+    "equipo": [
+      "máquina de abdominales"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, agarrar las asas superiores y fijar los pies. Flexionar el tronco acercando el esternón hacia la pelvis venciendo la resistencia de los discos.",
+    "respiracion": "Inspirar retornando a la posición estirada, espirar contrayendo la máquina.",
+    "variantes_anatomicas": [
+      "Permite aplicar sobrecarga progresiva (añadir más kilos) a la pared abdominal, algo indispensable para lograr profundidad visual en los segmentos del recto abdominal."
+    ],
+    "advertencias_lesion": [
+      "No empujar con los brazos o el pecho; la tracción de las palancas superiores debe originarse puramente en la contracción de la faja abdominal."
+    ]
+  },
+  {
+    "id": "ab_008",
+    "nombre": "Inclinación lateral con mancuerna",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_lateral",
+    "musculo_principal": "oblicuos",
+    "sinergistas": [
+      "cuadrado_lumbar"
+    ],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, una mancuerna en una mano, la otra detrás de la nuca. Flexionar el tronco hacia el lado de la mancuerna dejándola descender por la pierna, luego contraer el oblicuo opuesto para enderezarse.",
+    "respiracion": "Inspirar al inclinar el cuerpo bajando el peso, espirar al volver a la vertical.",
+    "variantes_anatomicas": [
+      "Se trabaja el lado OPUESTO a donde se sostiene la mancuerna. Es un constructor potente de la masa de los oblicuos."
+    ],
+    "advertencias_lesion": [
+      "Sostener dos mancuernas al mismo tiempo anula el ejercicio, ya que un peso sirve de contrapeso para el otro. Se debe hacer obligatoriamente a una mano. Ojo: usar mucho peso ensancha la cintura."
+    ]
+  },
+  {
+    "id": "ab_009",
+    "nombre": "Rotación de tronco con pica (Twist)",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "rotacion",
+    "musculo_principal": "oblicuos",
+    "sinergistas": [
+      "transverso_abdominal"
+    ],
+    "equipo": [
+      "pica o bastón"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en el extremo de un banco, con una pica apoyada sobre los hombros (no en las cervicales). Rotar el torso de izquierda a derecha de forma controlada.",
+    "respiracion": "Respiración fluida natural sin bloqueos.",
+    "variantes_anatomicas": [
+      "Hacerlo sentado bloquea la pelvis, asegurando que la rotación provenga puramente de la columna dorsal y los oblicuos, trabajando la cintura escapular frente a la cintura pélvica."
+    ],
+    "advertencias_lesion": [
+      "Hacer este movimiento de forma brusca o balística (girar fuertemente rebotando al final) desgasta los discos intervertebrales por la fricción de torsión."
+    ]
+  },
+  {
+    "id": "ab_010",
+    "nombre": "Rueda abdominal (Ab wheel)",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "core",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "transverso_abdominal",
+      "dorsal_ancho",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "rueda abdominal"
+    ],
+    "nivel": "avanzado",
+    "ejecucion": "De rodillas, sostener la rueda. Rodar hacia adelante estirando el cuerpo lo máximo posible sin que el vientre toque el suelo. Usar el abdomen para tirar y volver a la posición inicial.",
+    "respiracion": "Inspirar al rodar hacia adelante (estiramiento), espirar al traccionar de vuelta.",
+    "variantes_anatomicas": [
+      "Es un ejercicio de anti-extensión. El abdomen no se acorta, trabaja de forma isométrica brutal para evitar que la columna se parta hacia abajo por la gravedad."
+    ],
+    "advertencias_lesion": [
+      "Si la persona carece de fuerza en el core, al llegar al punto máximo de extensión la zona lumbar cederá bruscamente, causando un dolor intenso en las vértebras L4-L5."
+    ]
+  },
+  {
+    "id": "ab_011",
+    "nombre": "Crunch con balón medicinal",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_columna",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "oblicuos"
+    ],
+    "equipo": [
+      "balón medicinal"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Idéntico al crunch de suelo, pero sosteniendo un balón medicinal sobre el pecho o con los brazos estirados apuntando al techo.",
+    "respiracion": "Inspirar bajando, espirar subiendo.",
+    "variantes_anatomicas": [
+      "Si el balón se sostiene detrás de la cabeza, el brazo de palanca aumenta, haciendo el ejercicio mucho más difícil y exigiendo más a la porción superior del abdomen."
+    ],
+    "advertencias_lesion": [
+      "No usar inercia lanzando los brazos hacia adelante con el balón para ayudarse a subir."
+    ]
+  },
+  {
+    "id": "ab_012",
+    "nombre": "Plancha abdominal (Isométrica / TRX)",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "core",
+    "musculo_principal": "transverso_abdominal",
+    "sinergistas": [
+      "recto_abdominal",
+      "oblicuos"
+    ],
+    "equipo": [
+      "peso corporal",
+      "TRX"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Apoyado sobre los antebrazos y las puntas de los pies (o en TRX). Mantener el cuerpo completamente recto en línea paralela al suelo contrayendo el abdomen.",
+    "respiracion": "Respiración corta y controlada manteniendo la pared abdominal rígida.",
+    "variantes_anatomicas": [
+      "Trabaja de manera predominante el transverso abdominal (el músculo más profundo), vital para la contención visceral y para lograr un vientre plano estéticamente."
+    ],
+    "advertencias_lesion": [
+      "Dejar caer la pelvis hacia el suelo por fatiga provoca un pinzamiento doloroso en la zona lumbar baja. Es preferible cortar la serie a realizarla encorvado."
+    ]
+  },
+  {
+    "id": "ab_013",
+    "nombre": "Crunch en banco declinado",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_columna",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "psoas_iliaco",
+      "oblicuos"
+    ],
+    "equipo": [
+      "banco declinado"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Pies trabados en el banco declinado. Acostarse y flexionar el tronco curvando la espalda. El declive aumenta la resistencia por gravedad.",
+    "respiracion": "Inspirar dejándose caer controladamente, espirar al enrollarse hacia arriba.",
+    "variantes_anatomicas": [
+      "Realizar una torsión al final del movimiento (llevar el codo hacia la rodilla contraria) solicita de manera muy fuerte a los músculos oblicuos mayor y menor."
+    ],
+    "advertencias_lesion": [
+      "Bajar con la espalda totalmente recta (sin curvar) y tirar desde abajo recarga excesivamente el psoas ilíaco, causando un dolor tipo calambre en la zona lumbar superior."
+    ]
+  },
+  {
+    "id": "ab_014",
+    "nombre": "Elevación de piernas en banco plano",
+    "grupo_muscular": "abdominales",
+    "patron_movimiento": "flexion_cadera",
+    "musculo_principal": "recto_abdominal",
+    "sinergistas": [
+      "psoas_iliaco"
+    ],
+    "equipo": [
+      "banco plano"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado boca arriba en un banco, manos agarradas al borde por detrás de la cabeza o bajo los glúteos. Elevar las piernas flexionando ligeramente las rodillas, terminando con una elevación de la pelvis.",
+    "respiracion": "Inspirar al bajar las piernas, espirar al elevarlas y enrollar la pelvis.",
+    "variantes_anatomicas": [
+      "Si los pies bajan más allá de la línea del banco en la fase excéntrica, el psoas se estira al máximo. Sin embargo, esto requiere mucha fuerza abdominal para no quebrar la zona lumbar."
+    ],
+    "advertencias_lesion": [
+      "Colocar las manos debajo de los glúteos inclina la pelvis artificialmente, protegiendo la zona lumbar en principiantes que aún no tienen fuerza en el core para mantener la espalda pegada al banco."
+    ]
+  }
+]

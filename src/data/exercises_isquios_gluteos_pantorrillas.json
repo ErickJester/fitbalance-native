@@ -1,0 +1,524 @@
+[
+  {
+    "id": "isq_001",
+    "nombre": "Curl de piernas acostado (Femoral en máquina)",
+    "grupo_muscular": "isquiosurales",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "isquiosurales",
+    "sinergistas": [
+      "gemelos"
+    ],
+    "equipo": [
+      "máquina curl femoral acostado"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado boca abajo en la máquina, rodillas justo fuera del borde del banco y cojines sobre los talones. Flexionar las rodillas llevando los talones hacia los glúteos.",
+    "respiracion": "Inspirar extendiendo las piernas, espirar al flexionar intensamente.",
+    "variantes_anatomicas": [
+      "Posición de los pies: hacer el curl con los pies en flexión dorsal (puntas hacia la espinilla) involucra fuertemente a los gemelos. Hacerlo en extensión (puntas estiradas) aísla casi por completo los isquiosurales."
+    ],
+    "advertencias_lesion": [
+      "Levantar la pelvis del banco al hacer el esfuerzo transfiere tensión a la zona lumbar. Si la pelvis se levanta, el peso es excesivo."
+    ]
+  },
+  {
+    "id": "isq_002",
+    "nombre": "Curl de piernas sentado",
+    "grupo_muscular": "isquiosurales",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "isquiosurales",
+    "sinergistas": [
+      "gemelos"
+    ],
+    "equipo": [
+      "máquina curl femoral sentado"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina, con los muslos fijos por el cojín superior. Empujar el cojín inferior hacia abajo flexionando las rodillas.",
+    "respiracion": "Inspirar cediendo peso, espirar empujando hacia abajo.",
+    "variantes_anatomicas": [
+      "Al estar sentado (cadera flexionada a 90°), los isquiosurales se estiran desde su origen en el isquion, lo que provoca una contracción mucho más intensa y completa del músculo comparado con la versión acostada."
+    ],
+    "advertencias_lesion": [
+      "Ajustar mal el eje de rotación de la máquina respecto a la rodilla creará fricción antinatural en los ligamentos cruzados."
+    ]
+  },
+  {
+    "id": "isq_003",
+    "nombre": "Curl de piernas de pie (unilateral)",
+    "grupo_muscular": "isquiosurales",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "isquiosurales",
+    "sinergistas": [
+      "gemelos"
+    ],
+    "equipo": [
+      "máquina curl femoral de pie"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie frente a la máquina, apoyar el torso. Doblar una rodilla levantando el rodillo hacia el glúteo correspondiente.",
+    "respiracion": "Inspirar en descenso, espirar en contracción.",
+    "variantes_anatomicas": [
+      "El trabajo unilateral obliga a la pierna de apoyo a un trabajo isométrico estabilizador profundo en el glúteo medio."
+    ],
+    "advertencias_lesion": [
+      "No compensar la falta de fuerza arqueando la zona lumbar hacia atrás al llegar al punto máximo de flexión."
+    ]
+  },
+  {
+    "id": "isq_004",
+    "nombre": "Peso muerto rumano con mancuernas",
+    "grupo_muscular": "isquiosurales",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "isquiosurales",
+    "sinergistas": [
+      "gluteo_mayor",
+      "lumbar"
+    ],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "De pie, mancuernas al frente. Piernas con una ligerísima flexión (casi rectas). Echar la cadera hacia atrás (bisagra) bajando las mancuernas rozando las piernas hasta sentir estiramiento profundo.",
+    "respiracion": "Inspirar bajando (expandiendo tórax para bloquear espalda), espirar subiendo.",
+    "variantes_anatomicas": [
+      "Mantener las rodillas rígidas maximiza el estiramiento de los isquiosurales, pero exige una flexibilidad extrema; la ligera flexión protege la articulación sin perder el estímulo muscular."
+    ],
+    "advertencias_lesion": [
+      "Bajar más allá de la flexibilidad natural obliga a curvar la columna lumbar, exponiendo los discos a presiones altísimas. Detenerse cuando la espalda empiece a encorvarse."
+    ]
+  },
+  {
+    "id": "isq_005",
+    "nombre": "Curl nórdico (Glute-Ham Raise)",
+    "grupo_muscular": "isquiosurales",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "isquiosurales",
+    "sinergistas": [
+      "gluteo_mayor",
+      "lumbar"
+    ],
+    "equipo": [
+      "banco Glute Ham"
+    ],
+    "nivel": "avanzado",
+    "ejecucion": "Rodillas apoyadas, tobillos fijos bajo los rodillos. Dejarse caer hacia adelante controladamente usando la fuerza excéntrica de los isquios y volver a la vertical.",
+    "respiracion": "Inspirar en la caída excéntrica, espirar al traccionar arriba.",
+    "variantes_anatomicas": [
+      "Es uno de los pocos ejercicios que entrena los isquiosurales en sus dos funciones simultáneamente: flexores de rodilla y extensores de cadera, creando una tensión mecánica sin igual."
+    ],
+    "advertencias_lesion": [
+      "El riesgo de calambre o microdesgarro (tirón) es altísimo en principiantes debido a la brutal sobrecarga excéntrica. Progresar con asistencia de las manos o bandas."
+    ]
+  },
+  {
+    "id": "gl_001",
+    "nombre": "Hip thrust con barra (Empuje de cadera)",
+    "grupo_muscular": "gluteos",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "gluteo_mayor",
+    "sinergistas": [
+      "isquiosurales",
+      "core"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "banco plano",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Espalda alta apoyada en un banco, barra sobre la pelvis (con almohadilla). Pies planos en el suelo. Empujar las caderas verticalmente hacia el techo apretando glúteos al máximo.",
+    "respiracion": "Inspirar bajando la pelvis, espirar en el empuje vertical.",
+    "variantes_anatomicas": [
+      "La colocación de los pies es clave: muy adelante trabaja isquiosurales; muy atrás trabaja cuádriceps; espinillas a 90° exactos en el punto máximo de empuje aísla el glúteo mayor perfectamente."
+    ],
+    "advertencias_lesion": [
+      "Hiperextender la espalda baja en la parte alta del movimiento para intentar subir más pellizca las vértebras lumbares. El movimiento debe ser puramente pélvico."
+    ]
+  },
+  {
+    "id": "gl_002",
+    "nombre": "Puente de glúteo en suelo",
+    "grupo_muscular": "gluteos",
+    "patron_movimiento": "dominante_cadera",
+    "musculo_principal": "gluteo_mayor",
+    "sinergistas": [
+      "isquiosurales"
+    ],
+    "equipo": [
+      "peso corporal"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado boca arriba, rodillas flexionadas, pies en el suelo. Elevar la pelvis hasta que el cuerpo forme una línea recta desde los hombros hasta las rodillas.",
+    "respiracion": "Inspirar relajando al suelo, espirar contrayendo glúteos arriba.",
+    "variantes_anatomicas": [
+      "Hacerlo a una sola pierna incrementa dramáticamente el requerimiento de estabilización sobre el glúteo medio para evitar que la pelvis se incline hacia un lado."
+    ],
+    "advertencias_lesion": [
+      "Totalmente seguro para la espalda baja ya que el suelo actúa como tope natural que impide la hiperlordosis."
+    ]
+  },
+  {
+    "id": "gl_003",
+    "nombre": "Patada de glúteo en polea baja",
+    "grupo_muscular": "gluteos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gluteo_mayor",
+    "sinergistas": [
+      "isquiosurales"
+    ],
+    "equipo": [
+      "polea alta baja",
+      "tobillera"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie frente a la polea, tobillera puesta. Tronco ligeramente inclinado y apoyado. Extender la pierna hacia atrás de forma rítmica y controlada.",
+    "respiracion": "Inspirar retornando, espirar pateando hacia atrás.",
+    "variantes_anatomicas": [
+      "Extender la pierna recta hacia atrás recluta glúteo mayor e isquios; flexionar la rodilla y luego patear 'desconecta' parcialmente al isquiosural enfocando el estímulo en el glúteo."
+    ],
+    "advertencias_lesion": [
+      "Permitir que el cable tire fuertemente de la pierna hacia adelante en la fase excéntrica torcerá la cadera y la zona lumbar baja de forma brusca."
+    ]
+  },
+  {
+    "id": "gl_004",
+    "nombre": "Patada de glúteo en máquina",
+    "grupo_muscular": "gluteos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gluteo_mayor",
+    "sinergistas": [
+      "isquiosurales"
+    ],
+    "equipo": [
+      "máquina patada de glúteo"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Apoyado en la máquina (ya sea de pie o sobre antebrazos), colocar la planta del pie o la parte posterior de la rodilla en el soporte y empujar hacia atrás/arriba.",
+    "respiracion": "Inspirar cediendo la palanca, espirar empujando.",
+    "variantes_anatomicas": [
+      "Las máquinas donde se empuja con la rodilla flexionada (plataforma en la planta del pie) son biomecánicamente superiores para aislar la masa del glúteo mayor al desactivar los isquiotibiales."
+    ],
+    "advertencias_lesion": [
+      "El arco de la espalda baja debe permanecer estático. Si la espalda se hunde y se arquea en cada patada, el ejercicio deja de ser de glúteos y pasa a fatigar los espinales lumbares."
+    ]
+  },
+  {
+    "id": "gl_005",
+    "nombre": "Abducción de cadera en máquina sentado",
+    "grupo_muscular": "gluteos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gluteo_medio",
+    "sinergistas": [
+      "gluteo_menor",
+      "tensor_fascia_lata"
+    ],
+    "equipo": [
+      "máquina abductora"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, rodillas apoyadas por dentro de los cojines laterales. Separar las piernas venciendo la resistencia y volver controlando el cierre.",
+    "respiracion": "Inspirar cerrando piernas, espirar abriéndolas.",
+    "variantes_anatomicas": [
+      "Inclinación del tronco: inclinarse muy hacia atrás trabaja más las fibras posteriores del glúteo medio; sentarse en el borde e inclinarse hacia adelante aísla intensamente las fibras anteriores y el tensor de la fascia lata."
+    ],
+    "advertencias_lesion": [
+      "Dejar que las placas de peso se golpeen al cerrar relaja la tensión pélvica de golpe, creando riesgo de tirones musculares en la ingle."
+    ]
+  },
+  {
+    "id": "gl_006",
+    "nombre": "Abducción de cadera en polea baja",
+    "grupo_muscular": "gluteos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gluteo_medio",
+    "sinergistas": [
+      "tensor_fascia_lata"
+    ],
+    "equipo": [
+      "polea alta baja",
+      "tobillera"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, de lado a la polea. Enganchar la tobillera a la pierna alejada. Mantenerse recto y separar la pierna lateralmente lo más alto posible.",
+    "respiracion": "Inspirar cruzando la pierna por delante de la de apoyo (fase excéntrica máxima), espirar en la apertura lateral.",
+    "variantes_anatomicas": [
+      "Cruzar el cable por delante de la pierna de apoyo amplía el arco de movimiento, estirando el glúteo medio por completo antes de iniciar la contracción."
+    ],
+    "advertencias_lesion": [
+      "Mantener la pierna portadora semiflexionada para no forzar la articulación de la rodilla lateralmente (estrés de los ligamentos colaterales)."
+    ]
+  },
+  {
+    "id": "gl_007",
+    "nombre": "Extensión de cadera en máquina multicadera",
+    "grupo_muscular": "gluteos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gluteo_mayor",
+    "sinergistas": [
+      "isquiosurales"
+    ],
+    "equipo": [
+      "máquina multicadera"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, ajustar el rodillo a la altura de la parte posterior del muslo o corva. Empujar el rodillo hacia atrás manteniendo el torso erguido apoyado en las barras.",
+    "respiracion": "Inspirar retornando el rodillo adelante, espirar empujando atrás.",
+    "variantes_anatomicas": [
+      "Al mantenerse de pie y recto, la capacidad de usar la zona lumbar como trampa disminuye en comparación a la patada en cuadrupedia, logrando un mejor aislamiento del glúteo mayor."
+    ],
+    "advertencias_lesion": [
+      "El exceso de peso obligará inevitablemente al usuario a inclinar todo el tronco hacia adelante para crear palanca mecánica, anulando la efectividad del aparato."
+    ]
+  },
+  {
+    "id": "gl_008",
+    "nombre": "Extensión de cadera en cuadrupedia (suelo)",
+    "grupo_muscular": "gluteos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gluteo_mayor",
+    "sinergistas": [
+      "isquiosurales"
+    ],
+    "equipo": [
+      "peso corporal"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "A cuatro patas en el suelo (cuadrupedia), rodillas y manos o codos apoyados. Levantar una pierna hacia el techo manteniendo la rodilla flexionada a 90°.",
+    "respiracion": "Inspirar bajando la rodilla al suelo, espirar contrayendo arriba.",
+    "variantes_anatomicas": [
+      "Estirar la pierna hacia atrás (recta) trabaja glúteos e isquios; mantenerla flexionada (talón hacia el techo) aísla excepcionalmente el glúteo mayor. Agregar una banda de resistencia o tobillera aumenta la intensidad."
+    ],
+    "advertencias_lesion": [
+      "Hundir la espalda (crear lordosis) al subir la pierna transfiere tensión a las vértebras lumbares; el core debe estar apretado para que la espalda parezca una mesa."
+    ]
+  },
+  {
+    "id": "gl_009",
+    "nombre": "Abducción de cadera acostado (suelo)",
+    "grupo_muscular": "gluteos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gluteo_medio",
+    "sinergistas": [
+      "gluteo_menor"
+    ],
+    "equipo": [
+      "peso corporal"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado de lado en el suelo. Elevar la pierna superior lateralmente y retornar sin dejarla descansar sobre la otra pierna.",
+    "respiracion": "Inspirar al bajar, espirar al elevar la pierna.",
+    "variantes_anatomicas": [
+      "Rotar ligeramente la punta del pie hacia el suelo durante la elevación focaliza el trabajo de forma extrema en las fibras más altas del glúteo medio y menor."
+    ],
+    "advertencias_lesion": [
+      "Mover la pierna hacia adelante durante la elevación desvía el trabajo a los flexores de cadera; la pierna debe ir estrictamente en el plano lateral o ligeramente hacia atrás."
+    ]
+  },
+  {
+    "id": "pa_001",
+    "nombre": "Elevación de talones de pie en máquina",
+    "grupo_muscular": "pantorrillas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gemelos",
+    "sinergistas": [
+      "soleo"
+    ],
+    "equipo": [
+      "máquina elevación de gemelos de pie"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, hombros bajo los cojines. Puntas de los pies en el bloque, talones al aire. Elevar los talones extendiendo los tobillos lo más alto posible y descender hasta sentir un estiramiento profundo.",
+    "respiracion": "Inspirar bajando los talones, espirar en la extensión plantar máxima.",
+    "variantes_anatomicas": [
+      "Al realizar el ejercicio con las rodillas completamente estiradas (extensión), el gemelo (gastrocnemio) asume la práctica totalidad de la carga."
+    ],
+    "advertencias_lesion": [
+      "Las rodillas no deben estar hiperextendidas bloqueando el hueso; mantener siempre una flexión imperceptible para proteger la articulación de los kilos comprimidos desde los hombros."
+    ]
+  },
+  {
+    "id": "pa_002",
+    "nombre": "Elevación de talones sentado en máquina",
+    "grupo_muscular": "pantorrillas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "soleo",
+    "sinergistas": [
+      "gemelos"
+    ],
+    "equipo": [
+      "máquina elevación de gemelos sentado",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, rodillas flexionadas a 90° bajo los cojines. Puntas de los pies en el soporte. Elevar los talones y luego bajarlos permitiendo que el peso caiga controlado.",
+    "respiracion": "Inspirar estirando (talones abajo), espirar contrayendo (talones arriba).",
+    "variantes_anatomicas": [
+      "La biomecánica clave: doblar las rodillas a 90° afloja mecánicamente los gemelos (que cruzan la rodilla y el tobillo), 'desactivándolos' y forzando al músculo sóleo a realizar todo el trabajo de elevación."
+    ],
+    "advertencias_lesion": [
+      "Rebotar bruscamente en la parte más baja (el estiramiento máximo) bajo cargas elevadas puede provocar la rotura parcial del tendón de Aquiles."
+    ]
+  },
+  {
+    "id": "pa_003",
+    "nombre": "Elevación de talones tipo burro",
+    "grupo_muscular": "pantorrillas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gemelos",
+    "sinergistas": [
+      "soleo"
+    ],
+    "equipo": [
+      "máquina gemelo tipo burro"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Inclinado hacia adelante apoyando los antebrazos, cojín de la máquina sobre la zona lumbar/pélvica (no sobre la espalda). Elevar y descender talones.",
+    "respiracion": "Inspirar bajando, espirar subiendo talones.",
+    "variantes_anatomicas": [
+      "La flexión del tronco hacia adelante estira los gemelos desde su origen en el fémur de forma insuperable, permitiendo la mayor elongación y contracción posible del gastrocnemio."
+    ],
+    "advertencias_lesion": [
+      "Si no se dispone de máquina, un compañero puede sentarse sobre la pelvis, pero es fundamental que su peso esté sobre las caderas y JAMÁS sobre las vértebras lumbares para evitar hernias."
+    ]
+  },
+  {
+    "id": "pa_004",
+    "nombre": "Elevación de talones en prensa de piernas",
+    "grupo_muscular": "pantorrillas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gemelos",
+    "sinergistas": [
+      "soleo"
+    ],
+    "equipo": [
+      "prensa de piernas",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "En la prensa a 45°, piernas casi estiradas. Colocar solo las puntas de los pies en el borde inferior de la plataforma. Empujar la plataforma flexionando los tobillos.",
+    "respiracion": "Inspirar dejando que la plataforma acerque las puntas, espirar empujando con las puntas de los pies.",
+    "variantes_anatomicas": [
+      "Permite usar cargas masivas de forma muy segura al estar la espalda completamente plana sobre un respaldo, focalizando el trabajo brutalmente en el gastrocnemio."
+    ],
+    "advertencias_lesion": [
+      "Los seguros de la máquina SIEMPRE deben estar accionados en la posición más alta. Si las puntas resbalan del borde sin el seguro puesto, la plataforma caerá sobre las rodillas."
+    ]
+  },
+  {
+    "id": "pa_005",
+    "nombre": "Elevación de talones a una pierna con mancuerna",
+    "grupo_muscular": "pantorrillas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gemelos",
+    "sinergistas": [
+      "soleo"
+    ],
+    "equipo": [
+      "mancuernas",
+      "escalón o cuña"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie sobre el borde de un escalón con un solo pie. Sostener la mancuerna en la mano del mismo lado de la pierna que trabaja. La otra mano se apoya para equilibrar. Ejecutar la elevación.",
+    "respiracion": "Inspirar bajando el talón por debajo del escalón, espirar subiendo al máximo.",
+    "variantes_anatomicas": [
+      "El trabajo unilateral concentra toda la masa corporal (más la mancuerna) en un solo gemelo, ideal para corregir pantorrillas asimétricas."
+    ],
+    "advertencias_lesion": [
+      "Subir el talón de forma balística (con rebote rápido) puede inflamar la fascia plantar (planta del pie)."
+    ]
+  },
+  {
+    "id": "pa_006",
+    "nombre": "Elevación de talones de pie con barra libre",
+    "grupo_muscular": "pantorrillas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gemelos",
+    "sinergistas": [
+      "soleo"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Barra en los trapecios (como en sentadilla). Puntas de los pies apoyadas en un disco grueso o cuña. Mantener el equilibrio y efectuar la extensión de pies.",
+    "respiracion": "Inspirar bajando los talones a ras de suelo, espirar extendiendo hacia arriba.",
+    "variantes_anatomicas": [
+      "Puntas hacia adentro enfoca el haz externo del gemelo; puntas hacia afuera enfoca el haz interno."
+    ],
+    "advertencias_lesion": [
+      "Requiere un equilibrio excepcional. No recomendado con cargas altas porque la inestabilidad puede causar que los tobillos cedan lateralmente provocando un esguince severo."
+    ]
+  },
+  {
+    "id": "pa_007",
+    "nombre": "Elevación de talones sentado con barra libre",
+    "grupo_muscular": "pantorrillas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "soleo",
+    "sinergistas": [
+      "gemelos"
+    ],
+    "equipo": [
+      "barra corta o EZ",
+      "banco plano",
+      "discos",
+      "cuña"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en un banco, colocar un disco grueso en el suelo bajo las puntas de los pies. Apoyar una barra gruesa (o con almohadilla) sobre los muslos cerca de las rodillas y realizar las elevaciones.",
+    "respiracion": "Inspirar estirando hacia abajo, espirar apretando hacia arriba.",
+    "variantes_anatomicas": [
+      "Alternativa directa si el gimnasio no posee máquina sentada. Trabaja aislando el sóleo de la misma forma eficaz por la flexión de 90° de la rodilla."
+    ],
+    "advertencias_lesion": [
+      "Usar obligatoriamente una toalla o almohadilla protectora, ya que el peso de la barra metálica cortará la circulación o lastimará el nervio ciático si reposa directo sobre el fémur."
+    ]
+  },
+  {
+    "id": "pa_008",
+    "nombre": "Elevación de talones en máquina Smith",
+    "grupo_muscular": "pantorrillas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "gemelos",
+    "sinergistas": [
+      "soleo"
+    ],
+    "equipo": [
+      "máquina Smith",
+      "escalón o cuña",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Poner un escalón o discos gruesos debajo de la barra Smith. Colocar la barra sobre los hombros, posicionar puntas en el escalón y usar la guía vertical estricta para ejecutar las elevaciones.",
+    "respiracion": "Inspirar bajando, espirar subiendo.",
+    "variantes_anatomicas": [
+      "Combina la inmensa carga mecánica de la barra libre con la total seguridad del equilibrio guiado, permitiendo enfocarse 100% en exprimir las fibras del gemelo."
+    ],
+    "advertencias_lesion": [
+      "Asegurarse de que el escalón (o discos apilados) no deslice sobre el suelo del gimnasio bajo la enorme fuerza de empuje; usar tapetes de goma."
+    ]
+  },
+  {
+    "id": "pa_009",
+    "nombre": "Elevación de tibial anterior",
+    "grupo_muscular": "pantorrillas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "tibial_anterior",
+    "sinergistas": [],
+    "equipo": [
+      "peso corporal",
+      "banda de resistencia o máquina tibial"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado o de pie (talones apoyados levemente adelantados). Levantar las puntas de los pies hacia la espinilla lo máximo posible venciendo una resistencia.",
+    "respiracion": "Inspirar bajando las puntas, espirar levantándolas.",
+    "variantes_anatomicas": [
+      "Ejercicio vital y a menudo olvidado para la salud de la pierna baja. Fortalece la parte frontal de la espinilla, creando un balance de fuerzas que previene lesiones crónicas del gemelo."
+    ],
+    "advertencias_lesion": [
+      "Su carencia en las rutinas (entrenar solo los gemelos traseros) es la principal causa de la dolorosa 'periostitis tibial' en corredores o saltadores."
+    ]
+  }
+]

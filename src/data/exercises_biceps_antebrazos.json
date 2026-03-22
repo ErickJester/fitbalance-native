@@ -1,0 +1,453 @@
+[
+  {
+    "id": "b_001",
+    "nombre": "Curl con barra olímpica de pie",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial",
+      "supinador_largo"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, espalda recta, piernas ligeramente separadas. Agarrar la barra en supinación (palmas hacia arriba) con separación igual a los hombros. Flexionar los codos llevando la barra al pecho sin despegar los brazos del torso.",
+    "respiracion": "Inspirar antes de iniciar la flexión, espirar al final del esfuerzo.",
+    "variantes_anatomicas": [
+      "Agarre ancho: localiza el esfuerzo en la cabeza corta (interna) del bíceps.",
+      "Agarre estrecho: desplaza el esfuerzo hacia la cabeza larga (externa) del bíceps."
+    ],
+    "advertencias_lesion": [
+      "Balancear el torso hacia atrás (trampa) no solo reduce el trabajo del bíceps, sino que traslada una tensión muy peligrosa a los discos intervertebrales lumbares."
+    ]
+  },
+  {
+    "id": "b_002",
+    "nombre": "Curl con barra Z (EZ) de pie",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial",
+      "supinador_largo"
+    ],
+    "equipo": [
+      "barra Z",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, agarrar la barra EZ por sus pliegues (semisupinación). Flexionar los codos para llevar el peso hacia el pecho manteniendo los brazos fijos a los lados.",
+    "respiracion": "Inspirar al bajar la barra, espirar al completar la contracción.",
+    "variantes_anatomicas": [
+      "El agarre angulado (semisupinación) alivia drásticamente la tensión en la articulación de la muñeca (articulación radiocarpiana), siendo la variante ideal si se padecen dolores de muñeca o antebrazo."
+    ],
+    "advertencias_lesion": [
+      "Como en todo curl de pie, evitar el impulso pélvico. Contraer glúteos y abdomen durante el levantamiento estabiliza la columna."
+    ]
+  },
+  {
+    "id": "b_003",
+    "nombre": "Curl con barra corta de pie",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial",
+      "supinador_largo"
+    ],
+    "equipo": [
+      "barra corta",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Misma técnica que la barra olímpica, usando una barra preolímpica o corta, lo cual facilita el equilibrio. Flexionar los codos sin adelantar los hombros.",
+    "respiracion": "Inspirar descendiendo, espirar flexionando.",
+    "variantes_anatomicas": [
+      "Mantener los codos estrictamente alineados con el tronco; si se adelantan al subir, la tensión pasa al deltoides anterior, quitando carga al bíceps."
+    ],
+    "advertencias_lesion": [
+      "Estirar por completo los codos (bloqueo articular) en la fase baja sosteniendo mucho peso puede inflamar la inserción tendinosa del bíceps en el radio."
+    ]
+  },
+  {
+    "id": "b_004",
+    "nombre": "Curl con mancuernas de pie (alternado)",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial"
+    ],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie o sentado. Sostener mancuernas en semipronación. Inspirar y flexionar un codo, rotando la muñeca hacia afuera (supinación) antes de que el antebrazo llegue a la horizontal.",
+    "respiracion": "Inspirar al bajar, espirar al terminar el curl de cada brazo.",
+    "variantes_anatomicas": [
+      "El bíceps es flexor del codo pero también el supinador más potente del antebrazo; este giro de muñeca logra la contracción más completa posible del músculo."
+    ],
+    "advertencias_lesion": [
+      "Al hacerlo de forma alterna, el cuerpo tiende a inclinarse lateralmente. Mantener el core rígido para evitar compresión asimétrica en la columna lumbar."
+    ]
+  },
+  {
+    "id": "b_005",
+    "nombre": "Curl concentrado con mancuerna sentado",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco plano"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, con una mancuerna agarrada en supinación, apoyar el tríceps contra la cara interna del muslo. Flexionar el codo llevando el peso hacia el pecho.",
+    "respiracion": "Inspirar descendiendo la mancuerna, espirar finalizando la flexión.",
+    "variantes_anatomicas": [
+      "Este ejercicio permite un control visual directo sobre el bíceps y evita totalmente el uso de inercia o balanceo, logrando un aislamiento puro de las dos cabezas del bíceps braquial."
+    ],
+    "advertencias_lesion": [
+      "No apoyar el codo directamente sobre la rótula de la rodilla (hueso con hueso) para evitar dolor articular; el apoyo correcto es la porción carnosa del tríceps sobre el vasto interno."
+    ]
+  },
+  {
+    "id": "b_006",
+    "nombre": "Curl en banco predicador con barra EZ",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial"
+    ],
+    "equipo": [
+      "barra Z",
+      "banco predicador",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en el banco Scott (predicador), apoyar los brazos en el pupitre. Agarrar la barra EZ y flexionar los codos hacia la barbilla. Bajar lentamente.",
+    "respiracion": "Inspirar durante el descenso, espirar al final de la subida.",
+    "variantes_anatomicas": [
+      "Al tener los brazos por delante del cuerpo, la cabeza larga del bíceps se afloja, transfiriendo la mayor parte de la tensión a la cabeza corta (interna) y al músculo braquial anterior."
+    ],
+    "advertencias_lesion": [
+      "El riesgo de desgarro del tendón inferior del bíceps es muy alto en este banco si no se calienta bien o si se estiran los brazos por completo con cargas pesadas. Dejar siempre una mínima flexión."
+    ]
+  },
+  {
+    "id": "b_007",
+    "nombre": "Curl en banco predicador con mancuernas",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco predicador"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Ejecutar el curl en banco Scott a una mano con mancuerna, manteniendo el tríceps aplastado contra el cojín inclinado.",
+    "respiracion": "Inspirar bajando, espirar contrayendo.",
+    "variantes_anatomicas": [
+      "Permite enfocarse mentalmente en cada brazo de manera individual y realizar rotaciones de muñeca que la barra EZ no permite, maximizando la supinación."
+    ],
+    "advertencias_lesion": [
+      "Al trabajar unilateralmente, es vital no rotar el torso sobre el pupitre; mantener los hombros cuadrados frente al banco para no forzar el hombro."
+    ]
+  },
+  {
+    "id": "b_008",
+    "nombre": "Curl en banco predicador (máquina selectorizada)",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial"
+    ],
+    "equipo": [
+      "máquina curl de bícep"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina, apoyar la parte posterior de los brazos en el pupitre. Sujetar los manerales y traccionar hacia arriba guiado por el eje de la máquina.",
+    "respiracion": "Inspirar al bajar el peso, espirar al tirar hacia arriba.",
+    "variantes_anatomicas": [
+      "Las levas de la máquina mantienen una tensión mecánica uniforme sobre la cabeza corta del bíceps en todo el arco, algo imposible con pesas libres donde la tensión varía por la gravedad."
+    ],
+    "advertencias_lesion": [
+      "Ajustar el asiento para que el codo coincida exactamente con el eje de rotación mecánico de la máquina; un mal ajuste crea estrés por cizallamiento en la articulación."
+    ]
+  },
+  {
+    "id": "b_009",
+    "nombre": "Curl en banco predicador (máquina de discos)",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial"
+    ],
+    "equipo": [
+      "máquina predicador a discos",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Misma postura que en máquina selectorizada, operando empuñaduras que traccionan un mecanismo cargado con discos.",
+    "respiracion": "Inspirar extendiendo, espirar flexionando.",
+    "variantes_anatomicas": [
+      "La carga independiente (si las asas no están unidas) permite corregir asimetrías de fuerza entre el bíceps derecho y el izquierdo."
+    ],
+    "advertencias_lesion": [
+      "El punto de mayor riesgo de rotura tendinosa es al iniciar el levantamiento desde abajo; aplicar la fuerza gradualmente, nunca con un tirón explosivo."
+    ]
+  },
+  {
+    "id": "b_010",
+    "nombre": "Curl inclinado con mancuernas",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco inclinado"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en banco inclinado a 45°. Dejar colgar los brazos verticalmente (en supinación). Flexionar los antebrazos manteniendo los codos inmóviles apuntando al suelo.",
+    "respiracion": "Inspirar profundamente al bajar las mancuernas (abriendo la caja torácica), espirar al flexionar.",
+    "variantes_anatomicas": [
+      "Es el ejercicio rey para la cabeza larga (externa) del bíceps. Al llevar los brazos hacia atrás, la cabeza larga se estira desde el hombro, contrayéndose con mucha mayor intensidad."
+    ],
+    "advertencias_lesion": [
+      "El estiramiento extremo al que se somete la inserción superior del bíceps (en la escápula) requiere usar pesos moderados para evitar tendinitis bicipital superior."
+    ]
+  },
+  {
+    "id": "b_011",
+    "nombre": "Curl martillo con mancuernas",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "supinador_largo",
+    "sinergistas": [
+      "biceps_braquial",
+      "braquial"
+    ],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie o sentado. Sostener mancuernas a los lados en semipronación (agarre neutro, palmas mirándose). Flexionar los codos sin girar las muñecas.",
+    "respiracion": "Inspirar al bajar, espirar al final de la contracción.",
+    "variantes_anatomicas": [
+      "El agarre martillo desplaza drásticamente el trabajo del bíceps hacia el supinador largo (bracorradial) y el braquial anterior, siendo clave para dar volumen lateral al antebrazo y brazo."
+    ],
+    "advertencias_lesion": [
+      "Biomecánicamente es la posición más fuerte y estable para la muñeca y el codo, siendo una variante muy segura si existen molestias articulares."
+    ]
+  },
+  {
+    "id": "b_012",
+    "nombre": "Curl martillo con pesa rusa",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "supinador_largo",
+    "sinergistas": [
+      "biceps_braquial",
+      "braquial"
+    ],
+    "equipo": [
+      "pesa rusa"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sujetar la pesa rusa por el asa con una o dos manos en agarre neutro. Ejecutar la flexión de codo hacia el pecho o el hombro correspondiente.",
+    "respiracion": "Inspirar cediendo, espirar traccionando.",
+    "variantes_anatomicas": [
+      "El centro de gravedad desplazado de la kettlebell (peso colgado bajo la muñeca) crea una palanca de resistencia diferente a la mancuerna, activando más los estabilizadores del antebrazo."
+    ],
+    "advertencias_lesion": [
+      "Cuidar que la 'bola' de la pesa no golpee el antebrazo durante la ejecución rápida."
+    ]
+  },
+  {
+    "id": "b_013",
+    "nombre": "Curl en polea baja (barra)",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial"
+    ],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie frente a polea baja. Agarrar la barra corta conectada al cable en supinación. Manteniendo codos en los costados, flexionar antebrazos.",
+    "respiracion": "Inspirar estirando los brazos hacia abajo, espirar al flexionar contra la resistencia.",
+    "variantes_anatomicas": [
+      "A diferencia de la barra libre, el cable provee una tensión isocinética; el bíceps jamás descansa, ni siquiera en la parte más alta del movimiento."
+    ],
+    "advertencias_lesion": [
+      "Dar un paso atrás muy largo desde la polea cambiará el ángulo de tracción, forzando a los deltoides a intervenir para mantener los brazos pegados al cuerpo."
+    ]
+  },
+  {
+    "id": "b_014",
+    "nombre": "Curl en polea baja (cuerda — martillo)",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "supinador_largo",
+    "sinergistas": [
+      "biceps_braquial",
+      "braquial"
+    ],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Con un accesorio de cuerda en la polea baja, agarrar los extremos con palmas enfrentadas. Traccionar hacia arriba separando ligeramente las manos al final.",
+    "respiracion": "Inspirar cediendo cable, espirar tirando.",
+    "variantes_anatomicas": [
+      "Combina la hipertrofia del braquial anterior y supinador largo (agarre martillo) con la tensión constante insuperable de la polea, logrando una congestión muy alta."
+    ],
+    "advertencias_lesion": [
+      "Dejar que el cable tire fuertemente de los brazos hacia adelante en la bajada redondeará la espalda dorsal; mantenerse erguido."
+    ]
+  },
+  {
+    "id": "b_015",
+    "nombre": "Curl con barra en máquina Smith",
+    "grupo_muscular": "biceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "biceps_braquial",
+    "sinergistas": [
+      "braquial"
+    ],
+    "equipo": [
+      "máquina Smith",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie en el rack de la máquina Smith, destrabar la barra a la altura de los muslos (agarre supinado). Realizar la flexión de brazos guiada verticalmente.",
+    "respiracion": "Inspirar descendiendo, espirar contrayendo.",
+    "variantes_anatomicas": [
+      "La trayectoria estricta vertical elimina el balanceo de la barra, forzando a concentrar la fuerza en la contracción pura de las cabezas bicipitales."
+    ],
+    "advertencias_lesion": [
+      "Al no ceder lateralmente, obliga a una supinación forzada estricta; usar solo si las muñecas son lo suficientemente flexibles para no sufrir dolor."
+    ]
+  },
+  {
+    "id": "a_001",
+    "nombre": "Curl de muñeca con barra (flexores)",
+    "grupo_muscular": "antebrazos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "flexores_muneca",
+    "sinergistas": [],
+    "equipo": [
+      "barra corta",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, con los antebrazos apoyados sobre los muslos o un banco, manos en supinación (palmas arriba) sobresaliendo del borde. Flexionar las muñecas bajando la barra y subiéndola al máximo.",
+    "respiracion": "Inspirar al extender las muñecas bajando la barra, espirar al flexionarlas subiéndola.",
+    "variantes_anatomicas": [
+      "Dejar rodar la barra hasta la punta de los dedos en la bajada suma la intervención de los flexores profundos y superficiales de los dedos."
+    ],
+    "advertencias_lesion": [
+      "Usar peso excesivo puede generar inflamación severa en el túnel carpiano y tendinitis en la inserción medial del codo (epitrocleítis)."
+    ]
+  },
+  {
+    "id": "a_002",
+    "nombre": "Curl de muñeca inverso con barra (extensores)",
+    "grupo_muscular": "antebrazos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "extensores_muneca",
+    "sinergistas": [
+      "supinador_largo"
+    ],
+    "equipo": [
+      "barra corta",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Antebrazos apoyados en los muslos o banco, agarrar la barra en pronación (palmas abajo). Extender las muñecas levantando los nudillos hacia el techo.",
+    "respiracion": "Inspirar bajando las manos, espirar levantando la barra con los extensores.",
+    "variantes_anatomicas": [
+      "Este ejercicio localiza perfectamente el trabajo en los músculos epicondíleos (primer y segundo radial, extensor común), vital para compensar la desproporción si se entrenan mucho los flexores."
+    ],
+    "advertencias_lesion": [
+      "Los extensores son más débiles que los flexores. Cargar la barra como si fuera un curl normal provocará dolor irradiado hacia el codo externo (codo de tenista o epicondilitis)."
+    ]
+  },
+  {
+    "id": "a_003",
+    "nombre": "Curl de muñeca con mancuernas",
+    "grupo_muscular": "antebrazos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "flexores_muneca",
+    "sinergistas": [],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Misma mecánica que con la barra (antebrazos apoyados en supinación), pero sosteniendo una mancuerna en cada mano.",
+    "respiracion": "Inspirar en descenso, espirar en contracción flexora.",
+    "variantes_anatomicas": [
+      "Hacerlo a una mano (unilateral) permite un recorrido de la muñeca ligeramente más rotativo y adaptado a la morfología propia, evitando bloqueos rígidos."
+    ],
+    "advertencias_lesion": [
+      "Evitar que el antebrazo se levante del muslo durante el esfuerzo; si esto pasa, el bíceps está ayudando, arruinando el aislamiento."
+    ]
+  },
+  {
+    "id": "a_004",
+    "nombre": "Curl de muñeca inverso con mancuernas",
+    "grupo_muscular": "antebrazos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "extensores_muneca",
+    "sinergistas": [],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Antebrazos apoyados en pronación, mancuernas en las manos. Elevar los nudillos hacia arriba estimulando la cara superior del antebrazo.",
+    "respiracion": "Inspirar dejando caer el peso, espirar elevándolo.",
+    "variantes_anatomicas": [
+      "Las mancuernas previenen que el brazo más fuerte compense el trabajo del débil, igualando la fuerza de agarre en ambas manos."
+    ],
+    "advertencias_lesion": [
+      "Apretar la mancuerna excesivamente fuerte agota los músculos antes de que se logre la extensión completa de la muñeca."
+    ]
+  },
+  {
+    "id": "a_005",
+    "nombre": "Prono-supinación con mancuerna",
+    "grupo_muscular": "antebrazos",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "pronadores_supinadores",
+    "sinergistas": [],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Antebrazo apoyado en un banco. Sostener una mancuerna asimétrica (agarrada solo por un extremo o una barra corta cargada de un lado). Girar la muñeca llevando la carga de un lado al otro (pronación a supinación).",
+    "respiracion": "Inspirar rotando hacia afuera, espirar rotando hacia adentro, ritmo natural.",
+    "variantes_anatomicas": [
+      "Es un ejercicio raramente practicado pero fundamental para los músculos rotadores intrínsecos del antebrazo (pronador redondo, pronador cuadrado y supinador corto)."
+    ],
+    "advertencias_lesion": [
+      "El brazo de palanca al sostener la mancuerna por un extremo es muy severo. Usar pesos extremadamente ligeros para no torcer los ligamentos de la muñeca."
+    ]
+  }
+]

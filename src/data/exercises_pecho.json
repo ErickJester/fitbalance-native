@@ -1,0 +1,593 @@
+[
+  {
+    "id": "p_001",
+    "nombre": "Press de banca plano con barra",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "banco plano",
+      "rack de sentadillas"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Acostado en el banco plano, glúteos en contacto con el banco, pies en el suelo. Coger la barra en pronación con separación mayor a los hombros. Bajar controladamente hasta el pecho y empujar hacia arriba.",
+    "respiracion": "Inspirar al bajar la barra, espirar al final del esfuerzo (al extender los brazos).",
+    "variantes_anatomicas": [
+      "Agarre estrecho: transfiere gran parte del esfuerzo a los tríceps y a la parte interna del pectoral.",
+      "Arquear la espalda (powerlifting): permite levantar más peso al solicitar el haz inferior del pectoral, pero exige técnica para no dañar la lumbar."
+    ],
+    "advertencias_lesion": [
+      "Riesgo de desgarro del pectoral mayor si se baja la barra rebotando bruscamente sobre el tórax."
+    ]
+  },
+  {
+    "id": "p_002",
+    "nombre": "Press de banca plano con mancuernas",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco plano"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Acostado en el banco plano, coger las mancuernas en pronación a la altura del pecho. Empujar verticalmente hacia arriba y volver a la posición inicial.",
+    "respiracion": "Inspirar al bajar las mancuernas, espirar al final del empuje.",
+    "variantes_anatomicas": [
+      "Rotación isométrica: rotar las muñecas al subir (quedando en agarre neutro) fomenta una contracción más fuerte en la zona esternal."
+    ],
+    "advertencias_lesion": [
+      "Requiere mayor estabilización. No dejar caer las mancuernas bruscamente hacia los lados para evitar lesiones en el manguito rotador."
+    ]
+  },
+  {
+    "id": "p_003",
+    "nombre": "Press de banca plano en máquina Smith",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina Smith",
+      "banco plano",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado en el banco bajo la barra guiada. Agarrar la barra, destrabarla y bajarla hasta el pecho. Empujar hacia arriba hasta la extensión casi completa.",
+    "respiracion": "Inspirar durante el descenso, espirar al completar el empuje.",
+    "variantes_anatomicas": [
+      "Al no requerir estabilización, permite concentrar el esfuerzo 100% en la contracción del pectoral y usar técnicas de intensidad como pausas."
+    ],
+    "advertencias_lesion": [
+      "La trayectoria fija obliga a una alineación perfecta del banco; si se coloca mal, impone una tensión antinatural en la articulación del hombro."
+    ]
+  },
+  {
+    "id": "p_004",
+    "nombre": "Press de banca plano (máquina selectorizada)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina press de pecho"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina, ajustar el asiento para que los agarres queden a la altura del medio pecho. Empujar las asas hacia adelante y regresar controlando el peso.",
+    "respiracion": "Inspirar al acercar el peso al pecho, espirar al alejarlo.",
+    "variantes_anatomicas": [
+      "Agarre vertical (neutro): desplaza parte del esfuerzo hacia la porción superior del pectoral y los deltoides anteriores."
+    ],
+    "advertencias_lesion": [
+      "Excelente para principiantes por su bajo riesgo de lesión, siempre que no se hiperextiendan los codos bruscamente al final del movimiento."
+    ]
+  },
+  {
+    "id": "p_005",
+    "nombre": "Press de banca plano (máquina de discos)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina de discos press de pecho",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina convergente de discos, sujetar los agarres. Empujar hacia adelante, notando cómo las manos convergen (se juntan ligeramente) al final del recorrido.",
+    "respiracion": "Inspirar en la fase excéntrica (hacia atrás), espirar en la fase concéntrica (hacia adelante).",
+    "variantes_anatomicas": [
+      "El movimiento convergente simula el recorrido natural del pectoral, logrando una mejor contracción en la parte esternal que el press tradicional con barra."
+    ],
+    "advertencias_lesion": [
+      "Cuidado con el ajuste del asiento; si es muy alto o bajo, la tensión pasará a la cápsula articular del hombro."
+    ]
+  },
+  {
+    "id": "p_006",
+    "nombre": "Press de banca plano horizontal (máquina de discos)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina de discos press horizontal",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Tumbado en la máquina (si es de postura acostada) o sentado. Ejecutar el empuje horizontal cargado con discos, manteniendo el pecho erguido y las escápulas retraídas.",
+    "respiracion": "Inspirar al ceder el peso, espirar al empujar.",
+    "variantes_anatomicas": [
+      "Trabajo unilateral: permite enfocarse en igualar las asimetrías de fuerza entre el lado izquierdo y el derecho del pecho."
+    ],
+    "advertencias_lesion": [
+      "No separar la espalda del respaldo al empujar cargas pesadas, ya que anula la estabilización torácica."
+    ]
+  },
+  {
+    "id": "p_007",
+    "nombre": "Press de banca inclinado con barra",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor_clavicular",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "banco inclinado",
+      "rack de sentadillas"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Sentado en banco inclinado (45°-60°), agarrar la barra en pronación. Bajar hasta la parte alta del pecho (clavículas) y empujar hacia arriba de forma guiada.",
+    "respiracion": "Inspirar al bajar la barra controladamente, espirar al final del esfuerzo.",
+    "variantes_anatomicas": [
+      "Inclinación del banco: si se inclina más de 60°, el trabajo se desplaza al deltoides anterior, quitando estímulo al haz clavicular del pectoral."
+    ],
+    "advertencias_lesion": [
+      "Bajar la barra demasiado hacia el cuello o usar cargas excesivas que obliguen a despegar la lumbar del banco."
+    ]
+  },
+  {
+    "id": "p_008",
+    "nombre": "Press de banca inclinado con mancuernas",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor_clavicular",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco inclinado"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en banco inclinado, mancuernas a los lados de los hombros. Empujar verticalmente acercando las mancuernas en la parte superior del movimiento.",
+    "respiracion": "Inspirar durante la bajada, espirar al final de la extensión.",
+    "variantes_anatomicas": [
+      "Ofrece un mayor rango de movimiento que la barra, permitiendo un estiramiento más profundo de las fibras superiores del pectoral."
+    ],
+    "advertencias_lesion": [
+      "Evitar chocar las mancuernas en la parte superior, ya que quita la tensión muscular y puede desestabilizar la articulación."
+    ]
+  },
+  {
+    "id": "p_009",
+    "nombre": "Press de banca inclinado en máquina Smith",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor_clavicular",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina Smith",
+      "banco inclinado",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Ajustar el banco inclinado debajo de la barra Smith para que esta baje a la clavícula. Destrabar, descender lentamente y empujar a la posición inicial.",
+    "respiracion": "Inspirar bajando, espirar empujando.",
+    "variantes_anatomicas": [
+      "Ideal para aislar el haz clavicular eliminando el trabajo de los músculos estabilizadores."
+    ],
+    "advertencias_lesion": [
+      "Posicionar el banco muy atrás hará que la barra baje sobre el estómago, creando estrés articular en hombros y codos por la trayectoria fija."
+    ]
+  },
+  {
+    "id": "p_010",
+    "nombre": "Press de banca inclinado (máquina selectorizada)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor_clavicular",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina de press de pecho inclinado"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Ajustar asiento para que los agarres queden alineados con la parte superior del pecho. Empujar hacia arriba y adelante según el eje de la máquina.",
+    "respiracion": "Inspirar en descenso, espirar en empuje.",
+    "variantes_anatomicas": [
+      "Variar la altura del asiento cambia ligeramente el punto de máxima tensión en el deltoides anterior o el pectoral superior."
+    ],
+    "advertencias_lesion": [
+      "Mantener la cabeza siempre apoyada en el respaldo para evitar tensiones cervicales."
+    ]
+  },
+  {
+    "id": "p_011",
+    "nombre": "Press de banca inclinado (máquina de discos)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor_clavicular",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina de discos press inclinado",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina convergente inclinada, empujar los agarres hacia arriba y adentro. Controlar el retorno sintiendo el estiramiento.",
+    "respiracion": "Inspirar al bajar, espirar al empujar.",
+    "variantes_anatomicas": [
+      "La trayectoria convergente ascendente es anatómicamente perfecta para el haz clavicular del pectoral."
+    ],
+    "advertencias_lesion": [
+      "Asegurar un calentamiento previo de manguitos rotadores, ya que el ángulo inclinado expone más esta articulación."
+    ]
+  },
+  {
+    "id": "p_012",
+    "nombre": "Press de banca declinado con barra",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor_esternal",
+    "sinergistas": [
+      "triceps_braquial",
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "banco declinado"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Fijar los pies en los rodillos, acostarse cabeza abajo (declinado 20-30°). Agarrar la barra y bajarla hacia la parte inferior del esternón. Empujar verticalmente.",
+    "respiracion": "Inspirar al bajar, espirar al subir.",
+    "variantes_anatomicas": [
+      "El ángulo declinado anula gran parte del trabajo del deltoides anterior, enfocando toda la carga en el haz inferior del pectoral."
+    ],
+    "advertencias_lesion": [
+      "La postura con la cabeza hacia abajo aumenta el riego sanguíneo craneal; no se recomienda hacer series muy largas o pesadas si se sufre de hipertensión."
+    ]
+  },
+  {
+    "id": "p_013",
+    "nombre": "Press de banca declinado con mancuernas",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor_esternal",
+    "sinergistas": [
+      "triceps_braquial",
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco declinado"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "En banco declinado, sujetar las mancuernas a los lados del tórax inferior y empujar perpendicularmente al suelo. Bajar controlando.",
+    "respiracion": "Inspirar en descenso, espirar en esfuerzo.",
+    "variantes_anatomicas": [
+      "Permite un mayor estiramiento en la parte inferior del pectoral que la barra tradicional al no chocar con el esternón."
+    ],
+    "advertencias_lesion": [
+      "Misma precaución circulatoria que con barra. Cuidado al soltar las mancuernas estando declinado para no forzar los hombros."
+    ]
+  },
+  {
+    "id": "p_014",
+    "nombre": "Press de banca declinado (máquina de discos)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "pectoral_mayor_esternal",
+    "sinergistas": [
+      "triceps_braquial",
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "máquina de discos press declinado",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina (que simula el ángulo declinado empujando hacia abajo y adelante). Ejecutar el empuje manteniendo el pecho alto.",
+    "respiracion": "Inspirar cediendo peso, espirar empujando.",
+    "variantes_anatomicas": [
+      "Aísla la porción abdominal/inferior del pectoral sin los riesgos cardiovasculares de estar invertido en un banco libre."
+    ],
+    "advertencias_lesion": [
+      "Asegurarse de no encoger los hombros hacia adelante en la parte final del recorrido."
+    ]
+  },
+  {
+    "id": "p_015",
+    "nombre": "Aperturas en banco plano con mancuernas",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior",
+      "coracobraquial"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco plano"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado, brazos extendidos con leve flexión de codos. Abrir brazos hacia los lados hasta sentir estiramiento en el pecho y volver a la vertical como si se abrazara un barril.",
+    "respiracion": "Inspirar profundamente al abrir para expandir tórax, espirar al juntar mancuernas.",
+    "variantes_anatomicas": [
+      "Es un ejercicio de aislamiento; los codos deben mantener el mismo ángulo de flexión siempre."
+    ],
+    "advertencias_lesion": [
+      "Bajar más allá del nivel de los hombros pone tensión extrema en la articulación y aumenta el riesgo de luxación o desgarro pectoral."
+    ]
+  },
+  {
+    "id": "p_016",
+    "nombre": "Aperturas en banco inclinado con mancuernas",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "pectoral_mayor_clavicular",
+    "sinergistas": [
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco inclinado"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Igual que en banco plano pero a 45°. Abrir los brazos en cruz manteniendo leve flexión de codos y retornar contrayendo el pecho superior.",
+    "respiracion": "Inspirar abriendo tórax, espirar subiendo.",
+    "variantes_anatomicas": [
+      "Localiza el esfuerzo principalmente en los haces claviculares del pectoral mayor."
+    ],
+    "advertencias_lesion": [
+      "Un peso excesivo obligará a flexionar mucho los codos, transformando el movimiento de aislamiento en un simple press inclinado."
+    ]
+  },
+  {
+    "id": "p_017",
+    "nombre": "Cruces en poleas cruzadas (pec-deck con polea)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "poleas cruzadas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie en medio de las poleas altas, tronco ligeramente inclinado. Tirar de los manerales hacia adelante y abajo hasta que las manos se junten frente a la cintura.",
+    "respiracion": "Inspirar al inicio, espirar al juntar los brazos.",
+    "variantes_anatomicas": [
+      "Cruzar las manos una sobre otra al final del movimiento enfatiza brutalmente la contracción de la porción esternal (interna) del pecho."
+    ],
+    "advertencias_lesion": [
+      "Perder la estabilidad del core puede generar tirones en la zona lumbar baja al usar cargas pesadas en polea alta."
+    ]
+  },
+  {
+    "id": "p_018",
+    "nombre": "Cruces en polea alta baja (cable cruzado)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Dependiendo de si la polea está baja (tirar hacia arriba) o alta (tirar hacia abajo), se ejecuta un movimiento de abrazo constante. Mantener codos fijos.",
+    "respiracion": "Inspirar estirando, espirar contrayendo al centro.",
+    "variantes_anatomicas": [
+      "Poleas bajas (tirar de abajo hacia arriba): localiza el esfuerzo en la porción superior (clavicular) del pectoral y el deltoides anterior."
+    ],
+    "advertencias_lesion": [
+      "Asegurar un buen apoyo de pies; un desequilibrio con cables tensos puede causar lesiones en manguitos rotadores por tracción repentina."
+    ]
+  },
+  {
+    "id": "p_019",
+    "nombre": "Aperturas en máquina dual (pec-deck)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "máquina dual de aperturas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, con la espalda apoyada, sujetar los agarres con brazos semiflexionados. Juntar las manos frente al pecho y retornar controlando.",
+    "respiracion": "Inspirar al separar brazos, espirar al juntarlos.",
+    "variantes_anatomicas": [
+      "Mantiene una tensión continua sobre el pectoral mayor en todo el arco de movimiento, a diferencia de las mancuernas que pierden tensión arriba."
+    ],
+    "advertencias_lesion": [
+      "Excelente para principiantes; riesgo muy bajo siempre que no se deje caer el peso de golpe en la fase excéntrica."
+    ]
+  },
+  {
+    "id": "p_020",
+    "nombre": "Aperturas con brazos flexionados en máquina",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior",
+      "coracobraquial"
+    ],
+    "equipo": [
+      "máquina de aperturas con brazos flexionados"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, apoyar los antebrazos y codos en las almohadillas (codos a 90°). Juntar las almohadillas empujando con los codos hacia el centro.",
+    "respiracion": "Inspirar abriendo, espirar juntando codos.",
+    "variantes_anatomicas": [
+      "Al aplicar la fuerza directamente desde los codos, se elimina totalmente la intervención de los bíceps y antebrazos, aislando el pecho al máximo."
+    ],
+    "advertencias_lesion": [
+      "Muy seguro. Si los brazos están más altos que los hombros, puede crear pinzamiento acromioclavicular; ajustar bien el asiento."
+    ]
+  },
+  {
+    "id": "p_021",
+    "nombre": "Pull-over con mancuerna en banco plano",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "pectoral_mayor",
+      "triceps_braquial_cabeza_larga"
+    ],
+    "equipo": [
+      "mancuernas",
+      "banco plano"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Tumbado en banco plano, sostener una mancuerna con ambas manos sobre el pecho. Con codos semiflexionados, bajar la mancuerna detrás de la cabeza en un arco y volver.",
+    "respiracion": "Inspirar profundamente al máximo al bajar la mancuerna para expandir la caja torácica. Espirar al volver a subirla.",
+    "variantes_anatomicas": [
+      "Trabaja en sinergia el pectoral mayor, la porción larga del tríceps, el dorsal ancho y expande la capacidad torácica mediante el serrato anterior."
+    ],
+    "advertencias_lesion": [
+      "Bajar en exceso o con mucho peso fuerza la articulación del hombro y somete a enorme tensión al tendón de la cabeza larga del tríceps."
+    ]
+  },
+  {
+    "id": "p_022",
+    "nombre": "Pull-over en polea alta",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "pectoral_mayor"
+    ],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie o arrodillado frente a polea alta, agarrar barra recta. Con brazos casi estirados, tirar de la barra hacia los muslos trazando un arco.",
+    "respiracion": "Inspirar al subir la barra, espirar al tirar hacia abajo.",
+    "variantes_anatomicas": [
+      "Mantiene una tensión constante en el dorsal ancho (su principal objetivo) y en la porción inferior del pectoral, a diferencia del peso libre."
+    ],
+    "advertencias_lesion": [
+      "Flexionar demasiado los codos convierte el ejercicio en un jalón de tríceps, perdiendo el efecto sobre pecho y espalda."
+    ]
+  },
+  {
+    "id": "p_023",
+    "nombre": "Pull-over en máquina de discos",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "dorsal_ancho",
+    "sinergistas": [
+      "pectoral_mayor",
+      "serrato_anterior"
+    ],
+    "equipo": [
+      "máquina de pullover con discos",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en la máquina específica, apoyar los codos en las almohadillas. Tirar hacia adelante y abajo contrayendo pecho, serratos y dorsales.",
+    "respiracion": "Inspirar estirando hacia atrás, espirar contrayendo hacia el frente.",
+    "variantes_anatomicas": [
+      "Aísla de forma excelente la musculatura del tronco superior al no requerir equilibrar una mancuerna sobre la cabeza."
+    ],
+    "advertencias_lesion": [
+      "Ajustar bien la altura del asiento para que el eje de rotación de la máquina coincida con la articulación del hombro."
+    ]
+  },
+  {
+    "id": "p_024",
+    "nombre": "Fondos en paralelas (énfasis pecho)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "barra fondos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Suspendido en barras paralelas. Inclinar el torso fuertemente hacia adelante (mentón al pecho) y descender hasta que los brazos formen un ángulo recto. Subir empujando.",
+    "respiracion": "Inspirar durante el descenso, espirar al final del empuje.",
+    "variantes_anatomicas": [
+      "Inclinación del tronco: inclinarse hacia adelante con los codos separados transfiere la carga al haz inferior del pectoral; un torso recto afecta más al tríceps."
+    ],
+    "advertencias_lesion": [
+      "Bajar demasiado en este ejercicio puede causar luxación o desgarros graves si no se tiene la flexibilidad suficiente en la cápsula anterior del hombro."
+    ]
+  },
+  {
+    "id": "p_025",
+    "nombre": "Fondos asistidos (énfasis pecho)",
+    "grupo_muscular": "pecho",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "pectoral_mayor",
+    "sinergistas": [
+      "deltoides_anterior",
+      "triceps_braquial"
+    ],
+    "equipo": [
+      "máquina con asistencia (dominadas/fondos)"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Misma ejecución que los fondos libres (tronco inclinado adelante para pecho), pero las rodillas o pies reposan en una plataforma con contrapeso.",
+    "respiracion": "Inspirar bajando, espirar subiendo.",
+    "variantes_anatomicas": [
+      "Excelente para ganar fuerza y dominar la postura de 'torso inclinado' sin lidiar con el 100% del peso corporal."
+    ],
+    "advertencias_lesion": [
+      "Retirar la plataforma bruscamente o usar mal el seguro de la máquina puede provocar golpes; siempre salir controladamente."
+    ]
+  }
+]

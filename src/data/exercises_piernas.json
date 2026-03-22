@@ -1,0 +1,468 @@
+[
+  {
+    "id": "pi_001",
+    "nombre": "Sentadilla trasera con barra olímpica",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales",
+      "core"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "rack de sentadillas",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Barra apoyada en los trapecios. Pies a la anchura de los hombros, puntas ligeramente hacia afuera. Flexionar caderas y rodillas bajando como si se sentara en una silla, manteniendo la espalda recta. Empujar el suelo para subir.",
+    "respiracion": "Inspirar profundamente, bloquear la respiración (hinchar el tórax) durante el descenso para evitar que la columna colapse. Espirar al finalizar el ascenso.",
+    "variantes_anatomicas": [
+      "Pies separados y puntas hacia fuera (sumo): solicita intensamente los músculos aductores.",
+      "Poner un calzo bajo los talones: desplaza el centro de gravedad hacia adelante, restando trabajo a los glúteos y aislando fuertemente los cuádriceps."
+    ],
+    "advertencias_lesion": [
+      "Curvar la espalda (hacer el 'guiño de glúteo' o retroversión pélvica excesiva) en la parte baja del movimiento aplasta los discos intervertebrales L4-L5, siendo la causa número uno de hernias en el gym."
+    ]
+  },
+  {
+    "id": "pi_002",
+    "nombre": "Sentadilla frontal con barra olímpica",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "core"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "rack de sentadillas",
+      "discos"
+    ],
+    "nivel": "avanzado",
+    "ejecucion": "Barra apoyada sobre los deltoides anteriores y clavículas. Mantener los codos altos paralelos al suelo. Descender manteniendo el torso mucho más vertical que en la sentadilla trasera.",
+    "respiracion": "Inspirar y bloquear el tórax al bajar, espirar al terminar el empuje.",
+    "variantes_anatomicas": [
+      "Al tener el peso por delante, la espalda no se inclina tanto, lo que elimina gran parte del trabajo de glúteos y espinales, convirtiéndolo en un ejercicio casi puro de cuádriceps."
+    ],
+    "advertencias_lesion": [
+      "Si los codos bajan, la barra rodará hacia adelante tirando del cuerpo, lo que puede causar una caída o una lesión en las muñecas."
+    ]
+  },
+  {
+    "id": "pi_003",
+    "nombre": "Sentadilla en máquina Smith",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "máquina Smith",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Situarse bajo la barra guiada. Adelantar los pies respecto a la vertical de la barra. Descender apoyándose en la máquina como si fuera un respaldo y empujar.",
+    "respiracion": "Inspirar bajando, espirar subiendo.",
+    "variantes_anatomicas": [
+      "Adelantar los pies elimina el equilibrio de la ecuación y aísla los glúteos de manera extrema al bajar profundo. Pies debajo de la barra enfocan en los cuádriceps."
+    ],
+    "advertencias_lesion": [
+      "La trayectoria recta de la máquina fuerza una biomecánica poco natural si los pies se colocan justo debajo (como en barra libre), provocando dolor en el tendón rotuliano."
+    ]
+  },
+  {
+    "id": "pi_004",
+    "nombre": "Sentadilla hack con barra (barra detrás)",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "discos"
+    ],
+    "nivel": "avanzado",
+    "ejecucion": "Barra en el suelo por detrás de los talones. Flexionar piernas, agarrar la barra y levantarla extendiendo rodillas y caderas, manteniendo la barra rozando los gemelos y femorales.",
+    "respiracion": "Inspirar, bloquear y levantar; espirar al finalizar.",
+    "variantes_anatomicas": [
+      "Esencialmente es un peso muerto con la barra por detrás. Desarrolla el vasto interno (zona de la lágrima del cuádriceps) de forma excepcional."
+    ],
+    "advertencias_lesion": [
+      "Requiere tobillos flexibles. Si el usuario levanta los talones por falta de flexibilidad, toda la carga destructiva recae en la rótula."
+    ]
+  },
+  {
+    "id": "pi_005",
+    "nombre": "Sentadilla hack en máquina selectorizada",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "máquina de sentadillas hack"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Espalda firmemente apoyada en el respaldo inclinado, hombros bajo las almohadillas. Bajar controladamente hasta flexionar rodillas a 90° o más, y empujar la plataforma.",
+    "respiracion": "Inspirar durante el descenso guiado, espirar al empujar.",
+    "variantes_anatomicas": [
+      "Separar ligeramente los pies localiza más en el vasto interno y aductores. Juntar los pies localiza el esfuerzo en el vasto externo del cuádriceps."
+    ],
+    "advertencias_lesion": [
+      "El respaldo protege la columna perfectamente, pero si se desciende muy rápido (rebotando abajo), el tendón rotuliano puede inflamarse severamente."
+    ]
+  },
+  {
+    "id": "pi_006",
+    "nombre": "Sentadilla hack en máquina de discos",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "máquina sentadilla hack con discos",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Misma postura que en la selectorizada, operando una estructura inclinada de carga libre que se desliza por rieles.",
+    "respiracion": "Inspirar bajando, espirar empujando el carro.",
+    "variantes_anatomicas": [
+      "Colocar los pies muy altos en la plataforma desplaza el trabajo hacia los glúteos e isquiosurales; colocarlos bajos incide puramente en el cuádriceps."
+    ],
+    "advertencias_lesion": [
+      "Poner los pies demasiado bajos en la plataforma hace que las rodillas sobrepasen excesivamente la punta de los pies bajo alta carga, lo que es fatal para los meniscos."
+    ]
+  },
+  {
+    "id": "pi_007",
+    "nombre": "Sentadilla sissy",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [],
+    "equipo": [
+      "máquina de sentadillas sissy"
+    ],
+    "nivel": "avanzado",
+    "ejecucion": "Con pantorrillas bloqueadas en la máquina, inclinarse hacia atrás rígidamente (alineando rodillas, cadera y hombros) doblando únicamente las rodillas y volver a la vertical.",
+    "respiracion": "Inspirar y bloquear al dejarse caer hacia atrás, espirar al volver arriba.",
+    "variantes_anatomicas": [
+      "Aísla el cuádriceps de una forma brutal, específicamente el recto anterior, ya que lo estira desde su origen en la cadera al inclinarse hacia atrás."
+    ],
+    "advertencias_lesion": [
+      "Ejercicio de alta tensión en las rodillas. Prohibido para personas con condromalacia rotuliana o problemas de ligamentos."
+    ]
+  },
+  {
+    "id": "pi_008",
+    "nombre": "Sentadilla con cinturón (máquina)",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor"
+    ],
+    "equipo": [
+      "máquina de sentadillas con cinturón",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Asegurar el cinturón pesado a la cadera, enganchado a la carga. Mantener el torso erguido apoyándose en las asas y realizar el descenso de sentadilla.",
+    "respiracion": "Inspirar bajando, espirar subiendo.",
+    "variantes_anatomicas": [
+      "Elimina en un 100% la carga sobre la columna vertebral y los hombros, enfocando el peso directamente en el centro de gravedad del tren inferior."
+    ],
+    "advertencias_lesion": [
+      "Ideal y extremadamente segura para individuos con hernias de disco, escoliosis o dolor lumbar crónico."
+    ]
+  },
+  {
+    "id": "pi_009",
+    "nombre": "Sentadilla péndulo (máquina)",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "máquina de sentadillas péndulo",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Espalda apoyada en el soporte basculante. Descender; la máquina traza un movimiento en arco (péndulo) natural. Empujar el reposapiés para ascender.",
+    "respiracion": "Inspirar cediendo al arco de descenso, espirar extendiendo.",
+    "variantes_anatomicas": [
+      "El arco anatómico compensa las limitaciones de movilidad de tobillo, permitiendo una profundidad máxima que involucra cuádriceps y glúteo de forma profunda."
+    ],
+    "advertencias_lesion": [
+      "Como en la máquina Hack, un descenso rebotado abajo es perjudicial para la articulación femoropatelar."
+    ]
+  },
+  {
+    "id": "pi_010",
+    "nombre": "Prensa de piernas inclinada (selectorizada)",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "máquina de prensa de piernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, pies en la plataforma. Empujar hasta casi estirar las piernas y descender controladamente hasta que las rodillas lleguen cerca del pecho.",
+    "respiracion": "Inspirar al acercar las rodillas al pecho, espirar al empujar.",
+    "variantes_anatomicas": [
+      "Pies bajos: aísla el cuádriceps. Pies altos: desplaza el trabajo al glúteo mayor e isquiotibiales."
+    ],
+    "advertencias_lesion": [
+      "En la fase más baja del movimiento, la zona lumbar JAMÁS debe despegarse del asiento. Si lo hace, las vértebras L4-L5 sufren una compresión masiva."
+    ]
+  },
+  {
+    "id": "pi_011",
+    "nombre": "Prensa de piernas (máquina de discos)",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "prensa de piernas",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Tumbado en la prensa a 45°, quitar los seguros. Bajar el carro controladamente y empujarlo arriba fuertemente.",
+    "respiracion": "Inspirar descendiendo la carga, espirar en el esfuerzo concéntrico.",
+    "variantes_anatomicas": [
+      "Pies separados y puntas hacia afuera: traslada el esfuerzo principal a los músculos aductores (interior del muslo)."
+    ],
+    "advertencias_lesion": [
+      "NUNCA estirar (bloquear) las rodillas por completo en la parte alta con cargas pesadas. Puede provocar que la rodilla ceda hacia atrás (hiperextensión), causando fracturas y roturas ligamentosas catastróficas."
+    ]
+  },
+  {
+    "id": "pi_012",
+    "nombre": "Prensa de piernas vertical",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "prensa de piernas vertical",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado boca arriba, empujar una plataforma situada a 90° exactos directamente sobre el cuerpo.",
+    "respiracion": "Inspirar acercando la plataforma, espirar alejándola.",
+    "variantes_anatomicas": [
+      "Apoya la espalda plana contra el suelo/banco por gravedad, mitigando fuertemente el riesgo de redondear la zona lumbar."
+    ],
+    "advertencias_lesion": [
+      "Los topes de seguridad deben estar obligatoriamente puestos; un fallo muscular con peso vertical cayendo sobre el usuario es altamente peligroso."
+    ]
+  },
+  {
+    "id": "pi_013",
+    "nombre": "Prensa de piernas unilateral (máquina de discos)",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "prensa de piernas unilateral con carga de discos",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Realizar el empuje en prensa con una sola pierna a la vez, manteniendo la otra apoyada o inactiva.",
+    "respiracion": "Inspirar bajando, espirar empujando.",
+    "variantes_anatomicas": [
+      "Útil para igualar asimetrías de fuerza y masa entre la pierna dominante y la no dominante, y reduce el peso total necesario, liberando compresión espinal."
+    ],
+    "advertencias_lesion": [
+      "Mantener la cadera inmóvil. Al empujar con una sola pierna, la pelvis tiende a rotar, lo que puede causar pellizcos en el nervio ciático si no se mantiene el core rígido."
+    ]
+  },
+  {
+    "id": "pi_014",
+    "nombre": "Extensión de cuadriceps en máquina selectorizada",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [],
+    "equipo": [
+      "máquina extensión de piernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, tobillos detrás de los rodillos. Sujetar los agarres laterales y extender las piernas hasta la horizontal sin despegar los glúteos.",
+    "respiracion": "Inspirar al inicio, espirar al extender las piernas.",
+    "variantes_anatomicas": [
+      "Puntas de los pies hacia adentro: aísla el vasto externo. Puntas hacia afuera: aísla el vasto interno. Puntas rectas: trabaja el recto femoral central."
+    ],
+    "advertencias_lesion": [
+      "Es el ejercicio con mayor tensión de cizallamiento en el ligamento cruzado anterior (LCA). No recomendado para pesos extremadamente altos; su función es esculpir y aislar."
+    ]
+  },
+  {
+    "id": "pi_015",
+    "nombre": "Extensión de cuadriceps en máquina de discos",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [],
+    "equipo": [
+      "máquina de extensión de piernas con discos",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Igual que en la selectorizada, pero operando el brazo de palanca cargado con discos. Asegurar que la espalda toque bien el respaldo.",
+    "respiracion": "Inspirar flexionando hacia abajo, espirar extendiendo hacia arriba.",
+    "variantes_anatomicas": [
+      "El respaldo algo más reclinado hacia atrás estira el recto anterior desde la inserción pélvica, logrando una quemazón muscular (congestión) muy profunda."
+    ],
+    "advertencias_lesion": [
+      "El eje de rotación de la máquina debe quedar milimétricamente alineado con la articulación de la rodilla. Si queda más atrás o adelante, la rodilla sufrirá fricción no natural."
+    ]
+  },
+  {
+    "id": "pi_016",
+    "nombre": "Extensión de cuadriceps unilateral (máquina de discos)",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [],
+    "equipo": [
+      "máquina de extensión de piernas unilateral con carga de discos",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, realizar la extensión de una sola pierna aislando el movimiento para enfocar al 100% el esfuerzo neuromuscular.",
+    "respiracion": "Inspirar reteniendo la bajada, espirar pateando arriba.",
+    "variantes_anatomicas": [
+      "Al trabajar una pierna, se activa de forma isométrica potente el core (transverso abdominal) para evitar inclinarse de lado en el asiento."
+    ],
+    "advertencias_lesion": [
+      "Cuidado con patear explosivamente al tener poca carga (al ser unilateral). El movimiento debe ser lento y controlado para no golpear el tope de la articulación."
+    ]
+  },
+  {
+    "id": "pi_017",
+    "nombre": "Zancada con barra olímpica",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "De pie, barra en los trapecios. Dar un paso largo hacia adelante. Bajar el cuerpo flexionando ambas rodillas hasta que la trasera casi toque el suelo. Empujar con la pierna adelantada para volver al inicio.",
+    "respiracion": "Inspirar al dar el paso y descender, espirar al empujar con fuerza para volver.",
+    "variantes_anatomicas": [
+      "Paso corto: concentra el esfuerzo principalmente en los cuádriceps de la pierna adelantada. Paso largo: estira el glúteo mayor y el isquiotibial, transfiriéndoles el trabajo."
+    ],
+    "advertencias_lesion": [
+      "El equilibrio es un factor de riesgo. Si se balancea la barra, se puede sufrir una torsión de rodilla o tobillo. Principiantes deben usar mancuernas primero."
+    ]
+  },
+  {
+    "id": "pi_018",
+    "nombre": "Zancada con mancuernas",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sostener mancuernas a los lados, brazos colgando. Dar la zancada manteniendo el torso recto y la cabeza alta.",
+    "respiracion": "Inspirar bajando, espirar retornando a la posición inicial.",
+    "variantes_anatomicas": [
+      "Caminar haciendo zancadas (lunges caminando) en lugar de retornar al mismo sitio es uno de los mejores desarrolladores funcionales del glúteo mayor."
+    ],
+    "advertencias_lesion": [
+      "La rodilla adelantada no debe tambalearse hacia adentro (valgo de rodilla) al empujar; esto debilita y estresa el ligamento lateral interno."
+    ]
+  },
+  {
+    "id": "pi_019",
+    "nombre": "Zancada en máquina Smith",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "máquina Smith",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Posicionar una pierna delante y otra detrás. Bajar en línea recta guiado por la máquina. Al terminar las repeticiones, cambiar de pierna (zancada estática).",
+    "respiracion": "Inspirar descendiendo, espirar empujando hacia arriba.",
+    "variantes_anatomicas": [
+      "Elimina por completo el requerimiento de equilibrio, permitiendo sobrecargar el glúteo y el cuádriceps al llegar muy cerca del fallo muscular seguro."
+    ],
+    "advertencias_lesion": [
+      "Asegurarse de posicionar el pie adelantado lo suficientemente lejos para que la rodilla no forme un ángulo extremadamente agudo (menor a 90°)."
+    ]
+  },
+  {
+    "id": "pi_020",
+    "nombre": "Zancada con landmine",
+    "grupo_muscular": "piernas",
+    "patron_movimiento": "dominante_rodilla",
+    "musculo_principal": "cuadriceps",
+    "sinergistas": [
+      "gluteo_mayor",
+      "isquiosurales"
+    ],
+    "equipo": [
+      "landmine",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Sujetar el extremo libre de la barra (landmine) a la altura del pecho. Dar la zancada hacia atrás (zancada inversa) o estática.",
+    "respiracion": "Inspirar flexionando piernas, espirar extendiendo al subir.",
+    "variantes_anatomicas": [
+      "La carga por delante del cuerpo y en ligero arco fuerza una postura muy erguida, lo que enfatiza el cuádriceps frontal y descarga muchísimo la columna lumbar."
+    ],
+    "advertencias_lesion": [
+      "Cuidado con sostener la barra demasiado lejos del pecho, ya que fatigará inútilmente los deltoides anteriores antes que las piernas."
+    ]
+  }
+]

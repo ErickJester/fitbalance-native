@@ -1,0 +1,22 @@
+{
+  "expo": {
+    "name": "FitBalance",
+    "slug": "fitbalance-native",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#1D9E75"
+      }
+    },
+    "plugins": [
+      "expo-asset",
+      "expo-sqlite"
+    ]
+  }
+}

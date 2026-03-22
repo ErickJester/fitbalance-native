@@ -1,0 +1,367 @@
+[
+  {
+    "id": "t_001",
+    "nombre": "Extensión de tríceps en polea alta (barra recta)",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie, de cara al aparato. Agarrar la barra en pronación, codos pegados a los costados del cuerpo. Extender los antebrazos hacia abajo sin separar los codos del tronco.",
+    "respiracion": "Inspirar antes de iniciar la extensión y espirar al final del movimiento.",
+    "variantes_anatomicas": [
+      "Agarre en supinación (palmas hacia arriba): aísla de forma muy selectiva el vasto medial (cabeza interna) del tríceps."
+    ],
+    "advertencias_lesion": [
+      "Despegar los codos del cuerpo durante el esfuerzo convierte el ejercicio en un jalón, transfiriendo el trabajo al dorsal ancho y restando estímulo al tríceps."
+    ]
+  },
+  {
+    "id": "t_002",
+    "nombre": "Extensión de tríceps en polea alta (cuerda)",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Misma postura inicial que con barra, pero usando una cuerda. Al extender los brazos hacia abajo, separar las manos enérgicamente en la parte final del recorrido.",
+    "respiracion": "Inspirar al subir la cuerda, espirar al extender y separar las manos.",
+    "variantes_anatomicas": [
+      "Al separar los extremos de la cuerda (pronación forzada final), se logra una contracción máxima del vasto lateral (cabeza externa), marcando la forma de 'herradura' del tríceps."
+    ],
+    "advertencias_lesion": [
+      "Inclinarse excesivamente sobre la cuerda para usar el peso del cuerpo como palanca anula el trabajo de aislamiento y fuerza la zona lumbar."
+    ]
+  },
+  {
+    "id": "t_003",
+    "nombre": "Extensión de tríceps en polea alta (barra V)",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sujetar la barra en forma de 'V' (agarre semipronado). Mantener el pecho alto y los codos fijos a los lados, extendiendo los brazos hacia abajo.",
+    "respiracion": "Inspirar cediendo la carga, espirar empujando hacia abajo.",
+    "variantes_anatomicas": [
+      "Es el punto medio entre la barra recta y la cuerda. El agarre angulado recluta fuertemente el vasto lateral al tiempo que permite manejar cargas más pesadas que con la cuerda."
+    ],
+    "advertencias_lesion": [
+      "Es la variante más amable para las muñecas si se sufren dolores articulares (como tendinitis) por forzar la pronación plana de la barra recta."
+    ]
+  },
+  {
+    "id": "t_004",
+    "nombre": "Extensión de tríceps en polea baja sobre cabeza",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "polea alta baja"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "De pie o sentado, de espaldas a la polea baja. Sostener la cuerda (o barra) por detrás de la nuca con los codos apuntando al techo. Extender los antebrazos verticalmente.",
+    "respiracion": "Inspirar bajando el peso detrás de la cabeza, espirar estirando los brazos.",
+    "variantes_anatomicas": [
+      "Al tener los brazos elevados, el tríceps se estira desde su inserción en la escápula. Este estiramiento previo hace que el esfuerzo recaiga masivamente sobre la porción larga del músculo."
+    ],
+    "advertencias_lesion": [
+      "Separar demasiado los codos hacia los lados disminuye la eficacia y transfiere tensión indeseada a la articulación del hombro."
+    ]
+  },
+  {
+    "id": "t_005",
+    "nombre": "Press francés tumbado con barra EZ",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "barra Z",
+      "banco plano",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Tumbado en banco plano, agarrar barra EZ en pronación. Con brazos verticales, flexionar codos llevando la barra hacia la frente. Extender a la posición inicial.",
+    "respiracion": "Inspirar flexionando los codos, espirar al final de la extensión.",
+    "variantes_anatomicas": [
+      "Barra a la frente: esfuerzo en vastos medial y lateral.",
+      "Barra detrás de la cabeza: alarga la porción larga, solicitándola con más fuerza."
+    ],
+    "advertencias_lesion": [
+      "Usar cargas excesivas y abrir los codos impone un estrés altísimo en el tendón del tríceps, causando tendinitis severa en el codo."
+    ]
+  },
+  {
+    "id": "t_006",
+    "nombre": "Press francés tumbado con mancuernas",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "mancuernas",
+      "banco plano"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Acostado, una mancuerna en cada mano (agarre neutro). Flexionar los codos llevando las mancuernas hacia los lados de las orejas/cabeza y empujar de regreso a la vertical.",
+    "respiracion": "Inspirar al bajar las mancuernas, espirar al subirlas.",
+    "variantes_anatomicas": [
+      "El agarre neutro paralelo permite un estiramiento profundo y seguro de las tres cabezas del tríceps, repartiendo la carga de manera uniforme."
+    ],
+    "advertencias_lesion": [
+      "Cuidado de no golpearse el rostro o las sienes. Controlar la fase excéntrica es vital para no perder el control de los pesos libres cerca de la cabeza."
+    ]
+  },
+  {
+    "id": "t_007",
+    "nombre": "Extensión sobre cabeza con mancuerna (una mano)",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado o de pie. Brazo extendido verticalmente con una mancuerna. Flexionar el codo bajando la mancuerna por detrás de la nuca y luego extender por completo.",
+    "respiracion": "Inspirar bajando el peso, espirar elevándolo.",
+    "variantes_anatomicas": [
+      "El trabajo unilateral permite usar la mano libre para sostener el tríceps que trabaja, asegurando que el codo no se desplace y logrando un estímulo perfecto en la porción larga."
+    ],
+    "advertencias_lesion": [
+      "Bajar excesivamente la mancuerna si se carece de flexibilidad forzará la articulación del hombro en su rotación externa máxima."
+    ]
+  },
+  {
+    "id": "t_008",
+    "nombre": "Extensión sobre cabeza con mancuerna (dos manos)",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "mancuernas"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, sostener una mancuerna pesada con ambas manos (palmas contra el disco superior) por detrás de la nuca. Extender los antebrazos verticalmente.",
+    "respiracion": "Inspirar bajando la mancuerna, espirar al empujarla arriba.",
+    "variantes_anatomicas": [
+      "Ejercicio de potencia por excelencia para ganar masa general en la porción larga del tríceps, ya que permite cargar pesos mucho mayores que la versión a una mano."
+    ],
+    "advertencias_lesion": [
+      "Hacerlo sin respaldo en el banco provocará una hiperlordosis lumbar (curvatura excesiva de la espalda baja) para compensar el peso que cae hacia atrás."
+    ]
+  },
+  {
+    "id": "t_009",
+    "nombre": "Extensión sobre cabeza con barra EZ sentado",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "barra Z",
+      "banco vertical",
+      "discos"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado en banco con respaldo corto. Sostener la barra EZ por encima de la cabeza con brazos extendidos. Flexionar los codos bajando la barra tras la nuca y regresar.",
+    "respiracion": "Inspirar descendiendo la barra, espirar extendiendo.",
+    "variantes_anatomicas": [
+      "La barra EZ, al igual que en el press francés, reduce la tensión en las muñecas, pero al hacerse vertical, prioriza el estiramiento masivo de la cabeza larga."
+    ],
+    "advertencias_lesion": [
+      "Mantener los codos cerrados apuntando al techo; si se abren hacia los lados, el tríceps pierde efectividad y las articulaciones del codo sufren torsión."
+    ]
+  },
+  {
+    "id": "t_010",
+    "nombre": "Patada de tríceps con mancuerna (kickback)",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "mancuernas",
+      "banco plano"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Tronco inclinado hacia adelante paralelo al suelo (apoyado en banco). Brazo superior pegado al cuerpo horizontal. Extender el antebrazo hacia atrás hasta quedar recto.",
+    "respiracion": "Inspirar antes de empezar, espirar al extender el brazo hacia atrás.",
+    "variantes_anatomicas": [
+      "Es uno de los pocos ejercicios que logra la contracción total (acortamiento máximo) del vasto externo e interno simultáneamente."
+    ],
+    "advertencias_lesion": [
+      "Usar inercia balanceando el brazo o bajando el codo anula el ejercicio. La clave es poco peso y contracción máxima arriba."
+    ]
+  },
+  {
+    "id": "t_011",
+    "nombre": "Fondos en paralelas (énfasis tríceps)",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [
+      "pectoral_mayor",
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "barra fondos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Suspendido en las barras. Mantener el torso completamente recto (vertical) y los codos rozando el cuerpo durante el descenso y el empuje.",
+    "respiracion": "Inspirar al bajar, espirar al empujar con fuerza hacia arriba.",
+    "variantes_anatomicas": [
+      "Al mantener el torso recto y los codos cerrados (a diferencia del fondo para pecho), el tríceps asume el esfuerzo principal para extender el codo."
+    ],
+    "advertencias_lesion": [
+      "Exige gran fuerza base. Descender demasiado rápido y rebotar abajo con todo el peso corporal causará estragos en el tendón bicipital y clavículas."
+    ]
+  },
+  {
+    "id": "t_012",
+    "nombre": "Fondos asistidos (énfasis tríceps)",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [
+      "pectoral_mayor",
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "máquina con asistencia (dominadas/fondos)"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Misma postura (torso vertical, codos cerrados), pero con rodillas en la plataforma de contrapeso que asiste en la subida.",
+    "respiracion": "Inspirar bajando, espirar subiendo.",
+    "variantes_anatomicas": [
+      "Ideal para que los principiantes desarrollen la fuerza sinérgica de empuje de tríceps, pecho y deltoides sin el riesgo de fallo estructural."
+    ],
+    "advertencias_lesion": [
+      "No mirar hacia abajo al bajar, mantener la mirada al frente para no arquear la columna cervical."
+    ]
+  },
+  {
+    "id": "t_013",
+    "nombre": "Fondos en banco plano (banco dips)",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "banco plano"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Manos apoyadas en el borde de un banco a la espalda. Piernas estiradas (o apoyadas en otro banco). Bajar la pelvis flexionando los codos y empujar hacia arriba.",
+    "respiracion": "Inspirar bajando el cuerpo, espirar al empujar.",
+    "variantes_anatomicas": [
+      "Para aumentar la dificultad, se pueden colocar discos sobre los muslos, forzando una contracción intensa en los vastos externo e interno y el ancóneo."
+    ],
+    "advertencias_lesion": [
+      "Bajar demasiado crea una extensión excesiva del hombro hacia atrás (retroversión), lo que puede distender severamente la cápsula articular anterior."
+    ]
+  },
+  {
+    "id": "t_014",
+    "nombre": "Press cerrado con barra en banco plano",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "empuje_horizontal",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [
+      "pectoral_mayor",
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "barra olímpica",
+      "banco plano",
+      "rack de sentadillas",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Acostado, agarrar la barra con manos separadas entre 10 y 40 cm. Bajar al pecho manteniendo los codos rozando los costados. Empujar verticalmente.",
+    "respiracion": "Inspirar al bajar la barra, espirar al final del esfuerzo de empuje.",
+    "variantes_anatomicas": [
+      "Es un ejercicio constructor de masa fenomenal para los tríceps (todas sus cabezas) y localiza fuertemente el trabajo en el surco esternal del pectoral (zona central)."
+    ],
+    "advertencias_lesion": [
+      "Un agarre exageradamente cerrado (manos tocándose) obliga a abrir los codos, forzando destructivamente las muñecas y quitando tensión a los tríceps."
+    ]
+  },
+  {
+    "id": "t_015",
+    "nombre": "Fondos de tríceps en máquina selectorizada",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "máquina de fondos de tríceps"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado con la espalda apoyada, sujetar las asas a los lados. Empujar hacia abajo extendiendo los codos por completo.",
+    "respiracion": "Inspirar al permitir que los manerales suban, espirar al empujar abajo.",
+    "variantes_anatomicas": [
+      "Aísla el tríceps eliminando la inestabilidad del peso corporal que se tiene en las barras paralelas, ideal para aislar los vastos al final de la rutina."
+    ],
+    "advertencias_lesion": [
+      "Ajustar mal el asiento (muy bajo) obliga a encoger los hombros, transfiriendo esfuerzo inútil al cuello y trapecios."
+    ]
+  },
+  {
+    "id": "t_016",
+    "nombre": "Extensión de tríceps en máquina selectorizada",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "aislamiento",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [],
+    "equipo": [
+      "máquina de extensión de tríceps"
+    ],
+    "nivel": "principiante",
+    "ejecucion": "Sentado, con los codos apoyados en las almohadillas frente a uno o elevados (dependiendo del diseño). Empujar empuñaduras alejándolas del cuerpo.",
+    "respiracion": "Inspirar cediendo la carga, espirar empujando.",
+    "variantes_anatomicas": [
+      "Si la máquina simula un press francés (codos altos), se enfoca en la cabeza larga; si simula polea baja (codos abajo), trabaja más los vastos lateral y medial."
+    ],
+    "advertencias_lesion": [
+      "La alineación de la articulación del codo con la polea rotatoria de la máquina es innegociable para no sentir dolor cortante."
+    ]
+  },
+  {
+    "id": "t_017",
+    "nombre": "Fondos en máquina de discos",
+    "grupo_muscular": "triceps",
+    "patron_movimiento": "empuje_vertical",
+    "musculo_principal": "triceps_braquial",
+    "sinergistas": [
+      "pectoral_mayor",
+      "deltoides_anterior"
+    ],
+    "equipo": [
+      "máquina de fondos con discos",
+      "discos"
+    ],
+    "nivel": "intermedio",
+    "ejecucion": "Sentado frente a la estructura cargada con discos libres. Ejecutar el empuje de tríceps hacia abajo. Al ser libre (no atada por un cable), suele sentirse más pesada y 'real'.",
+    "respiracion": "Inspirar subiendo, espirar empujando hacia abajo.",
+    "variantes_anatomicas": [
+      "La carga independiente permite trabajar primero un tríceps y luego otro si el peso no empuja una palanca única, muy útil en rehabilitación."
+    ],
+    "advertencias_lesion": [
+      "Usar el cinturón de seguridad (si la máquina lo incluye en los muslos) para evitar que cargas muy pesadas levanten al usuario del asiento en la fase excéntrica."
+    ]
+  }
+]

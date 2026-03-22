@@ -1,0 +1,530 @@
+{
+  "_meta": {
+    "version": "1.2.0",
+    "autor": "Pendiente — nutriólogo",
+    "ultima_revision": "2026-03",
+    "mapeo_habitos_ui": {
+      "junk": "¿Comes comida rápida o procesada más de 4 veces por semana?",
+      "poor": "¿Comes comida rápida 2-3 veces por semana y pocas verduras?",
+      "average": "¿Comes balanceado la mayoría de los días, con algún antojo el fin de semana?",
+      "good": "¿Preparas casi todas tus comidas y controlas tus porciones?",
+      "excellent": "¿Mides tus macros estrictamente y sigues un plan?"
+    }
+  },
+
+  "consejos": [
+    {
+      "id": "c_001",
+      "objetivos": ["muscle"],
+      "dietas": ["poor", "junk"],
+      "titulo": "Prioriza proteína en cada comida",
+      "cuerpo": "Aunque tu dieta no sea perfecta, asegúrate de incluir una fuente de proteína de calidad en cada comida: huevo, pollo, atún o leguminosas. Esto protege tu masa muscular incluso con calorías de baja calidad.",
+      "fuente": "American College of Sports Medicine, 2022"
+    },
+    {
+      "id": "c_002",
+      "objetivos": ["muscle"],
+      "dietas": ["poor", "junk", "average"],
+      "titulo": "Ventana anabólica post-entreno",
+      "cuerpo": "Consume 20-40g de proteína dentro de los 30-60 min después de entrenar. Una opción práctica: 1 taza de leche + 1 scoop de proteína o 2 huevos con tortilla.",
+      "fuente": "Journal of the International Society of Sports Nutrition, 2017"
+    },
+    {
+      "id": "c_003",
+      "objetivos": ["lose"],
+      "dietas": ["poor", "junk"],
+      "titulo": "Reduce ultraprocesados gradualmente",
+      "cuerpo": "No elimines de golpe los alimentos que consumes habitualmente. Sustituye uno por semana: cambia refresco por agua con limón, papas fritas por nueces o fruta.",
+      "fuente": "NutriNet-Santé Cohort Study, 2018"
+    },
+    {
+      "id": "c_004",
+      "objetivos": ["lose"],
+      "dietas": ["average", "good", "excellent"],
+      "titulo": "Déficit calórico sostenible",
+      "cuerpo": "Un déficit de 300-500 kcal diarias es suficiente para perder grasa sin sacrificar músculo. No bajes de 1,200 kcal (mujeres) o 1,500 kcal (hombres).",
+      "fuente": "Academy of Nutrition and Dietetics, 2023"
+    },
+    {
+      "id": "c_005",
+      "objetivos": ["maintain", "health"],
+      "dietas": ["average", "poor"],
+      "titulo": "Regla del plato saludable",
+      "cuerpo": "Llena la mitad de tu plato con verduras, un cuarto con proteína magra y un cuarto con carbohidratos complejos (arroz integral, papa, frijoles). Simple y sostenible.",
+      "fuente": "Harvard T.H. Chan School of Public Health"
+    },
+    {
+      "id": "c_006",
+      "objetivos": ["muscle", "health", "maintain", "lose"],
+      "dietas": ["excellent", "good", "average", "poor", "junk"],
+      "titulo": "Hidratación y rendimiento",
+      "cuerpo": "Toma al menos 35ml de agua por kilo de peso corporal al día. Durante el gym, bebe 150-200ml cada 20 minutos. La deshidratación reduce el rendimiento hasta un 10%.",
+      "fuente": "ISSN Position Stand: Nutrient Timing, 2017"
+    },
+    {
+      "id": "c_007",
+      "objetivos": ["muscle", "health"],
+      "dietas": ["excellent", "good", "average", "poor"],
+      "titulo": "Memoria muscular y retorno al gym",
+      "cuerpo": "Si regresas a las pesas tras una larga pausa, no intentes levantar tu peso máximo anterior. La memoria muscular te ayudará a recuperar tus ganancias rápido, pero prioriza la técnica y una ingesta alta en proteínas las primeras semanas para evitar lesiones.",
+      "fuente": "European Journal of Applied Physiology, 2019"
+    },
+    {
+      "id": "c_008",
+      "objetivos": ["muscle", "lose", "maintain", "health"],
+      "dietas": ["excellent", "good", "average", "poor", "junk"],
+      "titulo": "El músculo se construye descansando",
+      "cuerpo": "Dormir menos de 6 horas reduce la síntesis de proteína muscular y aumenta el cortisol, dificultando la pérdida de grasa y la ganancia de músculo. Apunta a 7-8 horas de sueño de calidad.",
+      "fuente": "National Sleep Foundation, 2020"
+    },
+    {
+      "id": "c_009",
+      "objetivos": ["maintain", "health"],
+      "dietas": ["excellent", "good"],
+      "titulo": "Mantenimiento no es estancamiento",
+      "cuerpo": "Mantener el peso no significa comer igual todos los días. Varía tus fuentes de carbohidratos y proteínas semana a semana para evitar deficiencias de micronutrientes y mantener el metabolismo activo.",
+      "fuente": "Dietary Guidelines for Americans, 2020-2025"
+    },
+    {
+      "id": "c_010",
+      "objetivos": ["maintain"],
+      "dietas": ["excellent", "good"],
+      "titulo": "Periodización nutricional para mantenimiento",
+      "cuerpo": "En días de entreno intenso sube los carbohidratos un 15-20% respecto a los días de descanso. Esta estrategia, llamada carb cycling suave, optimiza el rendimiento sin acumular grasa.",
+      "fuente": "Journal of the International Society of Sports Nutrition, 2018"
+    },
+    {
+      "id": "c_011",
+      "objetivos": ["health"],
+      "dietas": ["excellent", "good"],
+      "titulo": "Fibra: el nutriente olvidado",
+      "cuerpo": "Una dieta ya saludable puede mejorarse aumentando la fibra a 25-38g/día. Incluye leguminosas, avena, linaza y verduras de hoja verde. La fibra regula el azúcar en sangre, mejora la microbiota y reduce el riesgo cardiovascular.",
+      "fuente": "The Lancet, 2019 — Carbohydrate Quality and Human Health"
+    },
+    {
+      "id": "c_012",
+      "objetivos": ["muscle", "lose", "maintain", "health"],
+      "dietas": ["excellent", "good", "average", "poor", "junk"],
+      "titulo": "Proteína vegetal como alternativa viable",
+      "cuerpo": "Si eres vegetariano o vegano, combina leguminosas + cereales en la misma comida (frijoles + arroz, lentejas + tortilla) para obtener un perfil completo de aminoácidos esenciales. La proteína de soya es la más completa de origen vegetal.",
+      "fuente": "Nutrients Journal, 2021 — Plant Proteins and Exercise"
+    },
+    {
+      "id": "c_013",
+      "objetivos": ["lose", "health"],
+      "dietas": ["junk", "poor"],
+      "titulo": "Cómo comer fuera sin arruinar tu progreso",
+      "cuerpo": "En restaurantes de comida rápida elige opciones horneadas o a la plancha sobre las fritas. Pide las salsas aparte y reduce las porciones de papas sustituyéndolas por ensalada. Un ajuste pequeño puede reducir 300-500 kcal por comida.",
+      "fuente": "Centers for Disease Control and Prevention, 2023"
+    },
+    {
+      "id": "c_014",
+      "objetivos": ["muscle", "lose", "maintain", "health"],
+      "dietas": ["excellent", "good", "average", "poor", "junk"],
+      "titulo": "Consistencia sobre perfección",
+      "cuerpo": "Seguir un plan nutricional al 80% durante 6 meses da mejores resultados que seguirlo al 100% durante 3 semanas. No existe la dieta perfecta, existe la dieta que puedes sostener en el tiempo.",
+      "fuente": "Obesity Reviews, 2020 — Adherence to dietary interventions"
+    }
+  ],
+
+  "recetas": [
+    {
+      "id": "r_001",
+      "nombre": "Bowl de avena proteico",
+      "momento": "desayuno",
+      "tiempo_prep_min": 10,
+      "objetivos": ["muscle", "maintain", "health"],
+      "dietas": ["average", "good", "excellent"],
+      "tipo_dieta": ["omnivoro", "vegetariano"],
+      "alergenos": ["lacteos", "mani", "gluten"],
+      "calorias": 420,
+      "macros": { "proteina": 28, "carbos": 52, "grasas": 10 },
+      "ingredientes": [
+        "80g avena en hojuelas",
+        "1 scoop proteína de vainilla (30g)",
+        "200ml leche descremada",
+        "1 plátano mediano",
+        "1 cucharada de mantequilla de maní natural"
+      ],
+      "preparacion": "Cocina la avena con la leche a fuego medio 5 min. Retira del fuego, mezcla con la proteína en polvo. Sirve con plátano en rodajas y mantequilla de maní encima."
+    },
+    {
+      "id": "r_002",
+      "nombre": "Wrap de pollo post-entreno",
+      "momento": "post-entreno",
+      "tiempo_prep_min": 15,
+      "objetivos": ["muscle", "lose"],
+      "dietas": ["excellent", "good", "average", "poor"],
+      "tipo_dieta": ["omnivoro"],
+      "alergenos": ["gluten", "lacteos"],
+      "calorias": 390,
+      "macros": { "proteina": 38, "carbos": 35, "grasas": 9 },
+      "ingredientes": [
+        "150g pechuga de pollo a la plancha",
+        "1 tortilla de harina integral (30g)",
+        "30g queso panela rallado",
+        "Lechuga, jitomate y pepino al gusto",
+        "1 cucharada de yogur griego como aderezo"
+      ],
+      "preparacion": "Calienta la tortilla. Coloca el pollo en tiras, el queso y las verduras. Agrega yogur como aderezo. Enrolla y consume inmediatamente."
+    },
+    {
+      "id": "r_003",
+      "nombre": "Ensalada de atún con frijoles",
+      "momento": "almuerzo",
+      "tiempo_prep_min": 10,
+      "objetivos": ["lose", "health"],
+      "dietas": ["excellent", "good", "average"],
+      "tipo_dieta": ["omnivoro", "pescatariano"],
+      "alergenos": ["pescado"],
+      "calorias": 320,
+      "macros": { "proteina": 32, "carbos": 28, "grasas": 7 },
+      "ingredientes": [
+        "1 lata de atún en agua (140g)",
+        "½ taza de frijoles negros cocidos",
+        "1 jitomate",
+        "½ cebolla morada",
+        "Jugo de 1 limón",
+        "Cilantro, sal y pimienta"
+      ],
+      "preparacion": "Escurre el atún. Mezcla todos los ingredientes en un tazón. Sazona con limón, sal y pimienta. Sirve frío o a temperatura ambiente."
+    },
+    {
+      "id": "r_004",
+      "nombre": "Huevos revueltos con espinacas",
+      "momento": "desayuno",
+      "tiempo_prep_min": 10,
+      "objetivos": ["lose", "health", "maintain"],
+      "dietas": ["excellent", "good", "average", "poor"],
+      "tipo_dieta": ["omnivoro", "vegetariano"],
+      "alergenos": ["huevo"],
+      "calorias": 260,
+      "macros": { "proteina": 22, "carbos": 8, "grasas": 16 },
+      "ingredientes": [
+        "3 huevos enteros",
+        "1 taza de espinacas baby",
+        "¼ cebolla picada",
+        "1 cucharadita de aceite de oliva",
+        "Sal, pimienta y chile al gusto"
+      ],
+      "preparacion": "Saltea la cebolla en aceite de oliva 2 min. Agrega las espinacas hasta que reduzcan. Vierte los huevos batidos y revuelve a fuego bajo hasta que cuajen."
+    },
+    {
+      "id": "r_005",
+      "nombre": "Licuado de plátano y proteína",
+      "momento": "pre-entreno",
+      "tiempo_prep_min": 5,
+      "objetivos": ["muscle"],
+      "dietas": ["excellent", "good", "average", "poor", "junk"],
+      "tipo_dieta": ["omnivoro", "vegetariano"],
+      "alergenos": ["lacteos"],
+      "calorias": 350,
+      "macros": { "proteina": 30, "carbos": 48, "grasas": 4 },
+      "ingredientes": [
+        "1 plátano maduro congelado",
+        "1 scoop proteína en polvo (chocolate o vainilla)",
+        "250ml leche descremada o vegetal",
+        "1 cucharadita de miel"
+      ],
+      "preparacion": "Licúa todos los ingredientes hasta obtener consistencia homogénea. Consume 45-60 min antes de entrenar."
+    },
+    {
+      "id": "r_006",
+      "nombre": "Cena ligera de pollo al limón",
+      "momento": "cena",
+      "tiempo_prep_min": 25,
+      "objetivos": ["lose", "health"],
+      "dietas": ["excellent", "good", "average"],
+      "tipo_dieta": ["omnivoro"],
+      "alergenos": [],
+      "calorias": 280,
+      "macros": { "proteina": 35, "carbos": 12, "grasas": 9 },
+      "ingredientes": [
+        "150g pechuga de pollo",
+        "Jugo de 2 limones",
+        "1 cucharadita de aceite de oliva",
+        "Ajo, orégano, sal y pimienta",
+        "Verduras al vapor: brócoli y zanahoria"
+      ],
+      "preparacion": "Marina el pollo con limón, ajo y especias 15 min. Cocina a la plancha 6-7 min por lado. Acompaña con verduras al vapor."
+    },
+    {
+      "id": "r_007",
+      "nombre": "Tortitas de avena y claras",
+      "momento": "desayuno",
+      "tiempo_prep_min": 15,
+      "objetivos": ["muscle", "maintain"],
+      "dietas": ["excellent", "good", "average"],
+      "tipo_dieta": ["omnivoro", "vegetariano"],
+      "alergenos": ["huevo", "gluten"],
+      "calorias": 340,
+      "macros": { "proteina": 30, "carbos": 45, "grasas": 4 },
+      "ingredientes": [
+        "1 taza de claras de huevo (aprox 6 claras)",
+        "60g de avena triturada o harina de avena",
+        "1 cucharadita de canela en polvo",
+        "Edulcorante al gusto",
+        "Spray antiadherente"
+      ],
+      "preparacion": "Licúa las claras, la avena, canela y edulcorante. Cocina en sartén precalentado con spray antiadherente como hotcakes, 2-3 min por lado."
+    },
+    {
+      "id": "r_008",
+      "nombre": "Bowl de carne molida magra",
+      "momento": "almuerzo",
+      "tiempo_prep_min": 20,
+      "objetivos": ["muscle", "lose"],
+      "dietas": ["excellent", "good", "average"],
+      "tipo_dieta": ["omnivoro"],
+      "alergenos": [],
+      "calorias": 450,
+      "macros": { "proteina": 40, "carbos": 35, "grasas": 15 },
+      "ingredientes": [
+        "150g de carne molida magra (90/10)",
+        "100g de arroz blanco o integral cocido",
+        "1 taza de espinacas o ejotes",
+        "Salsa de soya baja en sodio",
+        "Ajo en polvo y pimienta"
+      ],
+      "preparacion": "Cocina la carne molida sazonada en sartén sin aceite. Añade los vegetales y salsa de soya. Sirve sobre el arroz."
+    },
+    {
+      "id": "r_009",
+      "nombre": "Salmón al horno con camote",
+      "momento": "cena",
+      "tiempo_prep_min": 30,
+      "objetivos": ["muscle", "maintain"],
+      "dietas": ["excellent", "good", "average"],
+      "tipo_dieta": ["omnivoro", "pescatariano"],
+      "alergenos": ["pescado"],
+      "calorias": 480,
+      "macros": { "proteina": 42, "carbos": 38, "grasas": 14 },
+      "ingredientes": [
+        "180g filete de salmón",
+        "1 camote mediano (150g)",
+        "1 cucharadita de aceite de oliva",
+        "Ajo, limón, eneldo, sal y pimienta",
+        "Espárragos o ejotes al vapor"
+      ],
+      "preparacion": "Precalienta el horno a 200°C. Marina el salmón con limón, ajo y eneldo 10 min. Corta el camote en rodajas y hornea 20 min. Añade el salmón y hornea 12-15 min más. Sirve con los vegetales al vapor."
+    },
+    {
+      "id": "r_010",
+      "nombre": "Cena de res magra con quinoa",
+      "momento": "cena",
+      "tiempo_prep_min": 25,
+      "objetivos": ["muscle"],
+      "dietas": ["excellent", "good"],
+      "tipo_dieta": ["omnivoro"],
+      "alergenos": [],
+      "calorias": 510,
+      "macros": { "proteina": 45, "carbos": 42, "grasas": 14 },
+      "ingredientes": [
+        "180g bistec de res magro (sirloin o lomo)",
+        "80g quinoa seca (rinde ~200g cocida)",
+        "1 taza de espinacas salteadas",
+        "1 cucharadita de aceite de aguacate",
+        "Salsa inglesa, ajo y pimienta negra"
+      ],
+      "preparacion": "Sazona el bistec con ajo, pimienta y salsa inglesa. Cocina en sartén caliente 3-4 min por lado. Deja reposar 5 min antes de cortar. Sirve sobre quinoa con espinacas salteadas."
+    },
+    {
+      "id": "r_011",
+      "nombre": "Tostadas de frijoles y aguacate",
+      "momento": "desayuno",
+      "tiempo_prep_min": 10,
+      "objetivos": ["health", "lose", "maintain"],
+      "dietas": ["poor", "junk", "average"],
+      "tipo_dieta": ["omnivoro", "vegetariano", "vegano"],
+      "alergenos": ["gluten"],
+      "calorias": 310,
+      "macros": { "proteina": 12, "carbos": 40, "grasas": 12 },
+      "ingredientes": [
+        "2 tostadas de maíz",
+        "½ taza de frijoles negros refritos sin manteca",
+        "½ aguacate maduro",
+        "Jugo de limón, sal y chile en polvo",
+        "Jitomate en cubos y cilantro al gusto"
+      ],
+      "preparacion": "Calienta los frijoles. Unta en las tostadas. Aplasta el aguacate con limón y sal, coloca encima. Decora con jitomate y cilantro. Lista en minutos, sin cocción real."
+    },
+    {
+      "id": "r_012",
+      "nombre": "Pre-entreno de dátiles y mantequilla de almendra",
+      "momento": "pre-entreno",
+      "tiempo_prep_min": 5,
+      "objetivos": ["lose", "health", "maintain"],
+      "dietas": ["excellent", "good", "average", "poor"],
+      "tipo_dieta": ["omnivoro", "vegetariano", "vegano"],
+      "alergenos": ["nueces"],
+      "calorias": 220,
+      "macros": { "proteina": 5, "carbos": 38, "grasas": 7 },
+      "ingredientes": [
+        "4 dátiles Medjool sin hueso",
+        "1 cucharada de mantequilla de almendra",
+        "1 vaso de agua natural (250ml)"
+      ],
+      "preparacion": "Consume los dátiles con la mantequilla de almendra 30-45 min antes de entrenar. Los dátiles aportan azúcares de absorción rápida y lenta; la mantequilla de almendra añade grasas saludables para energía sostenida."
+    },
+    {
+      "id": "r_013",
+      "nombre": "Pre-entreno rápido de plátano con avena",
+      "momento": "pre-entreno",
+      "tiempo_prep_min": 5,
+      "objetivos": ["lose", "health"],
+      "dietas": ["excellent", "good", "average", "poor", "junk"],
+      "tipo_dieta": ["omnivoro", "vegetariano", "vegano"],
+      "alergenos": ["gluten"],
+      "calorias": 200,
+      "macros": { "proteina": 4, "carbos": 42, "grasas": 2 },
+      "ingredientes": [
+        "1 plátano maduro",
+        "3 cucharadas de avena en hojuelas (30g)",
+        "Canela al gusto"
+      ],
+      "preparacion": "Aplasta el plátano con un tenedor, mezcla con la avena cruda y canela. Come esta mezcla 30-45 min antes de entrenar. Sin cocción, ideal cuando tienes prisa."
+    },
+    {
+      "id": "r_014",
+      "nombre": "Snack de requesón con frutas",
+      "momento": "snack",
+      "tiempo_prep_min": 5,
+      "objetivos": ["muscle", "lose", "maintain", "health"],
+      "dietas": ["excellent", "good", "average"],
+      "tipo_dieta": ["omnivoro", "vegetariano"],
+      "alergenos": ["lacteos"],
+      "calorias": 180,
+      "macros": { "proteina": 18, "carbos": 20, "grasas": 3 },
+      "ingredientes": [
+        "150g requesón o cottage cheese bajo en grasa",
+        "½ taza de fresas o arándanos",
+        "1 cucharadita de miel de abeja",
+        "Canela al gusto"
+      ],
+      "preparacion": "Coloca el requesón en un tazón, añade la fruta encima, rocía la miel y espolvorea canela. Snack alto en proteína lista en menos de 2 minutos."
+    },
+    {
+      "id": "r_015",
+      "nombre": "Snack de nueces y manzana",
+      "momento": "snack",
+      "tiempo_prep_min": 2,
+      "objetivos": ["muscle", "lose", "maintain", "health"],
+      "dietas": ["excellent", "good", "average", "poor", "junk"],
+      "tipo_dieta": ["omnivoro", "vegetariano", "vegano"],
+      "alergenos": ["nueces"],
+      "calorias": 200,
+      "macros": { "proteina": 4, "carbos": 26, "grasas": 10 },
+      "ingredientes": [
+        "1 manzana mediana",
+        "20g de nueces mixtas (almendras, nueces de castilla)",
+        "Opcional: pizca de sal de mar"
+      ],
+      "preparacion": "Corta la manzana en gajos. Acompáñala con las nueces. Es un snack completo que combina fibra, azúcares naturales y grasas saludables para mantenerte saciado entre comidas."
+    },
+    {
+      "id": "r_016",
+      "nombre": "Snack proteico de junk-friendly",
+      "momento": "snack",
+      "tiempo_prep_min": 3,
+      "objetivos": ["muscle", "lose", "health"],
+      "dietas": ["poor", "junk"],
+      "tipo_dieta": ["omnivoro", "vegetariano"],
+      "alergenos": ["lacteos"],
+      "calorias": 160,
+      "macros": { "proteina": 15, "carbos": 18, "grasas": 3 },
+      "ingredientes": [
+        "1 yogur griego natural sin azúcar (150g)",
+        "1 cucharada de granola baja en azúcar",
+        "5-6 fresas frescas o ½ plátano"
+      ],
+      "preparacion": "Mezcla el yogur con la fruta y agrega la granola encima para dar textura. Es una opción accesible y rápida para alguien con hábitos poco saludables que quiere un snack con proteína real."
+    },
+    {
+      "id": "r_017",
+      "nombre": "Cena de lenteja al curry",
+      "momento": "cena",
+      "tiempo_prep_min": 30,
+      "objetivos": ["health", "maintain", "lose"],
+      "dietas": ["excellent", "good", "average", "poor"],
+      "tipo_dieta": ["omnivoro", "vegetariano", "vegano"],
+      "alergenos": [],
+      "calorias": 340,
+      "macros": { "proteina": 18, "carbos": 48, "grasas": 8 },
+      "ingredientes": [
+        "1 taza de lentejas verdes o rojas secas",
+        "1 lata de jitomate triturado (400g)",
+        "1 cucharadita de curry en polvo",
+        "½ cebolla, 2 dientes de ajo",
+        "1 cucharadita de aceite de oliva",
+        "Sal, comino y cilantro al gusto"
+      ],
+      "preparacion": "Sofríe la cebolla y el ajo en aceite 3 min. Añade el curry y el comino, 1 min más. Agrega las lentejas lavadas y el jitomate. Cubre con agua o caldo y cocina 20-25 min hasta que las lentejas estén suaves. Ajusta sal y decora con cilantro."
+    },
+    {
+      "id": "r_018",
+      "nombre": "Bowl vegano post-entreno",
+      "momento": "post-entreno",
+      "tiempo_prep_min": 15,
+      "objetivos": ["muscle", "maintain", "health"],
+      "dietas": ["excellent", "good", "average"],
+      "tipo_dieta": ["vegano", "vegetariano"],
+      "alergenos": ["soya"],
+      "calorias": 410,
+      "macros": { "proteina": 30, "carbos": 50, "grasas": 9 },
+      "ingredientes": [
+        "150g tofu firme en cubos",
+        "100g de arroz integral cocido",
+        "½ taza de edamame cocido",
+        "1 cucharada de salsa de soya baja en sodio",
+        "Aceite de ajonjolí, jengibre y ajo al gusto",
+        "Semillas de ajonjolí para decorar"
+      ],
+      "preparacion": "Dora el tofu en sartén con aceite de ajonjolí, ajo y jengibre 5-7 min hasta dorar. Mezcla con el arroz y el edamame. Baña con salsa de soya y decora con semillas de ajonjolí."
+    }
+  ],
+
+  "reglas_balance": {
+    "proteina_por_kg": {
+      "muscle": 2.0,
+      "lose": 1.8,
+      "maintain": 1.6,
+      "health": 1.4
+    },
+    "porcentaje_grasa": 0.28,
+    "ajuste_calorico": {
+      "lose": -500,
+      "muscle": 250,
+      "maintain": 0,
+      "health": -200
+    },
+    "minimo_calorias": {
+      "m": 1500,
+      "f": 1200
+    },
+    "factor_actividad": {
+      "sedentario": 1.2,
+      "ligero": 1.375,
+      "moderado": 1.55,
+      "activo": 1.725
+    }
+  },
+
+  "advertencias": [
+    {
+      "id": "adv_001",
+      "condicion": "imc_bajo",
+      "umbral_imc": 18.5,
+      "mensaje": "Tu IMC indica bajo peso. Se recomienda consultar a un médico o nutriólogo antes de seguir cualquier plan de déficit calórico."
+    },
+    {
+      "id": "adv_002",
+      "condicion": "deficit_extremo",
+      "mensaje": "Las calorías objetivo están por debajo del mínimo recomendado. El plan fue ajustado automáticamente para proteger tu salud."
+    },
+    {
+      "id": "adv_003",
+      "condicion": "alergia_detectada",
+      "mensaje": "Asegúrate de revisar la lista de ingredientes de estas recetas para evitar alérgenos que hayas registrado en tu perfil."
+    }
+  ]
+}

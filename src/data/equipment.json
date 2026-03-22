@@ -1,0 +1,714 @@
+{
+  "_meta": {
+    "version": "1.0.0",
+    "descripcion": "Catálogo de equipamiento de gimnasio con grupos musculares y tipo de carga"
+  },
+
+  "grupos_musculares": [
+    "pecho", "espalda", "hombros", "biceps", "triceps",
+    "cuadriceps", "isquiotibiales", "gluteos", "gemelos",
+    "core", "trapecio", "lumbar", "aductores", "abductores"
+  ],
+
+  "categorias": [
+    {
+      "id": "bancos_racks",
+      "nombre": "Bancos y racks",
+      "icono": "🪑",
+      "equipos": [
+        {
+          "id": "banco_plano",
+          "nombre": "Banco plano",
+          "tipo": "soporte",
+          "grupos": ["pecho", "triceps", "hombros"],
+          "descripcion": "Banco horizontal para press de pecho y ejercicios de empuje."
+        },
+        {
+          "id": "banco_inclinado",
+          "nombre": "Banco inclinado",
+          "tipo": "soporte",
+          "grupos": ["pecho", "hombros", "triceps"],
+          "descripcion": "Banco con inclinación positiva para trabajar la parte superior del pecho."
+        },
+        {
+          "id": "banco_declinado",
+          "nombre": "Banco declinado",
+          "tipo": "soporte",
+          "grupos": ["pecho", "triceps"],
+          "descripcion": "Banco con inclinación negativa para la parte inferior del pecho."
+        },
+        {
+          "id": "banco_predicador",
+          "nombre": "Banco predicador",
+          "tipo": "soporte",
+          "grupos": ["biceps"],
+          "descripcion": "Banco con almohadilla para aislar el curl de bíceps."
+        },
+        {
+          "id": "banco_lumbar",
+          "nombre": "Banco lumbar",
+          "tipo": "soporte",
+          "grupos": ["lumbar", "gluteos", "isquiotibiales"],
+          "descripcion": "Banco para extensiones lumbares e hiperextensiones."
+        },
+        {
+          "id": "banco_glute_ham",
+          "nombre": "Banco Glute Ham",
+          "tipo": "soporte",
+          "grupos": ["gluteos", "isquiotibiales", "lumbar"],
+          "descripcion": "Banco especializado para el ejercicio glute-ham raise."
+        },
+        {
+          "id": "banco_vertical",
+          "nombre": "Banco vertical (Scott)",
+          "tipo": "soporte",
+          "grupos": ["biceps"],
+          "descripcion": "Banco vertical con respaldo para press de hombros y curls sentado."
+        },
+        {
+          "id": "barra_fondos",
+          "nombre": "Barra de fondos (paralelas)",
+          "tipo": "soporte",
+          "grupos": ["triceps", "pecho", "hombros"],
+          "descripcion": "Barras paralelas fijas para fondos y ejercicios de empuje corporal."
+        },
+        {
+          "id": "barra_dominadas",
+          "nombre": "Barra de dominadas",
+          "tipo": "soporte",
+          "grupos": ["espalda", "biceps", "core"],
+          "descripcion": "Barra fija para dominadas y jalones con peso corporal."
+        },
+        {
+          "id": "rack_sentadillas",
+          "nombre": "Rack de sentadillas",
+          "tipo": "soporte",
+          "grupos": ["cuadriceps", "gluteos", "isquiotibiales", "pecho", "espalda", "hombros"],
+          "descripcion": "Estructura multipropósito para sentadillas, press de banca y press militar con barra."
+        }
+      ]
+    },
+
+    {
+      "id": "pesas_pequenas",
+      "nombre": "Pesas pequeñas",
+      "icono": "🏋️",
+      "equipos": [
+        {
+          "id": "mancuernas",
+          "nombre": "Mancuernas",
+          "tipo": "peso_libre",
+          "grupos": ["pecho", "espalda", "hombros", "biceps", "triceps", "cuadriceps", "gluteos", "core"],
+          "descripcion": "Pesas de mano para ejercicios unilaterales y bilaterales. Rango completo de movimiento."
+        },
+        {
+          "id": "pesa_rusa",
+          "nombre": "Pesa rusa (kettlebell)",
+          "tipo": "peso_libre",
+          "grupos": ["gluteos", "isquiotibiales", "core", "hombros", "espalda", "cuadriceps"],
+          "descripcion": "Pesa con asa para movimientos balísticos como swing, snatch y turkish get-up."
+        }
+      ]
+    },
+
+    {
+      "id": "maquinas_cable",
+      "nombre": "Máquinas de cable",
+      "icono": "🔗",
+      "equipos": [
+        {
+          "id": "poleas_cruzadas",
+          "nombre": "Poleas cruzadas",
+          "tipo": "cable",
+          "grupos": ["pecho", "espalda", "hombros", "biceps", "triceps", "core"],
+          "descripcion": "Dos poleas enfrentadas para aperturas, remos y ejercicios de tensión constante."
+        },
+        {
+          "id": "polea_alta_baja",
+          "nombre": "Polea alta/baja (ajustable)",
+          "tipo": "cable",
+          "grupos": ["espalda", "biceps", "triceps", "pecho", "hombros", "core", "gluteos"],
+          "descripcion": "Polea con altura ajustable para jalones, remos y ejercicios de cable en cualquier ángulo."
+        },
+        {
+          "id": "polea_alta_jalon",
+          "nombre": "Polea alta — jalón al pecho",
+          "tipo": "cable",
+          "grupos": ["espalda", "biceps", "trapecio"],
+          "descripcion": "Polea fija en posición alta con barra larga para jalones al pecho."
+        },
+        {
+          "id": "polea_remo",
+          "nombre": "Polea para remo",
+          "tipo": "cable",
+          "grupos": ["espalda", "biceps", "trapecio", "lumbar"],
+          "descripcion": "Polea baja con asiento para remos horizontales."
+        }
+      ]
+    },
+
+    {
+      "id": "barras_discos",
+      "nombre": "Barras y discos",
+      "icono": "⚖️",
+      "equipos": [
+        {
+          "id": "barra_olimpica",
+          "nombre": "Barra olímpica",
+          "tipo": "peso_libre",
+          "grupos": ["pecho", "espalda", "hombros", "cuadriceps", "isquiotibiales", "gluteos", "biceps", "triceps"],
+          "descripcion": "Barra estándar de 20 kg y 2.2 m. Base de ejercicios compuestos: sentadilla, peso muerto, press."
+        },
+        {
+          "id": "barra_z",
+          "nombre": "Barra Z (EZ)",
+          "tipo": "peso_libre",
+          "grupos": ["biceps", "triceps"],
+          "descripcion": "Barra con curvatura en W para curls de bíceps y extensiones de tríceps con menor estrés en muñecas."
+        },
+        {
+          "id": "barra_hexagonal",
+          "nombre": "Barra hexagonal (trap bar)",
+          "tipo": "peso_libre",
+          "grupos": ["cuadriceps", "isquiotibiales", "gluteos", "lumbar", "trapecio"],
+          "descripcion": "Barra hexagonal para peso muerto con agarre neutro, más amigable para la espalda baja."
+        },
+        {
+          "id": "barra_corta",
+          "nombre": "Barra corta",
+          "tipo": "peso_libre",
+          "grupos": ["biceps", "triceps", "pecho", "hombros"],
+          "descripcion": "Barra de menor longitud para ejercicios con una sola mano o rango de movimiento reducido."
+        },
+        {
+          "id": "landmine",
+          "nombre": "Landmine (pivote de barra)",
+          "tipo": "peso_libre",
+          "grupos": ["hombros", "pecho", "core", "espalda", "cuadriceps"],
+          "descripcion": "Soporte que ancla un extremo de la barra al suelo para press, remo y rotaciones."
+        },
+        {
+          "id": "discos",
+          "nombre": "Discos",
+          "tipo": "peso_libre",
+          "grupos": ["core", "hombros", "pecho"],
+          "descripcion": "Discos de peso usados como carga para barras o como accesorio (disco para abdominales, etc.)."
+        }
+      ]
+    },
+
+    {
+      "id": "maquinas_peso",
+      "nombre": "Máquinas de peso (stack)",
+      "icono": "🤖",
+      "equipos": [
+        {
+          "id": "maq_crunch_abdominal",
+          "nombre": "Máquina de crunch abdominal",
+          "tipo": "maquina_stack",
+          "grupos": ["core"],
+          "descripcion": "Máquina guiada para flexión de tronco con resistencia ajustable."
+        },
+        {
+          "id": "maq_abductores",
+          "nombre": "Máquina de abductores",
+          "tipo": "maquina_stack",
+          "grupos": ["abductores", "gluteos"],
+          "descripcion": "Máquina sentado para apertura de piernas hacia afuera."
+        },
+        {
+          "id": "maq_aductores",
+          "nombre": "Máquina de aductores",
+          "tipo": "maquina_stack",
+          "grupos": ["aductores"],
+          "descripcion": "Máquina sentado para cierre de piernas hacia adentro."
+        },
+        {
+          "id": "maq_asistencia",
+          "nombre": "Máquina con asistencia (dominadas/fondos)",
+          "tipo": "maquina_stack",
+          "grupos": ["espalda", "biceps", "triceps", "pecho"],
+          "descripcion": "Máquina que contrarresta parte del peso corporal para facilitar dominadas y fondos."
+        },
+        {
+          "id": "maq_press_pecho",
+          "nombre": "Máquina press de pecho",
+          "tipo": "maquina_stack",
+          "grupos": ["pecho", "triceps", "hombros"],
+          "descripcion": "Máquina guiada para press de pecho horizontal."
+        },
+        {
+          "id": "maq_press_pecho_inclinado",
+          "nombre": "Máquina press de pecho inclinado",
+          "tipo": "maquina_stack",
+          "grupos": ["pecho", "hombros", "triceps"],
+          "descripcion": "Máquina guiada para press inclinado, enfocada en la parte alta del pecho."
+        },
+        {
+          "id": "maq_curl_bicep",
+          "nombre": "Máquina curl de bíceps",
+          "tipo": "maquina_stack",
+          "grupos": ["biceps"],
+          "descripcion": "Máquina para curl de bíceps con apoyo en almohadilla."
+        },
+        {
+          "id": "maq_curl_predicador",
+          "nombre": "Máquina curl predicador",
+          "tipo": "maquina_stack",
+          "grupos": ["biceps"],
+          "descripcion": "Máquina tipo predicador para aislar el bíceps."
+        },
+        {
+          "id": "maq_elevacion_talones",
+          "nombre": "Máquina de elevación de talones (de pie)",
+          "tipo": "maquina_stack",
+          "grupos": ["gemelos"],
+          "descripcion": "Máquina para el ejercicio calf raise de pie."
+        },
+        {
+          "id": "maq_gemelos_sentado",
+          "nombre": "Máquina de gemelos sentado",
+          "tipo": "maquina_stack",
+          "grupos": ["gemelos"],
+          "descripcion": "Máquina para trabajar el sóleo y gemelo en posición sentada."
+        },
+        {
+          "id": "maq_dual_aperturas",
+          "nombre": "Máquina dual de aperturas (pec deck)",
+          "tipo": "maquina_stack",
+          "grupos": ["pecho", "hombros"],
+          "descripcion": "Máquina de aperturas para pecho y deltoides posterior con dos brazos independientes."
+        },
+        {
+          "id": "maq_aperturas_brazos_flex",
+          "nombre": "Máquina de aperturas con brazos flexionados",
+          "tipo": "maquina_stack",
+          "grupos": ["pecho"],
+          "descripcion": "Variación del pec deck con codos flexionados para mayor aislamiento del pecho."
+        },
+        {
+          "id": "maq_curl_piernas",
+          "nombre": "Máquina curl de piernas (acostado)",
+          "tipo": "maquina_stack",
+          "grupos": ["isquiotibiales"],
+          "descripcion": "Máquina en posición prona para flexión de rodilla e isquiotibiales."
+        },
+        {
+          "id": "maq_curl_piernas_sentado",
+          "nombre": "Máquina curl de piernas sentado",
+          "tipo": "maquina_stack",
+          "grupos": ["isquiotibiales"],
+          "descripcion": "Máquina en posición sentada para flexión de rodilla."
+        },
+        {
+          "id": "maq_extension_piernas",
+          "nombre": "Máquina extensión de piernas",
+          "tipo": "maquina_stack",
+          "grupos": ["cuadriceps"],
+          "descripcion": "Máquina sentado para extensión de rodilla y aislamiento de cuádriceps."
+        },
+        {
+          "id": "maq_prensa_piernas",
+          "nombre": "Máquina de prensa de piernas",
+          "tipo": "maquina_stack",
+          "grupos": ["cuadriceps", "gluteos", "isquiotibiales"],
+          "descripcion": "Prensa horizontal o inclinada para empuje de piernas con guía."
+        },
+        {
+          "id": "maq_fondos_triceps",
+          "nombre": "Máquina de fondos de tríceps",
+          "tipo": "maquina_stack",
+          "grupos": ["triceps", "pecho"],
+          "descripcion": "Máquina guiada para fondos de tríceps."
+        },
+        {
+          "id": "maq_extension_triceps",
+          "nombre": "Máquina de extensión de tríceps",
+          "tipo": "maquina_stack",
+          "grupos": ["triceps"],
+          "descripcion": "Máquina para extensiones de tríceps sobre la cabeza."
+        },
+        {
+          "id": "maq_vuelo_lateral",
+          "nombre": "Máquina vuelo lateral (deltoides)",
+          "tipo": "maquina_stack",
+          "grupos": ["hombros"],
+          "descripcion": "Máquina para elevaciones laterales con carga guiada."
+        },
+        {
+          "id": "maq_press_hombros",
+          "nombre": "Máquina press de hombros",
+          "tipo": "maquina_stack",
+          "grupos": ["hombros", "triceps", "trapecio"],
+          "descripcion": "Máquina guiada para press de hombros en posición sentada."
+        },
+        {
+          "id": "maq_remo",
+          "nombre": "Máquina de remo",
+          "tipo": "maquina_stack",
+          "grupos": ["espalda", "biceps", "trapecio"],
+          "descripcion": "Máquina de remo con pecho apoyado o sentado."
+        },
+        {
+          "id": "maq_gluteos",
+          "nombre": "Máquina de glúteos",
+          "tipo": "maquina_stack",
+          "grupos": ["gluteos", "isquiotibiales"],
+          "descripcion": "Máquina de patada de glúteo o hip extension guiada."
+        },
+        {
+          "id": "maq_jalon_pecho",
+          "nombre": "Máquina jalón al pecho",
+          "tipo": "maquina_stack",
+          "grupos": ["espalda", "biceps", "trapecio"],
+          "descripcion": "Máquina guiada para jalón al pecho (lat pulldown)."
+        },
+        {
+          "id": "maq_rotacion_torso",
+          "nombre": "Máquina de rotación de torso",
+          "tipo": "maquina_stack",
+          "grupos": ["core"],
+          "descripcion": "Máquina para rotaciones de tronco y trabajo de oblicuos."
+        },
+        {
+          "id": "maq_extension_gemelos",
+          "nombre": "Máquina de extensión de gemelos (leg press calf)",
+          "tipo": "maquina_stack",
+          "grupos": ["gemelos"],
+          "descripcion": "Elevación de talones en la prensa de piernas."
+        },
+        {
+          "id": "maq_sentadillas_hack",
+          "nombre": "Máquina de sentadillas hack",
+          "tipo": "maquina_stack",
+          "grupos": ["cuadriceps", "gluteos", "isquiotibiales"],
+          "descripcion": "Máquina guiada para sentadilla hack con espalda apoyada."
+        },
+        {
+          "id": "maq_multi_cadera",
+          "nombre": "Máquina multi cadera",
+          "tipo": "maquina_stack",
+          "grupos": ["gluteos", "abductores", "aductores", "isquiotibiales"],
+          "descripcion": "Máquina versátil para movimientos de cadera en diferentes planos."
+        },
+        {
+          "id": "maq_extension_lumbar",
+          "nombre": "Máquina de extensión lumbar",
+          "tipo": "maquina_stack",
+          "grupos": ["lumbar"],
+          "descripcion": "Máquina guiada para extensión de columna lumbar."
+        }
+      ]
+    },
+
+    {
+      "id": "pelotas_accesorios",
+      "nombre": "Pelotas y accesorios",
+      "icono": "🏅",
+      "equipos": [
+        {
+          "id": "rueda_abdominal",
+          "nombre": "Rueda abdominal",
+          "tipo": "accesorio",
+          "grupos": ["core", "espalda", "hombros", "triceps"],
+          "descripcion": "Rueda con agarres para rollouts abdominales. Alta demanda de core y estabilizadores."
+        },
+        {
+          "id": "cajon_pliometrico",
+          "nombre": "Cajón pliométrico",
+          "tipo": "accesorio",
+          "grupos": ["cuadriceps", "gluteos", "isquiotibiales", "gemelos", "core"],
+          "descripcion": "Caja de madera o metal para saltos pliométricos, step-ups y sentadillas búlgaras."
+        },
+        {
+          "id": "balon_medicinal",
+          "nombre": "Balón medicinal",
+          "tipo": "accesorio",
+          "grupos": ["core", "hombros", "pecho", "espalda"],
+          "descripcion": "Pelota con peso para lanzamientos, rotaciones y ejercicios explosivos."
+        },
+        {
+          "id": "balon_estabilidad",
+          "nombre": "Balón de estabilidad (fitball)",
+          "tipo": "accesorio",
+          "grupos": ["core", "lumbar", "pecho", "gluteos"],
+          "descripcion": "Pelota grande inflable para ejercicios de estabilidad, abdominales y extensiones."
+        },
+        {
+          "id": "trx",
+          "nombre": "TRX (suspensión)",
+          "tipo": "accesorio",
+          "grupos": ["pecho", "espalda", "core", "biceps", "triceps", "cuadriceps", "gluteos"],
+          "descripcion": "Arnés de suspensión para ejercicios con peso corporal a diferentes ángulos."
+        },
+        {
+          "id": "rodillo_masaje",
+          "nombre": "Rodillo de masaje (foam roller)",
+          "tipo": "accesorio",
+          "grupos": [],
+          "descripcion": "Cilindro de espuma para liberación miofascial y recuperación muscular."
+        },
+        {
+          "id": "maq_sissy_squat",
+          "nombre": "Máquina de sentadillas sissy",
+          "tipo": "accesorio",
+          "grupos": ["cuadriceps"],
+          "descripcion": "Soporte fijo para realizar sentadillas sissy con inclinación hacia atrás."
+        },
+        {
+          "id": "trineo",
+          "nombre": "Trineo (sled)",
+          "tipo": "accesorio",
+          "grupos": ["cuadriceps", "gluteos", "isquiotibiales", "gemelos", "core"],
+          "descripcion": "Trineo de empuje y arrastre para trabajo metabólico y fuerza funcional."
+        }
+      ]
+    },
+
+    {
+      "id": "maquinas_discos",
+      "nombre": "Máquinas con discos",
+      "icono": "🔩",
+      "equipos": [
+        {
+          "id": "maq_disc_hack_squat",
+          "nombre": "Máquina sentadilla hack con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["cuadriceps", "gluteos", "isquiotibiales"],
+          "descripcion": "Sentadilla hack cargada con discos, sin motor de peso stack."
+        },
+        {
+          "id": "maq_disc_press_pecho",
+          "nombre": "Máquina de discos press de pecho",
+          "tipo": "maquina_discos",
+          "grupos": ["pecho", "triceps", "hombros"],
+          "descripcion": "Press de pecho horizontal cargado con discos olímpicos."
+        },
+        {
+          "id": "maq_disc_press_declinado",
+          "nombre": "Máquina de discos press declinado",
+          "tipo": "maquina_discos",
+          "grupos": ["pecho", "triceps"],
+          "descripcion": "Press declinado con carga de discos para parte inferior del pecho."
+        },
+        {
+          "id": "maq_disc_press_inclinado",
+          "nombre": "Máquina de discos press inclinado",
+          "tipo": "maquina_discos",
+          "grupos": ["pecho", "hombros", "triceps"],
+          "descripcion": "Press inclinado con discos para la parte superior del pecho."
+        },
+        {
+          "id": "maq_disc_press_horizontal",
+          "nombre": "Máquina de discos press horizontal",
+          "tipo": "maquina_discos",
+          "grupos": ["pecho", "triceps", "hombros"],
+          "descripcion": "Press de pecho horizontal tipo Hammer Strength con discos."
+        },
+        {
+          "id": "maq_disc_press_hombros",
+          "nombre": "Máquina de discos press de hombros",
+          "tipo": "maquina_discos",
+          "grupos": ["hombros", "triceps", "trapecio"],
+          "descripcion": "Press de hombros con carga de discos."
+        },
+        {
+          "id": "maq_disc_remo_alto",
+          "nombre": "Máquina de discos remo alto",
+          "tipo": "maquina_discos",
+          "grupos": ["espalda", "biceps", "trapecio"],
+          "descripcion": "Remo con apoyo en pecho y carga de discos, agarre alto."
+        },
+        {
+          "id": "maq_disc_remo_bajo",
+          "nombre": "Máquina de discos remo bajo",
+          "tipo": "maquina_discos",
+          "grupos": ["espalda", "biceps", "lumbar"],
+          "descripcion": "Remo con apoyo y carga de discos, agarre bajo."
+        },
+        {
+          "id": "maq_disc_remo_pecho",
+          "nombre": "Máquina de remo con soporte para el pecho (discos)",
+          "tipo": "maquina_discos",
+          "grupos": ["espalda", "biceps", "trapecio"],
+          "descripcion": "Remo inclinado con pecho apoyado, cargado con discos."
+        },
+        {
+          "id": "maq_disc_encogimiento",
+          "nombre": "Máquina de discos encogimiento hombros",
+          "tipo": "maquina_discos",
+          "grupos": ["trapecio"],
+          "descripcion": "Máquina para shrugs (encogimiento) cargada con discos."
+        },
+        {
+          "id": "maq_disc_jalon",
+          "nombre": "Máquina de discos jalón al pecho",
+          "tipo": "maquina_discos",
+          "grupos": ["espalda", "biceps", "trapecio"],
+          "descripcion": "Jalón al pecho tipo Hammer Strength con carga de discos."
+        },
+        {
+          "id": "prensa_piernas",
+          "nombre": "Prensa de piernas (inclinada)",
+          "tipo": "maquina_discos",
+          "grupos": ["cuadriceps", "gluteos", "isquiotibiales"],
+          "descripcion": "Prensa de piernas inclinada 45° cargada con discos olímpicos."
+        },
+        {
+          "id": "prensa_piernas_vertical",
+          "nombre": "Prensa de piernas vertical",
+          "tipo": "maquina_discos",
+          "grupos": ["cuadriceps", "gluteos", "isquiotibiales", "gemelos"],
+          "descripcion": "Prensa vertical donde el usuario empuja el peso hacia arriba."
+        },
+        {
+          "id": "prensa_piernas_unilateral",
+          "nombre": "Prensa de piernas unilateral con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["cuadriceps", "gluteos", "isquiotibiales"],
+          "descripcion": "Prensa de piernas para trabajar una pierna a la vez."
+        },
+        {
+          "id": "maquina_smith",
+          "nombre": "Máquina Smith",
+          "tipo": "maquina_discos",
+          "grupos": ["cuadriceps", "gluteos", "pecho", "hombros", "isquiotibiales"],
+          "descripcion": "Barra guiada en rieles verticales para sentadillas, press y peso muerto guiado."
+        },
+        {
+          "id": "barra_t_maquina",
+          "nombre": "Barra T en máquina de discos",
+          "tipo": "maquina_discos",
+          "grupos": ["espalda", "biceps", "trapecio"],
+          "descripcion": "Remo con barra T fija al suelo o a máquina específica."
+        },
+        {
+          "id": "barra_t_pecho",
+          "nombre": "Barra T con soporte para el pecho (discos)",
+          "tipo": "maquina_discos",
+          "grupos": ["espalda", "biceps", "trapecio"],
+          "descripcion": "Remo con pecho apoyado en soporte inclinado y barra T."
+        },
+        {
+          "id": "maq_disc_predicador",
+          "nombre": "Máquina predicador a discos",
+          "tipo": "maquina_discos",
+          "grupos": ["biceps"],
+          "descripcion": "Curl predicador cargado con discos."
+        },
+        {
+          "id": "maq_disc_gemelo_sentado",
+          "nombre": "Máquina de gemelo sentado a discos",
+          "tipo": "maquina_discos",
+          "grupos": ["gemelos"],
+          "descripcion": "Calf raise sentado con carga de discos sobre las rodillas."
+        },
+        {
+          "id": "maq_disc_gemelos_inclinada",
+          "nombre": "Máquina de gemelos inclinada con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["gemelos"],
+          "descripcion": "Elevación de talones en posición inclinada con discos."
+        },
+        {
+          "id": "maq_disc_gemelos_pie",
+          "nombre": "Máquina de gemelos de pie con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["gemelos"],
+          "descripcion": "Calf raise de pie con carga de discos."
+        },
+        {
+          "id": "maq_disc_extension_piernas",
+          "nombre": "Máquina de extensión de piernas con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["cuadriceps"],
+          "descripcion": "Extensión de cuádriceps sentado con carga de discos."
+        },
+        {
+          "id": "maq_disc_extension_piernas_uni",
+          "nombre": "Máquina de extensión de piernas unilateral con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["cuadriceps"],
+          "descripcion": "Extensión unilateral de cuádriceps con discos."
+        },
+        {
+          "id": "maq_disc_curl_piernas_pie",
+          "nombre": "Máquina de curl de piernas de pie con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["isquiotibiales", "gluteos"],
+          "descripcion": "Curl de isquiotibiales en posición de pie, cargada con discos."
+        },
+        {
+          "id": "maq_disc_sentadillas_cinturon",
+          "nombre": "Máquina de sentadillas con cinturón (belt squat)",
+          "tipo": "maquina_discos",
+          "grupos": ["cuadriceps", "gluteos", "isquiotibiales"],
+          "descripcion": "Sentadilla con carga colgando del cinturón, sin estrés en columna."
+        },
+        {
+          "id": "maq_disc_sentadillas_pendulo",
+          "nombre": "Máquina de sentadillas péndulo",
+          "tipo": "maquina_discos",
+          "grupos": ["cuadriceps", "gluteos"],
+          "descripcion": "Sentadilla en sistema péndulo para movimiento natural y carga de discos."
+        },
+        {
+          "id": "maq_disc_peso_muerto",
+          "nombre": "Máquina de peso muerto con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["isquiotibiales", "gluteos", "lumbar", "trapecio"],
+          "descripcion": "Peso muerto guiado cargado con discos."
+        },
+        {
+          "id": "maq_disc_fondos",
+          "nombre": "Máquina de fondos con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["triceps", "pecho", "hombros"],
+          "descripcion": "Fondos cargados con discos para triceps y pecho."
+        },
+        {
+          "id": "maq_disc_hip_thrust",
+          "nombre": "Máquina de hip thrust con discos (con cinturón)",
+          "tipo": "maquina_discos",
+          "grupos": ["gluteos", "isquiotibiales"],
+          "descripcion": "Empuje de cadera con carga en cinturón y discos."
+        },
+        {
+          "id": "maq_disc_empuje_cadera",
+          "nombre": "Empuje de cadera en máquina de discos",
+          "tipo": "maquina_discos",
+          "grupos": ["gluteos", "isquiotibiales", "cuadriceps"],
+          "descripcion": "Hip thrust guiado en máquina con carga de discos."
+        },
+        {
+          "id": "maq_disc_patada_gluteo",
+          "nombre": "Patada de glúteo en máquina de discos",
+          "tipo": "maquina_discos",
+          "grupos": ["gluteos", "isquiotibiales"],
+          "descripcion": "Extensión de cadera en posición cuadrúpeda con carga de discos."
+        },
+        {
+          "id": "maq_disc_elevacion_lateral",
+          "nombre": "Máquina de elevación lateral de pie con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["hombros"],
+          "descripcion": "Elevación lateral de hombros de pie con resistencia de discos."
+        },
+        {
+          "id": "maq_disc_pullover",
+          "nombre": "Máquina de pullover con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["espalda", "pecho", "core"],
+          "descripcion": "Pullover guiado en máquina con carga de discos."
+        },
+        {
+          "id": "maq_disc_abdominales",
+          "nombre": "Máquina de abdominales cargada con discos",
+          "tipo": "maquina_discos",
+          "grupos": ["core"],
+          "descripcion": "Crunch abdominal en máquina específica cargada con discos."
+        }
+      ]
+    }
+  ]
+}
