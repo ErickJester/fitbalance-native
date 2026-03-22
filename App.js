@@ -20,7 +20,7 @@ import StepEquipment from "./src/screens/StepEquipment";
 import StepPlan from "./src/screens/StepPlan";
 import { buildPlan } from "./src/logic/calculations";
 import { buildRoutine } from "./src/logic/routineBuilder";
-import { openDatabase, getAllExercises } from "./src/db/database";
+import { openDatabase, getAllExercises, saveUserPlan } from "./src/db/database";
 import equipmentData from "./src/data/equipment.json";
 import { colors, radius } from "./src/components/theme";
 
@@ -50,6 +50,7 @@ export default function App() {
   const [routine, setRoutine]             = useState([]);
   const [selectedEquipment, setSelectedEquipment] = useState([]);
   const [exercises, setExercises]         = useState([]);
+  const [db, setDb]                       = useState(null);
   const [dbReady, setDbReady]             = useState(false);
 
   // ─── Inicializar base de datos al arrancar ───────────────────────────────
@@ -58,6 +59,7 @@ export default function App() {
       try {
         const db   = await openDatabase();
         const exs  = await getAllExercises(db);
+        setDb(db);
         setExercises(exs);
       } catch (err) {
         console.error("Error iniciando base de datos:", err);
@@ -102,6 +104,7 @@ export default function App() {
     setPlan(p);
     setRoutine(r);
     setStep(4);
+    if (db) saveUserPlan(db, { ...data, selectedEquipment }, p, r).catch(console.error);
   };
 
   const handleBack  = () => setStep(s => s - 1);

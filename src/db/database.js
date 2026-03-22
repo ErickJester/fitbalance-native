@@ -47,6 +47,39 @@ async function initSchema(db) {
       key   TEXT PRIMARY KEY,
       value TEXT
     );
+
+    CREATE TABLE IF NOT EXISTS user_profile (
+      id                INTEGER PRIMARY KEY,
+      sex               TEXT,
+      age               INTEGER,
+      weight            REAL,
+      height            REAL,
+      physical_activity TEXT,
+      diet_style        TEXT,
+      gym_days          INTEGER,
+      gym_minutes       INTEGER,
+      goal              TEXT,
+      equipment_ids     TEXT,
+      updated_at        TEXT NOT NULL DEFAULT (datetime('now'))
+    );
+
+    CREATE TABLE IF NOT EXISTS user_plan (
+      id             INTEGER PRIMARY KEY,
+      profile_id     INTEGER REFERENCES user_profile(id),
+      tdee           INTEGER,
+      target         INTEGER,
+      protein        INTEGER,
+      fat            INTEGER,
+      carbs          INTEGER,
+      gym_cal_week   INTEGER,
+      reco_gym_days  INTEGER,
+      diet_score     REAL,
+      gym_score      REAL,
+      diet_note      TEXT,
+      gym_note       TEXT,
+      routine        TEXT,
+      created_at     TEXT NOT NULL DEFAULT (datetime('now'))
+    );
   `);
 }
 
@@ -134,6 +167,108 @@ export async function getExercisesByLevel(db, nivel) {
     [nivel]
   );
   return rows.map(parseRow);
+}
+
+/**
+ * Guarda (o actualiza) el perfil del usuario y los resultados del plan.
+ * Siempre mantiene solo un registro (id = 1) para perfil y plan.
+ * @param {SQLiteDatabase} db
+ * @param {object} profile  — campos del wizard (data + selectedEquipment)
+ * @param {object} plan     — resultado de buildPlan()
+ * @param {Array}  routine  — resultado de buildRoutine()
+ * @returns {Promise<void>}
+ */
+export async function saveUserPlan(db, profile, plan, routine) {
+  await db.withTransactionAsync(async () => {
+    await db.runAsync(
+      `INSERT INTO user_profile (id, sex, age, weight, height, physical_activity,
+         diet_style, gym_days, gym_minutes, goal, equipment_ids, updated_at)
+       VALUES (1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
+       ON CONFLICT(id) DO UPDATE SET
+         sex = excluded.sex,
+         age = excluded.age,
+         weight = excluded.weight,
+         height = excluded.height,
+         physical_activity = excluded.physical_activity,
+         diet_style = excluded.diet_style,
+         gym_days = excluded.gym_days,
+         gym_minutes = excluded.gym_minutes,
+         goal = excluded.goal,
+         equipment_ids = excluded.equipment_ids,
+         updated_at = excluded.updated_at`,
+      [
+        profile.sex,
+        parseInt(profile.age)        || null,
+        parseFloat(profile.weight)   || null,
+        parseFloat(profile.height)   || null,
+        profile.physicalActivity,
+        profile.dietStyle,
+        parseInt(profile.gymDays)    || null,
+        parseInt(profile.gymMinutes) || null,
+        profile.goal,
+        JSON.stringify(profile.selectedEquipment || []),
+      ]
+    );
+
+    await db.runAsync(
+      `INSERT INTO user_plan (id, profile_id, tdee, target, protein, fat, carbs,
+         gym_cal_week, reco_gym_days, diet_score, gym_score, diet_note, gym_note,
+         routine, created_at)
+       VALUES (1, 1, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, datetime('now'))
+       ON CONFLICT(id) DO UPDATE SET
+         profile_id    = excluded.profile_id,
+         tdee          = excluded.tdee,
+         target        = excluded.target,
+         protein       = excluded.protein,
+         fat           = excluded.fat,
+         carbs         = excluded.carbs,
+         gym_cal_week  = excluded.gym_cal_week,
+         reco_gym_days = excluded.reco_gym_days,
+         diet_score    = excluded.diet_score,
+         gym_score     = excluded.gym_score,
+         diet_note     = excluded.diet_note,
+         gym_note      = excluded.gym_note,
+         routine       = excluded.routine,
+         created_at    = excluded.created_at`,
+      [
+        plan.tdee,
+        plan.target,
+        plan.protein,
+        plan.fat,
+        plan.carbs,
+        plan.gymCalWeek,
+        plan.recoGymDays,
+        plan.dietScore,
+        plan.gymScore,
+        plan.dietNote,
+        plan.gymNote,
+        JSON.stringify(routine),
+      ]
+    );
+  });
+}
+
+/**
+ * Carga el perfil y el plan guardado del usuario.
+ * Retorna null si no hay datos guardados.
+ * @param {SQLiteDatabase} db
+ * @returns {Promise<{profile: object, plan: object} | null>}
+ */
+export async function loadUserPlan(db) {
+  const profile = await db.getFirstAsync("SELECT * FROM user_profile WHERE id = 1");
+  if (!profile) return null;
+
+  const plan = await db.getFirstAsync("SELECT * FROM user_plan WHERE id = 1");
+
+  return {
+    profile: {
+      ...profile,
+      equipment_ids: JSON.parse(profile.equipment_ids || "[]"),
+    },
+    plan: plan
+      ? { ...plan, routine: JSON.parse(plan.routine || "[]") }
+      : null,
+  };
 }
 
 // ─── Helpers ──────────────────────────────────────────────────────────────────
