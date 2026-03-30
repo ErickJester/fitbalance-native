@@ -1,0 +1,380 @@
+
+<style>
+* { box-sizing:border-box; margin:0; padding:0; }
+.scene { display:flex; justify-content:center; padding:2rem 1rem; background:var(--color-background-secondary); border-radius:var(--border-radius-lg); min-height:900px; }
+.phone { width:320px; background:#f0efeb; border-radius:40px; border:2px solid #c8c8c4; overflow:hidden; box-shadow:0 0 0 6px #e2e1dc,0 0 0 7px #c8c8c4; }
+.notch { height:44px; background:#f0efeb; display:flex; align-items:center; justify-content:space-between; padding:0 20px; }
+.notch span { font-size:12px; font-weight:500; color:#1a1a1a; font-family:var(--font-sans); }
+.screen { background:#f0efeb; display:flex; flex-direction:column; }
+
+.stepbar { display:flex; gap:6px; padding:18px 16px 0; }
+.si { flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; }
+.sb { height:3px; width:100%; border-radius:99px; background:#e8e7e3; }
+.sb.on { background:#1D9E75; }
+.sl { font-size:10px; color:#6b6b6b; font-family:var(--font-sans); }
+.sl.on { color:#0F6E56; font-weight:500; }
+
+.scroll { padding:14px 16px 0; display:flex; flex-direction:column; gap:10px; overflow-y:auto; max-height:620px; }
+
+.header-card { background:#1D9E75; border-radius:14px; padding:16px 18px; display:flex; align-items:center; gap:14px; flex-shrink:0; }
+.header-icon { width:48px; height:48px; border-radius:12px; background:#E1F5EE; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.header-text-title { font-size:16px; font-weight:500; color:#ffffff; font-family:var(--font-sans); }
+.header-text-sub { font-size:12px; color:#9FE1CB; font-family:var(--font-sans); margin-top:2px; }
+
+/* stats row */
+.stats-row { display:flex; gap:8px; flex-shrink:0; }
+.stat-card { flex:1; background:#ffffff; border:0.5px solid #d0d0cc; border-radius:12px; padding:10px; display:flex; flex-direction:column; align-items:center; gap:2px; }
+.stat-val { font-size:18px; font-weight:500; color:#1D9E75; font-family:var(--font-sans); }
+.stat-lbl { font-size:10px; color:#6b6b6b; font-family:var(--font-sans); text-align:center; line-height:1.3; }
+
+/* quick actions */
+.quick-row { display:flex; gap:8px; flex-shrink:0; }
+.btn-all { flex:1; padding:9px; border-radius:10px; background:#1D9E75; border:none; color:#fff; font-size:13px; font-weight:500; cursor:pointer; font-family:var(--font-sans); }
+.btn-clear { flex:1; padding:9px; border-radius:10px; background:#ffffff; border:0.5px solid #d0d0cc; color:#1a1a1a; font-size:13px; cursor:pointer; font-family:var(--font-sans); }
+
+/* category cards */
+.cat-card { background:#ffffff; border:0.5px solid #d0d0cc; border-radius:14px; overflow:hidden; flex-shrink:0; }
+.cat-header { display:flex; align-items:center; justify-content:space-between; padding:13px 14px; cursor:pointer; }
+.cat-left { display:flex; align-items:center; gap:10px; }
+.cat-emoji { font-size:18px; width:18px; }
+.cat-name { font-size:14px; font-weight:500; color:#1a1a1a; font-family:var(--font-sans); }
+.cat-count { font-size:11px; color:#6b6b6b; font-family:var(--font-sans); margin-top:1px; }
+.cat-right { display:flex; align-items:center; gap:8px; }
+.cat-badge { background:#1D9E75; border-radius:99px; padding:2px 8px; font-size:11px; color:#fff; font-family:var(--font-sans); font-weight:500; }
+.cat-badge.hidden { display:none; }
+.chevron { font-size:10px; color:#6b6b6b; font-family:var(--font-sans); }
+
+.cat-body { border-top:0.5px solid #e8e7e3; display:none; }
+.cat-body.open { display:block; }
+.cat-selall { padding:9px 14px; font-size:12px; color:#1D9E75; font-family:var(--font-sans); cursor:pointer; background:#f8f8f6; border:none; text-align:left; width:100%; border-bottom:0.5px solid #e8e7e3; font-weight:500; }
+
+.equipo-row { display:flex; align-items:center; padding:11px 14px; gap:12px; border-bottom:0.5px solid #f0efeb; cursor:pointer; }
+.equipo-row:last-child { border-bottom:none; }
+.equipo-row.on { background:#f0faf6; }
+.checkbox { width:18px; height:18px; border-radius:4px; border:1.5px solid #d0d0cc; background:#fff; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.checkbox.on { background:#1D9E75; border-color:#1D9E75; }
+.equipo-info { flex:1; }
+.equipo-name { font-size:13px; color:#1a1a1a; font-family:var(--font-sans); }
+.equipo-row.on .equipo-name { color:#0F6E56; font-weight:500; }
+.equipo-grupos { font-size:11px; color:#6b6b6b; font-family:var(--font-sans); margin-top:1px; }
+
+/* tip */
+.tip-box { background:#E1F5EE; border-radius:10px; padding:11px 14px; display:flex; gap:8px; align-items:flex-start; flex-shrink:0; }
+.tip-icon { flex-shrink:0; margin-top:1px; }
+.tip-text { font-size:12px; color:#0F6E56; font-family:var(--font-sans); line-height:1.5; }
+
+.nav { display:flex; gap:8px; padding:14px 16px 24px; }
+.btn-back { flex:1; padding:13px; border-radius:10px; background:#ffffff; border:0.5px solid #d0d0cc; color:#1a1a1a; font-size:14px; cursor:pointer; font-family:var(--font-sans); }
+.btn-next { flex:2; padding:13px; border-radius:10px; background:#1D9E75; border:none; color:#fff; font-size:14px; font-weight:500; cursor:pointer; font-family:var(--font-sans); }
+
+.home-bar { display:flex; justify-content:center; padding:10px 0 6px; background:#f0efeb; }
+.pill { width:100px; height:4px; border-radius:99px; background:#1a1a1a; opacity:0.2; }
+.screen-label { text-align:center; font-size:12px; color:var(--color-text-secondary); margin-top:14px; font-family:var(--font-sans); }
+</style>
+
+<div class="scene"><div>
+<div class="phone">
+  <div class="notch"><span>9:41</span><span>▲ WiFi ■</span></div>
+  <div class="screen">
+
+    <div class="stepbar">
+      <div class="si"><div class="sb on"></div><span class="sl on">Perfil</span></div>
+      <div class="si"><div class="sb on"></div><span class="sl on">Rutina</span></div>
+      <div class="si"><div class="sb on"></div><span class="sl on">Objetivo</span></div>
+      <div class="si"><div class="sb on"></div><span class="sl on">Equipo</span></div>
+      <div class="si"><div class="sb"></div><span class="sl">Plan</span></div>
+    </div>
+
+    <div class="scroll" id="scroll">
+
+      <div class="header-card">
+        <div class="header-icon">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <rect x="3" y="3" width="20" height="20" rx="4" stroke="#1D9E75" stroke-width="2" fill="none"/>
+            <path d="M8 9h10M8 13h7M8 17h5" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="20" cy="20" r="5" fill="#E1F5EE" stroke="#1D9E75" stroke-width="1.5"/>
+            <path d="M18 20l1.5 1.5L22 18.5" stroke="#1D9E75" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <div>
+          <div class="header-text-title">Tu equipamiento</div>
+          <div class="header-text-sub">Paso 4 de 5 — ¿qué tienes en tu gym?</div>
+        </div>
+      </div>
+
+      <!-- Stats -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-val" id="s-sel">0</div>
+          <div class="stat-lbl">equipos seleccionados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val" id="s-ej">0</div>
+          <div class="stat-lbl">ejercicios disponibles</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-val" id="s-gm">0</div>
+          <div class="stat-lbl">grupos musculares</div>
+        </div>
+      </div>
+
+      <!-- Quick actions -->
+      <div class="quick-row">
+        <button class="btn-all" onclick="selAll()">Seleccionar todo</button>
+        <button class="btn-clear" onclick="clearAll()">Limpiar</button>
+      </div>
+
+      <!-- Categoría 1: Bancos y racks -->
+      <div class="cat-card" id="cat-0">
+        <div class="cat-header" onclick="toggleCat(0)">
+          <div class="cat-left">
+            <span class="cat-emoji">🪑</span>
+            <div>
+              <div class="cat-name">Bancos y racks</div>
+              <div class="cat-count" id="cc-0">0 / 9 seleccionados</div>
+            </div>
+          </div>
+          <div class="cat-right">
+            <span class="cat-badge hidden" id="cb-0">0</span>
+            <span class="chevron" id="ch-0">▼</span>
+          </div>
+        </div>
+        <div class="cat-body" id="cb0">
+          <button class="cat-selall" onclick="selCat(0)">Seleccionar categoría</button>
+          <div class="equipo-row" onclick="tog(this,'bancos',3,'Pecho · Tríceps · Hombros')" data-exs="3" data-grupos="pecho,triceps,hombros">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Banco plano</div><div class="equipo-grupos">Pecho · Tríceps · Hombros</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'bancos',3,'Pecho · Hombros · Tríceps')" data-exs="3" data-grupos="pecho,hombros,triceps">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Banco inclinado</div><div class="equipo-grupos">Pecho · Hombros · Tríceps</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'bancos',2,'Pecho · Tríceps')" data-exs="2" data-grupos="pecho,triceps">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Banco declinado</div><div class="equipo-grupos">Pecho · Tríceps</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'bancos',4,'Espalda · Bíceps · Core')" data-exs="4" data-grupos="espalda,biceps,core">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Barra de dominadas</div><div class="equipo-grupos">Espalda · Bíceps · Core</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'bancos',5,'Sentadilla · Pecho · Hombros')" data-exs="5" data-grupos="cuadriceps,gluteos,pecho,hombros,espalda">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Rack de sentadillas</div><div class="equipo-grupos">Cuádriceps · Glúteos · Pecho</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría 2: Pesas libres -->
+      <div class="cat-card" id="cat-1">
+        <div class="cat-header" onclick="toggleCat(1)">
+          <div class="cat-left">
+            <span class="cat-emoji">🏋️</span>
+            <div>
+              <div class="cat-name">Pesas libres</div>
+              <div class="cat-count" id="cc-1">0 / 4 seleccionados</div>
+            </div>
+          </div>
+          <div class="cat-right">
+            <span class="cat-badge hidden" id="cb-1">0</span>
+            <span class="chevron" id="ch-1">▼</span>
+          </div>
+        </div>
+        <div class="cat-body open" id="cb1">
+          <button class="cat-selall" onclick="selCat(1)">Seleccionar categoría</button>
+          <div class="equipo-row on" onclick="tog(this,'libres',8,'Pecho · Espalda · Hombros · Bíceps')" data-exs="8" data-grupos="pecho,espalda,hombros,biceps,triceps,cuadriceps,gluteos,core">
+            <div class="checkbox on"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="equipo-info"><div class="equipo-name">Mancuernas</div><div class="equipo-grupos">Pecho · Espalda · Hombros · Bíceps +4</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'libres',6,'Glúteos · Isquios · Core · Hombros')" data-exs="6" data-grupos="gluteos,isquiotibiales,core,hombros,espalda,cuadriceps">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Pesa rusa (kettlebell)</div><div class="equipo-grupos">Glúteos · Isquios · Core · Hombros</div></div>
+          </div>
+          <div class="equipo-row on" onclick="tog(this,'libres',7,'Todo el cuerpo')" data-exs="7" data-grupos="pecho,espalda,hombros,biceps,triceps,cuadriceps,core">
+            <div class="checkbox on"><svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg></div>
+            <div class="equipo-info"><div class="equipo-name">Barra olímpica + discos</div><div class="equipo-grupos">Todo el cuerpo</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'libres',2,'Gemelos · Core')" data-exs="2" data-grupos="gemelos,core">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Discos sueltos</div><div class="equipo-grupos">Gemelos · Core</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría 3: Máquinas -->
+      <div class="cat-card" id="cat-2">
+        <div class="cat-header" onclick="toggleCat(2)">
+          <div class="cat-left">
+            <span class="cat-emoji">🔗</span>
+            <div>
+              <div class="cat-name">Máquinas y cables</div>
+              <div class="cat-count" id="cc-2">0 / 6 seleccionados</div>
+            </div>
+          </div>
+          <div class="cat-right">
+            <span class="cat-badge hidden" id="cb-2">0</span>
+            <span class="chevron" id="ch-2">▼</span>
+          </div>
+        </div>
+        <div class="cat-body" id="cb2">
+          <button class="cat-selall" onclick="selCat(2)">Seleccionar categoría</button>
+          <div class="equipo-row" onclick="tog(this,'maquinas',6,'Pecho · Espalda · Hombros')" data-exs="6" data-grupos="pecho,espalda,hombros,biceps,triceps,core">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Poleas cruzadas</div><div class="equipo-grupos">Pecho · Espalda · Hombros</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'maquinas',4,'Espalda · Bíceps · Trapecio')" data-exs="4" data-grupos="espalda,biceps,trapecio">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Polea alta — jalón al pecho</div><div class="equipo-grupos">Espalda · Bíceps · Trapecio</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'maquinas',5,'Cuádriceps · Glúteos')" data-exs="5" data-grupos="cuadriceps,gluteos,isquiotibiales">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Prensa de piernas</div><div class="equipo-grupos">Cuádriceps · Glúteos · Isquios</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'maquinas',3,'Isquiotibiales')" data-exs="3" data-grupos="isquiotibiales">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Curl femoral (máquina)</div><div class="equipo-grupos">Isquiotibiales</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'maquinas',3,'Pecho')" data-exs="3" data-grupos="pecho,triceps,hombros">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Pec deck / Aperturas</div><div class="equipo-grupos">Pecho · Tríceps · Hombros</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría 4: Cardio -->
+      <div class="cat-card" id="cat-3">
+        <div class="cat-header" onclick="toggleCat(3)">
+          <div class="cat-left">
+            <span class="cat-emoji">🏃</span>
+            <div>
+              <div class="cat-name">Cardio</div>
+              <div class="cat-count" id="cc-3">0 / 4 seleccionados</div>
+            </div>
+          </div>
+          <div class="cat-right">
+            <span class="cat-badge hidden" id="cb-3">0</span>
+            <span class="chevron" id="ch-3">▼</span>
+          </div>
+        </div>
+        <div class="cat-body" id="cb3">
+          <button class="cat-selall" onclick="selCat(3)">Seleccionar categoría</button>
+          <div class="equipo-row" onclick="tog(this,'cardio',0,'Cardio general')" data-exs="0" data-grupos="core,gemelos">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Caminadora / Treadmill</div><div class="equipo-grupos">Cardio · Gemelos · Core</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'cardio',0,'Cardio general')" data-exs="0" data-grupos="cuadriceps,gluteos">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Bicicleta estática</div><div class="equipo-grupos">Cardio · Cuádriceps · Glúteos</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'cardio',0,'Cardio general')" data-exs="0" data-grupos="cuadriceps,gluteos,core">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Elíptica</div><div class="equipo-grupos">Cardio · Cuerpo completo</div></div>
+          </div>
+          <div class="equipo-row" onclick="tog(this,'cardio',0,'Cardio general')" data-exs="0" data-grupos="core,hombros,espalda">
+            <div class="checkbox"></div><div class="equipo-info"><div class="equipo-name">Remo (ergómetro)</div><div class="equipo-grupos">Cardio · Core · Espalda</div></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tip -->
+      <div class="tip-box" id="tip-box" style="display:none;">
+        <div class="tip-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
+            <circle cx="8" cy="8" r="7" stroke="#1D9E75" stroke-width="1.5" fill="none"/>
+            <path d="M8 7v5" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="8" cy="4.5" r="1" fill="#1D9E75"/>
+          </svg>
+        </div>
+        <div class="tip-text">Sin equipamiento generaremos una rutina de peso corporal personalizada para ti.</div>
+      </div>
+
+    </div>
+
+    <div class="nav">
+      <button class="btn-back">← Atrás</button>
+      <button class="btn-next">Ver mi plan →</button>
+    </div>
+
+  </div>
+  <div class="home-bar"><div class="pill"></div></div>
+</div>
+<div class="screen-label">Step 4 — Equipamiento</div>
+</div></div>
+
+<script>
+var state = { sel:0, ej:0, grupos:new Set() };
+
+var catTotals = [5,4,5,4];
+var catSel = [0,0,0,0];
+var catOpen = [false,true,false,false];
+
+function updStats() {
+  document.getElementById('s-sel').textContent = state.sel;
+  document.getElementById('s-ej').textContent = state.ej;
+  document.getElementById('s-gm').textContent = state.grupos.size;
+  document.getElementById('tip-box').style.display = state.sel === 0 ? 'flex' : 'none';
+}
+
+function tog(row, catKey, exs, gruposStr) {
+  var isOn = row.classList.contains('on');
+  var cb = row.querySelector('.checkbox');
+  var catIdx = {'bancos':0,'libres':1,'maquinas':2,'cardio':3}[catKey];
+  
+  if (isOn) {
+    row.classList.remove('on');
+    cb.innerHTML = '';
+    cb.classList.remove('on');
+    state.sel--;
+    state.ej = Math.max(0, state.ej - exs);
+    catSel[catIdx]--;
+  } else {
+    row.classList.add('on');
+    cb.classList.add('on');
+    cb.innerHTML = '<svg width="10" height="10" viewBox="0 0 10 10" fill="none"><path d="M2 5l2.5 2.5L8 3" stroke="white" stroke-width="1.5" stroke-linecap="round"/></svg>';
+    state.sel++;
+    state.ej += exs;
+    catSel[catIdx]++;
+    var gs = row.dataset.grupos ? row.dataset.grupos.split(',') : [];
+    gs.forEach(function(g){ state.grupos.add(g); });
+  }
+  updCatBadge(catIdx);
+  updStats();
+}
+
+function updCatBadge(i) {
+  var badge = document.getElementById('cb-'+i);
+  var count = document.getElementById('cc-'+i);
+  var total = catTotals[i];
+  badge.textContent = catSel[i];
+  badge.className = 'cat-badge' + (catSel[i] > 0 ? '' : ' hidden');
+  count.textContent = catSel[i] + ' / ' + total + ' seleccionados';
+}
+
+function toggleCat(i) {
+  catOpen[i] = !catOpen[i];
+  document.getElementById('cb'+i).className = 'cat-body' + (catOpen[i] ? ' open' : '');
+  document.getElementById('ch-'+i).textContent = catOpen[i] ? '▲' : '▼';
+}
+
+function selCat(i) {
+  var body = document.getElementById('cb'+i);
+  var rows = body.querySelectorAll('.equipo-row');
+  rows.forEach(function(row) {
+    if (!row.classList.contains('on')) {
+      var catKey = ['bancos','libres','maquinas','cardio'][i];
+      tog(row, catKey, parseInt(row.dataset.exs)||0, '');
+    }
+  });
+}
+
+function selAll() {
+  document.querySelectorAll('.equipo-row').forEach(function(row) {
+    if (!row.classList.contains('on')) {
+      var catIdx = 0;
+      var card = row.closest('.cat-card');
+      var id = card.id.replace('cat-','');
+      var catKey = ['bancos','libres','maquinas','cardio'][parseInt(id)];
+      tog(row, catKey, parseInt(row.dataset.exs)||0, '');
+    }
+  });
+}
+
+function clearAll() {
+  document.querySelectorAll('.equipo-row.on').forEach(function(row) {
+    var card = row.closest('.cat-card');
+    var id = card.id.replace('cat-','');
+    var catKey = ['bancos','libres','maquinas','cardio'][parseInt(id)];
+    tog(row, catKey, parseInt(row.dataset.exs)||0, '');
+  });
+}
+
+updCatBadge(0); updCatBadge(1); updCatBadge(2); updCatBadge(3);
+state.sel = 2; state.ej = 15; state.grupos = new Set(['pecho','espalda','hombros','biceps','triceps','cuadriceps','gluteos','core']);
+catSel[1] = 2;
+updCatBadge(1);
+updStats();
+</script>

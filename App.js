@@ -13,6 +13,7 @@ import {
 import { StatusBar } from "expo-status-bar";
 
 import StepBar from "./src/components/StepBar";
+import SplashScreen from "./src/screens/SplashScreen";
 import StepPerfil from "./src/screens/StepPerfil";
 import StepRutina from "./src/screens/StepRutina";
 import StepObjetivo from "./src/screens/StepObjetivo";
@@ -40,26 +41,25 @@ const ALL_EQUIPMENT_IDS = equipmentData.categorias.flatMap(cat =>
   cat.equipos.map(e => e.id)
 );
 
-// Steps: 0=Perfil 1=Rutina 2=Objetivo 3=Equipamiento 4=Plan
 const TOTAL_STEPS = 5;
 
 export default function App() {
-  const [step, setStep]                   = useState(0);
-  const [data, setData]                   = useState(INITIAL_DATA);
-  const [plan, setPlan]                   = useState(null);
-  const [routine, setRoutine]             = useState([]);
+  const [showSplash, setShowSplash]         = useState(true);
+  const [step, setStep]                     = useState(0);
+  const [data, setData]                     = useState(INITIAL_DATA);
+  const [plan, setPlan]                     = useState(null);
+  const [routine, setRoutine]               = useState([]);
   const [selectedEquipment, setSelectedEquipment] = useState([]);
-  const [exercises, setExercises]         = useState([]);
-  const [db, setDb]                       = useState(null);
-  const [dbReady, setDbReady]             = useState(false);
+  const [exercises, setExercises]           = useState([]);
+  const [db, setDb]                         = useState(null);
+  const [dbReady, setDbReady]               = useState(false);
 
-  // ─── Inicializar base de datos al arrancar ───────────────────────────────
   useEffect(() => {
     async function initDB() {
       try {
-        const db   = await openDatabase();
-        const exs  = await getAllExercises(db);
-        setDb(db);
+        const database = await openDatabase();
+        const exs      = await getAllExercises(database);
+        setDb(database);
         setExercises(exs);
       } catch (err) {
         console.error("Error iniciando base de datos:", err);
@@ -91,7 +91,6 @@ export default function App() {
       setStep(s => s + 1);
       return;
     }
-    // Step 3 → generar plan y rutina → ir a Step 4
     const p = buildPlan(data);
     const r = buildRoutine({
       exercises,
@@ -117,14 +116,25 @@ export default function App() {
     setSelectedEquipment([]);
   };
 
-  // ─── Pantalla de carga mientras la BD se inicializa ──────────────────────
+  // Loading screen
   if (!dbReady) {
     return (
       <SafeAreaView style={styles.safe}>
+        <StatusBar style="dark" />
         <View style={styles.loadingContainer}>
           <ActivityIndicator size="large" color={colors.primary} />
           <Text style={styles.loadingText}>Cargando ejercicios…</Text>
         </View>
+      </SafeAreaView>
+    );
+  }
+
+  // Splash screen
+  if (showSplash) {
+    return (
+      <SafeAreaView style={styles.safe}>
+        <StatusBar style="dark" />
+        <SplashScreen onStart={() => setShowSplash(false)} />
       </SafeAreaView>
     );
   }
@@ -169,7 +179,7 @@ export default function App() {
             <View style={styles.nav}>
               {step > 0 && (
                 <TouchableOpacity style={styles.backBtn} onPress={handleBack} activeOpacity={0.7}>
-                  <Text style={styles.backLabel}>Atrás</Text>
+                  <Text style={styles.backLabel}>← Atrás</Text>
                 </TouchableOpacity>
               )}
               <TouchableOpacity
@@ -179,7 +189,7 @@ export default function App() {
                 activeOpacity={0.8}
               >
                 <Text style={[styles.nextLabel, !canNext() && styles.nextLabelDisabled]}>
-                  {step === 3 ? "Ver mi plan" : "Siguiente →"}
+                  {step === 3 ? "Ver mi plan →" : "Siguiente →"}
                 </Text>
               </TouchableOpacity>
             </View>
@@ -194,7 +204,7 @@ const styles = StyleSheet.create({
   safe:    { flex: 1, backgroundColor: colors.background },
   flex:    { flex: 1 },
   scroll:  { flex: 1 },
-  content: { padding: 16, paddingTop: 24 },
+  content: { padding: 16, paddingTop: 18 },
   loadingContainer: {
     flex: 1,
     justifyContent: "center",
@@ -208,11 +218,12 @@ const styles = StyleSheet.create({
   nav: {
     flexDirection: "row",
     gap: 8,
-    marginTop: 16,
+    marginTop: 14,
+    paddingBottom: 24,
   },
   backBtn: {
     flex: 1,
-    padding: 12,
+    padding: 13,
     borderRadius: radius.md,
     borderWidth: 0.5,
     borderColor: colors.border,
@@ -225,7 +236,7 @@ const styles = StyleSheet.create({
   },
   nextBtn: {
     flex: 2,
-    padding: 12,
+    padding: 13,
     borderRadius: radius.md,
     backgroundColor: colors.primary,
     alignItems: "center",

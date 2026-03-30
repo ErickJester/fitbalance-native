@@ -1,0 +1,244 @@
+
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+.scene { display:flex; justify-content:center; padding:2rem 1rem; background:var(--color-background-secondary); border-radius:var(--border-radius-lg); min-height:900px; }
+.phone { width:320px; background:#f0efeb; border-radius:40px; border:2px solid #c8c8c4; overflow:hidden; box-shadow:0 0 0 6px #e2e1dc,0 0 0 7px #c8c8c4; }
+.notch { height:44px; background:#f0efeb; display:flex; align-items:center; justify-content:space-between; padding:0 20px; }
+.notch span { font-size:12px; font-weight:500; color:#1a1a1a; font-family:var(--font-sans); }
+.screen { background:#f0efeb; display:flex; flex-direction:column; }
+
+.stepbar { display:flex; gap:6px; padding:18px 16px 0; }
+.si { flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; }
+.sb { height:3px; width:100%; border-radius:99px; background:#e8e7e3; }
+.sb.on { background:#1D9E75; }
+.sl { font-size:10px; color:#6b6b6b; font-family:var(--font-sans); }
+.sl.on { color:#0F6E56; font-weight:500; }
+
+.scroll { padding:14px 16px 0; display:flex; flex-direction:column; gap:10px; }
+
+/* header card */
+.header-card { background:#1D9E75; border-radius:14px; padding:16px 18px; display:flex; align-items:center; gap:14px; }
+.header-icon { width:48px; height:48px; border-radius:12px; background:#E1F5EE; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.header-text-title { font-size:16px; font-weight:500; color:#ffffff; font-family:var(--font-sans); }
+.header-text-sub { font-size:12px; color:#9FE1CB; font-family:var(--font-sans); margin-top:2px; }
+
+/* metric mini row */
+.metrics-row { display:flex; gap:8px; }
+.metric-card { flex:1; background:#ffffff; border:0.5px solid #d0d0cc; border-radius:12px; padding:12px; display:flex; flex-direction:column; align-items:center; gap:2px; }
+.metric-val { font-size:20px; font-weight:500; color:#1D9E75; font-family:var(--font-sans); }
+.metric-lbl { font-size:10px; color:#6b6b6b; font-family:var(--font-sans); text-align:center; }
+
+/* main card */
+.card { background:#ffffff; border:0.5px solid #d0d0cc; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:16px; }
+
+.section-title { font-size:11px; font-weight:500; color:#6b6b6b; text-transform:uppercase; letter-spacing:0.6px; font-family:var(--font-sans); margin-bottom:-4px; }
+
+/* sex toggle */
+.sex-row { display:flex; gap:0; border:0.5px solid #d0d0cc; border-radius:10px; overflow:hidden; }
+.sex-btn { flex:1; padding:11px 0; text-align:center; font-size:14px; font-family:var(--font-sans); color:#6b6b6b; background:#f8f8f6; cursor:pointer; border:none; display:flex; align-items:center; justify-content:center; gap:6px; transition:all 0.15s; }
+.sex-btn.on { background:#1D9E75; color:#ffffff; font-weight:500; }
+.sex-btn:first-child { border-right:0.5px solid #d0d0cc; }
+.sex-btn.on:first-child { border-right:0.5px solid #0F6E56; }
+
+/* number inputs row */
+.inputs-grid { display:grid; grid-template-columns:1fr 1fr 1fr; gap:8px; }
+.inp-block { display:flex; flex-direction:column; gap:5px; }
+.inp-lbl { font-size:11px; color:#6b6b6b; font-family:var(--font-sans); }
+.inp-wrap { position:relative; }
+.inp-wrap input { width:100%; padding:9px 28px 9px 10px; border-radius:8px; border:0.5px solid #d0d0cc; background:#f8f8f6; color:#1a1a1a; font-size:14px; font-weight:500; font-family:var(--font-sans); outline:none; }
+.inp-unit { position:absolute; right:8px; top:50%; transform:translateY(-50%); font-size:11px; color:#6b6b6b; font-family:var(--font-sans); pointer-events:none; }
+
+/* activity buttons */
+.act-grid { display:flex; flex-direction:column; gap:6px; }
+.act-btn { padding:10px 14px; border-radius:10px; border:0.5px solid #d0d0cc; background:#f8f8f6; color:#1a1a1a; font-size:13px; cursor:pointer; font-family:var(--font-sans); text-align:left; display:flex; align-items:center; gap:10px; transition:all 0.15s; }
+.act-btn.on { border:1.5px solid #1D9E75; background:#E1F5EE; color:#0F6E56; font-weight:500; }
+.act-dot { width:8px; height:8px; border-radius:50%; background:#d0d0cc; flex-shrink:0; transition:background 0.15s; }
+.act-btn.on .act-dot { background:#1D9E75; }
+.act-label { flex:1; }
+.act-freq { font-size:11px; color:#6b6b6b; font-family:var(--font-sans); }
+.act-btn.on .act-freq { color:#0F6E56; }
+
+/* IMC badge */
+.imc-row { background:#E1F5EE; border-radius:10px; padding:10px 14px; display:flex; align-items:center; justify-content:space-between; }
+.imc-label { font-size:12px; color:#0F6E56; font-family:var(--font-sans); }
+.imc-val { font-size:14px; font-weight:500; color:#0F6E56; font-family:var(--font-sans); }
+
+/* nav */
+.nav { display:flex; gap:8px; padding:14px 16px 24px; }
+.btn-next { flex:1; padding:13px; border-radius:10px; background:#1D9E75; border:none; color:#fff; font-size:14px; font-weight:500; cursor:pointer; font-family:var(--font-sans); }
+
+.home-bar { display:flex; justify-content:center; padding:10px 0 6px; background:#f0efeb; }
+.pill { width:100px; height:4px; border-radius:99px; background:#1a1a1a; opacity:0.2; }
+.screen-label { text-align:center; font-size:12px; color:var(--color-text-secondary); margin-top:14px; font-family:var(--font-sans); }
+</style>
+
+<div class="scene"><div>
+<div class="phone">
+  <div class="notch"><span>9:41</span><span>▲ WiFi ■</span></div>
+  <div class="screen">
+
+    <div class="stepbar">
+      <div class="si"><div class="sb on"></div><span class="sl on">Perfil</span></div>
+      <div class="si"><div class="sb"></div><span class="sl">Rutina</span></div>
+      <div class="si"><div class="sb"></div><span class="sl">Objetivo</span></div>
+      <div class="si"><div class="sb"></div><span class="sl">Equipo</span></div>
+      <div class="si"><div class="sb"></div><span class="sl">Plan</span></div>
+    </div>
+
+    <div class="scroll">
+
+      <!-- Header card verde -->
+      <div class="header-card">
+        <div class="header-icon">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <circle cx="13" cy="9" r="5" stroke="#1D9E75" stroke-width="2" fill="none"/>
+            <path d="M4 22c0-5 4-8 9-8s9 3 9 8" stroke="#1D9E75" stroke-width="2" stroke-linecap="round" fill="none"/>
+          </svg>
+        </div>
+        <div>
+          <div class="header-text-title">Tu perfil</div>
+          <div class="header-text-sub">Paso 1 de 5 — cuéntanos sobre ti</div>
+        </div>
+      </div>
+
+      <!-- Mini métricas reactivas -->
+      <div class="metrics-row">
+        <div class="metric-card">
+          <div class="metric-val" id="m-peso">75</div>
+          <div class="metric-lbl">kg</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" id="m-altura">178</div>
+          <div class="metric-lbl">cm</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" id="m-imc">23.7</div>
+          <div class="metric-lbl">IMC</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" id="m-edad">28</div>
+          <div class="metric-lbl">años</div>
+        </div>
+      </div>
+
+      <!-- Card principal -->
+      <div class="card">
+
+        <!-- Sexo -->
+        <div>
+          <div class="section-title">Sexo</div>
+          <div style="margin-top:8px;" class="sex-row">
+            <button class="sex-btn on" id="btn-m" onclick="setSex('m')">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="5" cy="8" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M8 5l4-4M12 1h-3M12 1v3" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Hombre
+            </button>
+            <button class="sex-btn" id="btn-f" onclick="setSex('f')">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="5" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M7 9v4M5 11h4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+              Mujer
+            </button>
+          </div>
+        </div>
+
+        <!-- Datos numéricos -->
+        <div>
+          <div class="section-title">Datos físicos</div>
+          <div style="margin-top:8px;" class="inputs-grid">
+            <div class="inp-block">
+              <span class="inp-lbl">Edad</span>
+              <div class="inp-wrap">
+                <input type="number" value="28" min="10" max="99" oninput="upd(this,'m-edad',null,null)" />
+                <span class="inp-unit">a</span>
+              </div>
+            </div>
+            <div class="inp-block">
+              <span class="inp-lbl">Peso</span>
+              <div class="inp-wrap">
+                <input id="inp-peso" type="number" value="75" min="30" max="250" oninput="updImc()" />
+                <span class="inp-unit">kg</span>
+              </div>
+            </div>
+            <div class="inp-block">
+              <span class="inp-lbl">Altura</span>
+              <div class="inp-wrap">
+                <input id="inp-altura" type="number" value="178" min="100" max="250" oninput="updImc()" />
+                <span class="inp-unit">cm</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- IMC badge -->
+        <div class="imc-row">
+          <span class="imc-label" id="imc-label">Peso normal</span>
+          <span class="imc-val" id="imc-badge">IMC 23.7</span>
+        </div>
+
+        <!-- Actividad -->
+        <div>
+          <div class="section-title">Nivel de actividad</div>
+          <div style="margin-top:8px;" class="act-grid">
+            <button class="act-btn" onclick="selAct(this)">
+              <div class="act-dot"></div>
+              <div><div class="act-label">Sedentario</div><div class="act-freq">Sin ejercicio habitual</div></div>
+            </button>
+            <button class="act-btn" onclick="selAct(this)">
+              <div class="act-dot"></div>
+              <div><div class="act-label">Ligero</div><div class="act-freq">1–2 días / semana</div></div>
+            </button>
+            <button class="act-btn on" onclick="selAct(this)">
+              <div class="act-dot"></div>
+              <div><div class="act-label">Moderado</div><div class="act-freq">3–4 días / semana</div></div>
+            </button>
+            <button class="act-btn" onclick="selAct(this)">
+              <div class="act-dot"></div>
+              <div><div class="act-label">Activo</div><div class="act-freq">5–6 días / semana</div></div>
+            </button>
+            <button class="act-btn" onclick="selAct(this)">
+              <div class="act-dot"></div>
+              <div><div class="act-label">Muy activo</div><div class="act-freq">Diario + trabajo físico</div></div>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="nav">
+      <button class="btn-next">Siguiente →</button>
+    </div>
+
+  </div>
+  <div class="home-bar"><div class="pill"></div></div>
+</div>
+<div class="screen-label">Step 1 — Tu perfil</div>
+</div></div>
+
+<script>
+function setSex(v) {
+  document.getElementById('btn-m').className = 'sex-btn' + (v==='m'?' on':'');
+  document.getElementById('btn-f').className = 'sex-btn' + (v==='f'?' on':'');
+}
+
+function updImc() {
+  var p = parseFloat(document.getElementById('inp-peso').value) || 0;
+  var a = parseFloat(document.getElementById('inp-altura').value) || 1;
+  var imc = p / ((a/100)*(a/100));
+  var imcR = Math.round(imc * 10) / 10;
+  document.getElementById('m-peso').textContent = Math.round(p);
+  document.getElementById('m-altura').textContent = Math.round(a);
+  document.getElementById('m-imc').textContent = imcR.toFixed(1);
+  document.getElementById('imc-badge').textContent = 'IMC ' + imcR.toFixed(1);
+  var label = imc < 18.5 ? 'Bajo peso' : imc < 25 ? 'Peso normal' : imc < 30 ? 'Sobrepeso' : 'Obesidad';
+  document.getElementById('imc-label').textContent = label;
+}
+
+function upd(inp, id, min, max) {
+  var v = parseInt(inp.value) || 0;
+  document.getElementById(id).textContent = v;
+}
+
+function selAct(btn) {
+  document.querySelectorAll('.act-btn').forEach(function(b){ b.className='act-btn'; });
+  btn.className = 'act-btn on';
+}
+</script>

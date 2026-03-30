@@ -1,51 +1,40 @@
 import React, { useState } from "react";
-import {
-  View, Text, TouchableOpacity, StyleSheet, ScrollView
-} from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet } from "react-native";
 import { getEquipmentStats } from "../logic/routineBuilder";
 import { colors, radius } from "../components/theme";
+import HeaderCard from "../components/HeaderCard";
+import MiniMetrics from "../components/MiniMetrics";
+
+const GRUPO_LABEL = {
+  pecho: "Pecho", espalda: "Espalda", hombros: "Hombros",
+  biceps: "Bíceps", triceps: "Tríceps", cuadriceps: "Cuádriceps",
+  isquiotibiales: "Isquios", gluteos: "Glúteos", gemelos: "Gemelos",
+  core: "Core", trapecio: "Trapecio", lumbar: "Lumbar",
+  aductores: "Aductores", abductores: "Abductores",
+};
 
 export default function StepEquipment({ exercises, equipmentData, selectedEquipment, onToggle, onSelectAll, onClearAll }) {
   const [expandedCat, setExpandedCat] = useState(null);
   const stats = getEquipmentStats({ exercises, selectedEquipment, equipmentData });
 
-  const totalEquipos = equipmentData.categorias.reduce(
-    (acc, cat) => acc + cat.equipos.length, 0
-  );
+  const metrics = [
+    { value: String(selectedEquipment.length), label: "equipos\nseleccionados" },
+    { value: String(stats.totalEjercicios), label: "ejercicios\ndisponibles" },
+    { value: String(stats.gruposCubiertos.length), label: "grupos\nmusculares" },
+  ];
 
   return (
     <View>
-      {/* Header */}
-      <Text style={styles.title}>¿Qué tienes en tu gym?</Text>
-      <Text style={styles.subtitle}>
-        Selecciona el equipamiento disponible. La rutina se armará solo con lo que tengas.
-      </Text>
+      <HeaderCard icon="✅" title="Tu equipamiento" subtitle="Paso 4 de 5 — ¿qué tienes en tu gym?" />
+      <MiniMetrics items={metrics} />
 
-      {/* Stats bar */}
-      <View style={styles.statsBar}>
-        <View style={styles.statItem}>
-          <Text style={styles.statNum}>{selectedEquipment.length}</Text>
-          <Text style={styles.statLabel}>de {totalEquipos} equipos</Text>
-        </View>
-        <View style={styles.statDivider} />
-        <View style={styles.statItem}>
-          <Text style={styles.statNum}>{stats.totalEjercicios}</Text>
-          <Text style={styles.statLabel}>ejercicios disponibles</Text>
-        </View>
-        <View style={styles.statDivider} />
-        <View style={styles.statItem}>
-          <Text style={styles.statNum}>{stats.gruposCubiertos.length}</Text>
-          <Text style={styles.statLabel}>grupos musculares</Text>
-        </View>
-      </View>
-
-      {/* Acciones rápidas */}
-      <View style={styles.quickActions}>
-        <TouchableOpacity style={styles.quickBtn} onPress={onSelectAll} activeOpacity={0.7}>
-          <Text style={styles.quickBtnLabel}>Seleccionar todo</Text>
+      {/* Quick actions */}
+      <View style={styles.quickRow}>
+        <TouchableOpacity style={styles.btnAll} onPress={onSelectAll} activeOpacity={0.7}>
+          <Text style={styles.btnAllText}>Seleccionar todo</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={[styles.quickBtn, styles.quickBtnOutline]} onPress={onClearAll} activeOpacity={0.7}>
-          <Text style={[styles.quickBtnLabel, styles.quickBtnLabelOutline]}>Limpiar</Text>
+        <TouchableOpacity style={styles.btnClear} onPress={onClearAll} activeOpacity={0.7}>
+          <Text style={styles.btnClearText}>Limpiar</Text>
         </TouchableOpacity>
       </View>
 
@@ -56,72 +45,65 @@ export default function StepEquipment({ exercises, equipmentData, selectedEquipm
         const allInCat = selectedInCat === cat.equipos.length;
 
         return (
-          <View key={cat.id} style={styles.categoryCard}>
-            {/* Cabecera de categoría */}
+          <View key={cat.id} style={styles.catCard}>
             <TouchableOpacity
               style={styles.catHeader}
               onPress={() => setExpandedCat(isOpen ? null : cat.id)}
               activeOpacity={0.7}
             >
-              <View style={styles.catHeaderLeft}>
-                <Text style={styles.catIcon}>{cat.icono}</Text>
+              <View style={styles.catLeft}>
+                <Text style={styles.catEmoji}>{cat.icono}</Text>
                 <View>
-                  <Text style={styles.catNombre}>{cat.nombre}</Text>
-                  <Text style={styles.catCount}>
-                    {selectedInCat}/{cat.equipos.length} seleccionados
-                  </Text>
+                  <Text style={styles.catName}>{cat.nombre}</Text>
+                  <Text style={styles.catCount}>{selectedInCat} / {cat.equipos.length} seleccionados</Text>
                 </View>
               </View>
-              <View style={styles.catHeaderRight}>
+              <View style={styles.catRight}>
                 {selectedInCat > 0 && (
-                  <View style={styles.badge}>
-                    <Text style={styles.badgeText}>{selectedInCat}</Text>
+                  <View style={styles.catBadge}>
+                    <Text style={styles.catBadgeText}>{selectedInCat}</Text>
                   </View>
                 )}
                 <Text style={styles.chevron}>{isOpen ? "▲" : "▼"}</Text>
               </View>
             </TouchableOpacity>
 
-            {/* Lista de equipos */}
             {isOpen && (
-              <View style={styles.equiposList}>
-                {/* Seleccionar/limpiar categoría */}
+              <View style={styles.catBody}>
                 <TouchableOpacity
-                  style={styles.catSelectAll}
+                  style={styles.catSelAll}
                   onPress={() => {
                     const ids = cat.equipos.map(e => e.id);
-                    allInCat ? ids.forEach(id => onToggle(id, false)) : ids.forEach(id => onToggle(id, true));
+                    allInCat
+                      ? ids.forEach(id => onToggle(id, false))
+                      : ids.forEach(id => onToggle(id, true));
                   }}
                   activeOpacity={0.7}
                 >
-                  <Text style={styles.catSelectAllLabel}>
+                  <Text style={styles.catSelAllText}>
                     {allInCat ? "Deseleccionar categoría" : "Seleccionar categoría"}
                   </Text>
                 </TouchableOpacity>
 
                 {cat.equipos.map(equipo => {
-                  const selected = selectedEquipment.includes(equipo.id);
+                  const on = selectedEquipment.includes(equipo.id);
                   return (
                     <TouchableOpacity
                       key={equipo.id}
-                      style={[styles.equipoItem, selected && styles.equipoItemSelected]}
-                      onPress={() => onToggle(equipo.id, !selected)}
+                      style={[styles.equipoRow, on && styles.equipoRowOn]}
+                      onPress={() => onToggle(equipo.id, !on)}
                       activeOpacity={0.7}
                     >
-                      <View style={styles.equipoItemLeft}>
-                        <View style={[styles.checkbox, selected && styles.checkboxSelected]}>
-                          {selected && <Text style={styles.checkmark}>✓</Text>}
-                        </View>
-                        <View style={styles.equipoInfo}>
-                          <Text style={[styles.equipoNombre, selected && styles.equipoNombreSelected]}>
-                            {equipo.nombre}
+                      <View style={[styles.checkbox, on && styles.checkboxOn]}>
+                        {on && <Text style={styles.checkmark}>✓</Text>}
+                      </View>
+                      <View style={styles.equipoInfo}>
+                        <Text style={[styles.equipoName, on && styles.equipoNameOn]}>{equipo.nombre}</Text>
+                        {equipo.grupos.length > 0 && (
+                          <Text style={styles.equipoGrupos} numberOfLines={1}>
+                            {equipo.grupos.map(g => GRUPO_LABEL[g] || g).join(" · ")}
                           </Text>
-                          {equipo.grupos.length > 0 && (
-                            <Text style={styles.equipoGrupos} numberOfLines={1}>
-                              {equipo.grupos.map(g => GRUPO_LABEL[g] || g).join(" · ")}
-                            </Text>
-                          )}
-                        </View>
+                        )}
                       </View>
                     </TouchableOpacity>
                   );
@@ -135,8 +117,9 @@ export default function StepEquipment({ exercises, equipmentData, selectedEquipm
       {/* Tip */}
       {selectedEquipment.length === 0 && (
         <View style={styles.tipBox}>
+          <Text style={styles.tipIcon}>ℹ️</Text>
           <Text style={styles.tipText}>
-            💡 Sin equipamiento generaremos una rutina de peso corporal para ti.
+            Sin equipamiento generaremos una rutina de peso corporal personalizada para ti.
           </Text>
         </View>
       )}
@@ -144,198 +127,153 @@ export default function StepEquipment({ exercises, equipmentData, selectedEquipm
   );
 }
 
-const GRUPO_LABEL = {
-  pecho: "Pecho", espalda: "Espalda", hombros: "Hombros",
-  biceps: "Bíceps", triceps: "Tríceps", cuadriceps: "Cuádriceps",
-  isquiotibiales: "Isquios", gluteos: "Glúteos", gemelos: "Gemelos",
-  core: "Core", trapecio: "Trapecio", lumbar: "Lumbar",
-  aductores: "Aductores", abductores: "Abductores",
-};
-
 const styles = StyleSheet.create({
-  title: {
-    fontSize: 18,
-    fontWeight: "600",
-    color: colors.textPrimary,
-    marginBottom: 6,
-  },
-  subtitle: {
-    fontSize: 13,
-    color: colors.textSecondary,
-    lineHeight: 20,
-    marginBottom: 16,
-  },
-  // Stats
-  statsBar: {
-    flexDirection: "row",
-    backgroundColor: colors.card,
-    borderRadius: radius.md,
-    borderWidth: 0.5,
-    borderColor: colors.border,
-    padding: 12,
-    marginBottom: 12,
-    justifyContent: "space-around",
-  },
-  statItem: {
-    alignItems: "center",
-  },
-  statNum: {
-    fontSize: 20,
-    fontWeight: "600",
-    color: colors.primary,
-  },
-  statLabel: {
-    fontSize: 11,
-    color: colors.textSecondary,
-    marginTop: 2,
-  },
-  statDivider: {
-    width: 0.5,
-    backgroundColor: colors.border,
-  },
   // Quick actions
-  quickActions: {
+  quickRow: {
     flexDirection: "row",
     gap: 8,
-    marginBottom: 14,
+    marginBottom: 10,
   },
-  quickBtn: {
+  btnAll: {
     flex: 1,
-    padding: 8,
-    borderRadius: radius.sm,
+    padding: 9,
+    borderRadius: radius.md,
     backgroundColor: colors.primary,
     alignItems: "center",
   },
-  quickBtnOutline: {
-    backgroundColor: "transparent",
-    borderWidth: 0.5,
-    borderColor: colors.border,
-  },
-  quickBtnLabel: {
+  btnAllText: {
     fontSize: 13,
     fontWeight: "500",
-    color: "#fff",
+    color: "#ffffff",
   },
-  quickBtnLabelOutline: {
-    color: colors.textSecondary,
-  },
-  // Categorías
-  categoryCard: {
-    backgroundColor: colors.card,
+  btnClear: {
+    flex: 1,
+    padding: 9,
     borderRadius: radius.md,
+    backgroundColor: colors.card,
     borderWidth: 0.5,
     borderColor: colors.border,
-    marginBottom: 10,
+    alignItems: "center",
+  },
+  btnClearText: {
+    fontSize: 13,
+    color: colors.textPrimary,
+  },
+  // Category card
+  catCard: {
+    backgroundColor: colors.card,
+    borderWidth: 0.5,
+    borderColor: colors.border,
+    borderRadius: radius.lg,
     overflow: "hidden",
+    marginBottom: 10,
   },
   catHeader: {
     flexDirection: "row",
-    justifyContent: "space-between",
     alignItems: "center",
-    padding: 14,
+    justifyContent: "space-between",
+    padding: 13,
+    paddingHorizontal: 14,
   },
-  catHeaderLeft: {
+  catLeft: {
     flexDirection: "row",
     alignItems: "center",
     gap: 10,
     flex: 1,
   },
-  catIcon: {
-    fontSize: 22,
+  catEmoji: {
+    fontSize: 18,
+    width: 22,
   },
-  catNombre: {
+  catName: {
     fontSize: 14,
     fontWeight: "500",
     color: colors.textPrimary,
   },
   catCount: {
-    fontSize: 12,
+    fontSize: 11,
     color: colors.textSecondary,
     marginTop: 1,
   },
-  catHeaderRight: {
+  catRight: {
     flexDirection: "row",
     alignItems: "center",
     gap: 8,
   },
-  badge: {
+  catBadge: {
     backgroundColor: colors.primary,
-    borderRadius: 10,
+    borderRadius: 99,
+    paddingVertical: 2,
+    paddingHorizontal: 8,
     minWidth: 20,
-    height: 20,
     alignItems: "center",
-    justifyContent: "center",
-    paddingHorizontal: 5,
   },
-  badgeText: {
-    color: "#fff",
+  catBadgeText: {
     fontSize: 11,
-    fontWeight: "600",
-  },
-  chevron: {
-    fontSize: 11,
-    color: colors.textSecondary,
-  },
-  // Lista equipos
-  equiposList: {
-    borderTopWidth: 0.5,
-    borderTopColor: colors.border,
-  },
-  catSelectAll: {
-    padding: 10,
-    paddingHorizontal: 14,
-    borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
-    backgroundColor: colors.backgroundSecondary,
-  },
-  catSelectAllLabel: {
-    fontSize: 12,
-    color: colors.primary,
+    color: "#ffffff",
     fontWeight: "500",
   },
-  equipoItem: {
-    flexDirection: "row",
-    alignItems: "center",
-    padding: 12,
+  chevron: {
+    fontSize: 10,
+    color: colors.textSecondary,
+  },
+  // Category body
+  catBody: {
+    borderTopWidth: 0.5,
+    borderTopColor: colors.backgroundSecondary,
+  },
+  catSelAll: {
+    padding: 9,
     paddingHorizontal: 14,
+    backgroundColor: colors.inputBg,
     borderBottomWidth: 0.5,
-    borderBottomColor: colors.border,
+    borderBottomColor: colors.backgroundSecondary,
   },
-  equipoItemSelected: {
-    backgroundColor: colors.primaryLight,
+  catSelAllText: {
+    fontSize: 12,
+    fontWeight: "500",
+    color: colors.primary,
   },
-  equipoItemLeft: {
+  // Equipment row
+  equipoRow: {
     flexDirection: "row",
     alignItems: "center",
+    padding: 11,
+    paddingHorizontal: 14,
     gap: 12,
-    flex: 1,
+    borderBottomWidth: 0.5,
+    borderBottomColor: colors.background,
+  },
+  equipoRowOn: {
+    backgroundColor: "#f0faf6",
   },
   checkbox: {
-    width: 20,
-    height: 20,
-    borderRadius: 5,
+    width: 18,
+    height: 18,
+    borderRadius: 4,
     borderWidth: 1.5,
     borderColor: colors.border,
+    backgroundColor: colors.card,
     alignItems: "center",
     justifyContent: "center",
   },
-  checkboxSelected: {
+  checkboxOn: {
     backgroundColor: colors.primary,
     borderColor: colors.primary,
   },
   checkmark: {
-    color: "#fff",
-    fontSize: 12,
+    color: "#ffffff",
+    fontSize: 11,
     fontWeight: "700",
   },
   equipoInfo: {
     flex: 1,
   },
-  equipoNombre: {
+  equipoName: {
     fontSize: 13,
     color: colors.textPrimary,
   },
-  equipoNombreSelected: {
+  equipoNameOn: {
     color: colors.primaryDark,
     fontWeight: "500",
   },
@@ -348,13 +286,20 @@ const styles = StyleSheet.create({
   tipBox: {
     backgroundColor: colors.primaryLight,
     borderRadius: radius.md,
-    padding: 12,
-    marginTop: 4,
-    marginBottom: 8,
+    padding: 11,
+    paddingHorizontal: 14,
+    flexDirection: "row",
+    alignItems: "flex-start",
+    gap: 8,
+  },
+  tipIcon: {
+    fontSize: 14,
+    marginTop: 1,
   },
   tipText: {
-    fontSize: 13,
+    flex: 1,
+    fontSize: 12,
     color: colors.primaryDark,
-    lineHeight: 20,
+    lineHeight: 18,
   },
 });

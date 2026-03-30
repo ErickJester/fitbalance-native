@@ -1,0 +1,223 @@
+
+<style>
+* { box-sizing:border-box; margin:0; padding:0; }
+.scene { display:flex; justify-content:center; padding:2rem 1rem; background:var(--color-background-secondary); border-radius:var(--border-radius-lg); min-height:900px; }
+.phone { width:320px; background:#f0efeb; border-radius:40px; border:2px solid #c8c8c4; overflow:hidden; box-shadow:0 0 0 6px #e2e1dc,0 0 0 7px #c8c8c4; }
+.notch { height:44px; background:#f0efeb; display:flex; align-items:center; justify-content:space-between; padding:0 20px; }
+.notch span { font-size:12px; font-weight:500; color:#1a1a1a; font-family:var(--font-sans); }
+.screen { background:#f0efeb; display:flex; flex-direction:column; }
+
+.stepbar { display:flex; gap:6px; padding:18px 16px 0; }
+.si { flex:1; display:flex; flex-direction:column; align-items:center; gap:4px; }
+.sb { height:3px; width:100%; border-radius:99px; background:#e8e7e3; }
+.sb.on { background:#1D9E75; }
+.sl { font-size:10px; color:#6b6b6b; font-family:var(--font-sans); }
+.sl.on { color:#0F6E56; font-weight:500; }
+
+.scroll { padding:14px 16px 0; display:flex; flex-direction:column; gap:10px; }
+
+.header-card { background:#1D9E75; border-radius:14px; padding:16px 18px; display:flex; align-items:center; gap:14px; }
+.header-icon { width:48px; height:48px; border-radius:12px; background:#E1F5EE; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+.header-text-title { font-size:16px; font-weight:500; color:#ffffff; font-family:var(--font-sans); }
+.header-text-sub { font-size:12px; color:#9FE1CB; font-family:var(--font-sans); margin-top:2px; }
+
+.metrics-row { display:flex; gap:8px; }
+.metric-card { flex:1; background:#ffffff; border:0.5px solid #d0d0cc; border-radius:12px; padding:12px; display:flex; flex-direction:column; align-items:center; gap:2px; }
+.metric-val { font-size:20px; font-weight:500; color:#1D9E75; font-family:var(--font-sans); }
+.metric-lbl { font-size:10px; color:#6b6b6b; font-family:var(--font-sans); text-align:center; }
+
+.card { background:#ffffff; border:0.5px solid #d0d0cc; border-radius:14px; padding:18px; display:flex; flex-direction:column; gap:16px; }
+.section-title { font-size:11px; font-weight:500; color:#6b6b6b; text-transform:uppercase; letter-spacing:0.6px; font-family:var(--font-sans); }
+
+.days-row { display:flex; gap:6px; margin-top:8px; }
+.day-btn { flex:1; aspect-ratio:1; border-radius:10px; border:0.5px solid #d0d0cc; background:#f8f8f6; color:#1a1a1a; font-size:14px; font-weight:500; cursor:pointer; font-family:var(--font-sans); display:flex; align-items:center; justify-content:center; transition:all 0.15s; padding:0; }
+.day-btn.on { background:#1D9E75; border-color:#1D9E75; color:#ffffff; }
+
+.slider-wrap { margin-top:8px; }
+.slider-row { display:flex; align-items:center; gap:10px; }
+.slider-row input[type=range] { flex:1; accent-color:#1D9E75; }
+.slider-val { font-size:15px; font-weight:500; color:#1D9E75; font-family:var(--font-sans); min-width:48px; text-align:right; }
+.slider-labels { display:flex; justify-content:space-between; margin-top:4px; }
+.slider-labels span { font-size:10px; color:#6b6b6b; font-family:var(--font-sans); }
+
+.diet-grid { display:flex; flex-direction:column; gap:6px; margin-top:8px; }
+.diet-btn { padding:11px 14px; border-radius:10px; border:0.5px solid #d0d0cc; background:#f8f8f6; color:#1a1a1a; font-size:13px; cursor:pointer; font-family:var(--font-sans); text-align:left; display:flex; align-items:center; gap:10px; transition:all 0.15s; }
+.diet-btn.on { border:1.5px solid #1D9E75; background:#E1F5EE; color:#0F6E56; font-weight:500; }
+.diet-dot { width:8px; height:8px; border-radius:50%; background:#d0d0cc; flex-shrink:0; }
+.diet-btn.on .diet-dot { background:#1D9E75; }
+.diet-info { display:flex; flex-direction:column; gap:1px; }
+.diet-label { font-size:13px; }
+.diet-sub { font-size:11px; color:#6b6b6b; font-family:var(--font-sans); }
+.diet-btn.on .diet-sub { color:#0F6E56; }
+
+.summary-card { background:#E1F5EE; border-radius:10px; padding:12px 14px; display:flex; align-items:center; justify-content:space-between; }
+.summary-text { font-size:12px; color:#0F6E56; font-family:var(--font-sans); line-height:1.5; }
+.summary-val { font-size:18px; font-weight:500; color:#1D9E75; font-family:var(--font-sans); white-space:nowrap; }
+
+.nav { display:flex; gap:8px; padding:14px 16px 24px; }
+.btn-back { flex:1; padding:13px; border-radius:10px; background:#ffffff; border:0.5px solid #d0d0cc; color:#1a1a1a; font-size:14px; cursor:pointer; font-family:var(--font-sans); }
+.btn-next { flex:2; padding:13px; border-radius:10px; background:#1D9E75; border:none; color:#fff; font-size:14px; font-weight:500; cursor:pointer; font-family:var(--font-sans); }
+
+.home-bar { display:flex; justify-content:center; padding:10px 0 6px; background:#f0efeb; }
+.pill { width:100px; height:4px; border-radius:99px; background:#1a1a1a; opacity:0.2; }
+.screen-label { text-align:center; font-size:12px; color:var(--color-text-secondary); margin-top:14px; font-family:var(--font-sans); }
+</style>
+
+<div class="scene"><div>
+<div class="phone">
+  <div class="notch"><span>9:41</span><span>▲ WiFi ■</span></div>
+  <div class="screen">
+
+    <div class="stepbar">
+      <div class="si"><div class="sb on"></div><span class="sl on">Perfil</span></div>
+      <div class="si"><div class="sb on"></div><span class="sl on">Rutina</span></div>
+      <div class="si"><div class="sb"></div><span class="sl">Objetivo</span></div>
+      <div class="si"><div class="sb"></div><span class="sl">Equipo</span></div>
+      <div class="si"><div class="sb"></div><span class="sl">Plan</span></div>
+    </div>
+
+    <div class="scroll">
+
+      <div class="header-card">
+        <div class="header-icon">
+          <svg width="26" height="26" viewBox="0 0 26 26" fill="none">
+            <rect x="3" y="3" width="20" height="20" rx="4" stroke="#1D9E75" stroke-width="2" fill="none"/>
+            <path d="M8 13h10M8 17h6" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/>
+            <circle cx="8" cy="9" r="2" fill="#1D9E75"/>
+            <path d="M12 9h6" stroke="#1D9E75" stroke-width="1.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <div>
+          <div class="header-text-title">Tu rutina</div>
+          <div class="header-text-sub">Paso 2 de 5 — cuéntanos tu ritmo</div>
+        </div>
+      </div>
+
+      <!-- Métricas reactivas -->
+      <div class="metrics-row">
+        <div class="metric-card">
+          <div class="metric-val" id="m-dias">3</div>
+          <div class="metric-lbl">días/sem</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" id="m-min">45</div>
+          <div class="metric-lbl">min/sesión</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-val" id="m-total">135</div>
+          <div class="metric-lbl">min/semana</div>
+        </div>
+      </div>
+
+      <div class="card">
+
+        <!-- Días de gym -->
+        <div>
+          <div class="section-title">Días de gym por semana</div>
+          <div class="days-row" id="days-row">
+            <button class="day-btn" onclick="setDay(0)">0</button>
+            <button class="day-btn" onclick="setDay(1)">1</button>
+            <button class="day-btn" onclick="setDay(2)">2</button>
+            <button class="day-btn on" onclick="setDay(3)">3</button>
+            <button class="day-btn" onclick="setDay(4)">4</button>
+            <button class="day-btn" onclick="setDay(5)">5</button>
+            <button class="day-btn" onclick="setDay(6)">6</button>
+          </div>
+        </div>
+
+        <!-- Minutos por sesión (slider) -->
+        <div>
+          <div class="section-title">Minutos por sesión</div>
+          <div class="slider-wrap">
+            <div class="slider-row">
+              <input type="range" id="min-slider" min="20" max="120" value="45" step="5" oninput="updMin(this.value)" />
+              <span class="slider-val" id="min-label">45 min</span>
+            </div>
+            <div class="slider-labels">
+              <span>20 min</span>
+              <span>120 min</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resumen semanal -->
+        <div class="summary-card">
+          <div class="summary-text">Tiempo total<br>en el gym por semana</div>
+          <div class="summary-val" id="summary-val">2h 15m</div>
+        </div>
+
+        <!-- Calidad de dieta -->
+        <div>
+          <div class="section-title">Calidad de tu dieta actual</div>
+          <div class="diet-grid">
+            <button class="diet-btn" onclick="selDiet(this)">
+              <div class="diet-dot"></div>
+              <div class="diet-info"><div class="diet-label">Muy saludable</div><div class="diet-sub">Sin procesados, mides tus macros</div></div>
+            </button>
+            <button class="diet-btn" onclick="selDiet(this)">
+              <div class="diet-dot"></div>
+              <div class="diet-info"><div class="diet-label">Saludable</div><div class="diet-sub">Pocos procesados, cocinas en casa</div></div>
+            </button>
+            <button class="diet-btn on" onclick="selDiet(this)">
+              <div class="diet-dot"></div>
+              <div class="diet-info"><div class="diet-label">Promedio</div><div class="diet-sub">Mixta, algún antojo el finde</div></div>
+            </button>
+            <button class="diet-btn" onclick="selDiet(this)">
+              <div class="diet-dot"></div>
+              <div class="diet-info"><div class="diet-label">Poco saludable</div><div class="diet-sub">Comida rápida frecuente</div></div>
+            </button>
+            <button class="diet-btn" onclick="selDiet(this)">
+              <div class="diet-dot"></div>
+              <div class="diet-info"><div class="diet-label">Alta en ultraprocesados</div><div class="diet-sub">Fast food casi todos los días</div></div>
+            </button>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="nav">
+      <button class="btn-back">← Atrás</button>
+      <button class="btn-next">Siguiente →</button>
+    </div>
+
+  </div>
+  <div class="home-bar"><div class="pill"></div></div>
+</div>
+<div class="screen-label">Step 2 — Tu rutina</div>
+</div></div>
+
+<script>
+var dias = 3;
+var mins = 45;
+
+function setDay(d) {
+  dias = d;
+  document.querySelectorAll('.day-btn').forEach(function(b, i) {
+    b.className = 'day-btn' + (i === d ? ' on' : '');
+  });
+  updMetrics();
+}
+
+function updMin(v) {
+  mins = parseInt(v);
+  document.getElementById('min-label').textContent = mins + ' min';
+  updMetrics();
+}
+
+function updMetrics() {
+  document.getElementById('m-dias').textContent = dias;
+  document.getElementById('m-min').textContent = mins;
+  var total = dias * mins;
+  document.getElementById('m-total').textContent = total;
+  var h = Math.floor(total / 60);
+  var m = total % 60;
+  var txt = h > 0 ? h + 'h ' + (m > 0 ? m + 'm' : '') : m + 'm';
+  document.getElementById('summary-val').textContent = txt.trim();
+}
+
+function selDiet(btn) {
+  document.querySelectorAll('.diet-btn').forEach(function(b) { b.className = 'diet-btn'; });
+  btn.className = 'diet-btn on';
+}
+</script>
